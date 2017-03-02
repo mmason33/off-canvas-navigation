@@ -69,31 +69,29 @@
   }
 }
 
+.menu-item-has-children{
+  position: relative;
+  margin-right: 1.5em;
+  &:after{
+    font-family: FontAwesome;
+    font-size: .75rem;
+    content: '\f0d7';
+    color: #ef6f00;
+    position: absolute;
+    top: .3rem;
+    right: -.85rem;
+  }
+}
+
 .main-navigation{
   box-flex: 3;
   -moz-flex: 3;
   -ms-flex: 3;
   flex: 3;
   .menu-header-navigation-container{
-    .menu.dropdown{
-      float: right;
-    }
     .menu li:last-child{
       margin-right: 0;
       padding-right: 0;
-    }
-    .menu-item-has-children{
-      position: relative;
-      margin-right: 1.5em;
-      &:after{
-        font-family: FontAwesome;
-        font-size: .75rem;
-        content: '\f0d7';
-        color: #c13333;
-        position: absolute;
-        top: .1875rem;
-        right: -.25rem;
-      }
     }
     a{
       font-size: 1.125rem;
@@ -141,13 +139,11 @@ a#menu-icon {
     margin: 0;
     padding: 0;
     list-style: none;
+    float: right;
     &:after{
       clear: both;
       content: "";
       display: block;
-    }
-    li{
-      margin: 0 .625rem 0 0;
     }
     ul{
       margin: 0;
@@ -217,6 +213,11 @@ a#menu-icon {
   li{
     float: left;
     position: relative;
+    margin-right: 3rem;
+    font-size: 105%;
+    a{
+      color: #969696;
+    }
   }
 }
 
@@ -319,7 +320,7 @@ a#menu-icon {
       }
       ul:not(.sub-menu) {
         position: fixed;
-        background: rgba(239,111,0,.85);
+        background: #969696;
         border-left: 1px solid rgba(0,32,66,1);
         border-right: 1px solid rgba(0,32,66,1);
         border-top: 1px solid rgba(0,32,66,1);
@@ -357,6 +358,9 @@ a#menu-icon {
       }
       ul:not(.sub-menu){
         li.menu-item-has-children{
+          ul.sub-menu{
+            box-shadow: inset 0px 0px 4px #000 !important;
+          }
           &.active:hover{
             >ul.sub-menu{
               display: block;
@@ -374,7 +378,7 @@ a#menu-icon {
           }
           >ul.sub-menu{
             display: none;
-            background: #444;
+            background: #878787 !important;
             border: none;
             box-shadow: none;
             height: inherit;
@@ -392,11 +396,14 @@ a#menu-icon {
               background: none;
               a{
                 font-size: .9375rem;
+                color: #002042;
                 padding: 6px 30px;
                 border: none;
                 width: 100%;
                 &:before{
-                  content: '';
+                  content: "\f105";
+                  font-family: FontAwesome;
+                  margin-right: 5px;
                 }
               }
             }
