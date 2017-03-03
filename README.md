@@ -5,8 +5,7 @@ I am developing a simple off-canvas navigation for mobile. The menu is clean and
 
 #Dependencies
 
-'''
-jQuery 3.1.0
-Bootstrap 4.0.0
-FontAwesome 4.7.0
-'''
+
+##jQuery 3.1.0
+##Bootstrap 4.0.0
+##FontAwesome 4.7.0
