@@ -14,7 +14,7 @@
 
 .menu-item-has-children { position: relative; margin-right: 1.5em; }
 
-.menu-item-has-children:after { font-family: FontAwesome; font-size: .75rem; content: '\f0d7'; color: #ef6f00; position: absolute; top: .3rem; right: -.85rem; }
+.menu-item-has-children:after { font-family: FontAwesome; font-size: 1rem; content: "\f107"; color: #ef6f00; position: absolute; top: 0em; right: -1.25rem; }
 
 .main-navigation { box-flex: 3; -moz-flex: 3; -ms-flex: 3; flex: 3; }
 
@@ -50,21 +50,21 @@ a#menu-icon { display: none; visibility: hidden; }
 
 .menu.menu-vertical a { border-bottom: 1px solid #ccc; padding: .625rem; }
 
-.menu.dropdown ul.sub-menu { position: absolute; top: 1.125rem; left: -999em; box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4); float: left; z-index: 99999; padding: 2.4375rem 0 0; }
+.menu.dropdown ul.sub-menu { position: absolute; top: 1.125rem; left: -999em; float: left; z-index: 99999; padding-top: 2.6rem; transform: translateY(-2em); z-index: -1; transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s; opacity: 0; visibility: hidden; }
 
 .menu.dropdown ul.sub-menu a { height: auto; width: 12.5rem; }
 
 .menu.dropdown ul.sub-menu ul { left: -999em; top: 0; }
 
-.menu.dropdown ul.sub-menu li { margin: 0; background: #000; }
+.menu.dropdown ul.sub-menu li { margin: 0; background: #e3e3e3; width: 100%; box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.6); border-bottom: 1px solid grey; }
 
-.menu.dropdown ul.sub-menu li:first-child { border-top: .125rem solid #c13333; padding-top: .75em; }
+.menu.dropdown ul.sub-menu li:first-child { border-top: 2px solid #ef6f00; }
 
-.menu.dropdown ul.sub-menu li:last-child { padding-right: 0.75em !important; padding-bottom: .75em; }
+.menu.dropdown ul.sub-menu li:last-child { padding-right: 0.75em !important; }
 
-.menu.dropdown ul.sub-menu li a { padding: .75em; }
+.menu.dropdown ul.sub-menu li a { padding: .75em; color: #595959; }
 
-.menu.dropdown ul.sub-menu li a:hover { color: #c13333; }
+.menu.dropdown ul.sub-menu li a:hover { color: #ef6f00; }
 
 .menu.dropdown li { float: left; position: relative; margin-right: 3rem; font-size: 105%; }
 
@@ -72,7 +72,7 @@ a#menu-icon { display: none; visibility: hidden; }
 
 .menu.dropdown ul.sub-menu li.focus > ul, .menu.dropdown ul.sub-menu li:hover > ul { left: 100%; }
 
-.menu.dropdown .focus > ul, .menu.dropdown li:hover > ul { left: auto; }
+.menu.dropdown .focus > ul, .menu.dropdown li:hover > ul { left: auto; visibility: visible; /* shows sub-menu */ opacity: 1; z-index: 1; transform: translateY(0%); transition-delay: 0s, 0s, 0.3s; }
 
 .menu-toggle, .menu a { display: block; }
 
@@ -80,7 +80,10 @@ a#menu-icon { display: none; visibility: hidden; }
 
 @media screen and (max-width: 640px) { .menu-open .menu-overlay { right: 260px !important; } }
 
-@media screen and (max-width: 1024px) { a#menu-icon { display: block; position: absolute; top: 50%; right: 1.25rem; margin: 0; padding: 10px 35px 10px 0; cursor: pointer; visibility: visible; transform: translateY(-50%); transition: all .3s ease-in-out; }
+@media screen and (max-width: 1024px) { .menu-item-has-children:after { font-family: FontAwesome; font-size: 1rem; content: "\f138"; color: #002042; position: absolute; top: .3rem; right: -1rem; }
+  .menu.dropdown ul.sub-menu { transform: none; opacity: 1; visibility: visible; }
+  .menu.dropdown ul.sub-menu li { box-shadow: none; }
+  a#menu-icon { display: block; position: absolute; top: 50%; right: 1.25rem; margin: 0; padding: 10px 35px 10px 0; cursor: pointer; visibility: visible; transform: translateY(-50%); transition: all .3s ease-in-out; }
   a#menu-icon span, a#menu-icon span:after, a#menu-icon span:before { display: block; position: absolute; height: 3px; width: 35px; top: 0; background: #ef6f00; border-radius: 1px; cursor: pointer; transition: all .5s ease-in-out; content: ''; }
   a#menu-icon span:before { top: 8px; }
   a#menu-icon span:after { top: 16px; }
@@ -97,12 +100,13 @@ a#menu-icon { display: none; visibility: hidden; }
   nav#site-navigation ul:not(.sub-menu) li a { display: block; line-height: 1.5; margin: 0; padding: 15px 30px; border: none; color: #002042; }
   nav#site-navigation ul:not(.sub-menu) li.menu-item-has-children ul.sub-menu { box-shadow: inset 0px 0px 4px #000 !important; }
   nav#site-navigation ul:not(.sub-menu) li.menu-item-has-children.active:hover > ul.sub-menu { display: block; }
+  nav#site-navigation ul:not(.sub-menu) li.menu-item-has-children.active:after { transform: rotate(90deg); transform-origin: 96% 30%; }
   nav#site-navigation ul:not(.sub-menu) li.menu-item-has-children.active > ul.sub-menu { display: block; }
   nav#site-navigation ul:not(.sub-menu) li.menu-item-has-children:after { top: 50%; right: 1.25rem; transform: translateY(-50%); }
   nav#site-navigation ul:not(.sub-menu) li.menu-item-has-children > ul.sub-menu { display: none; background: #878787 !important; border: none; box-shadow: none; height: inherit; width: 100%; margin: 0; padding: 8px 0; position: relative; top: 0; left: 0; right: 0; bottom: 0; transition: all .3s ease-in-out; }
   nav#site-navigation ul:not(.sub-menu) li.menu-item-has-children > ul.sub-menu li { border: none; background: none; }
   nav#site-navigation ul:not(.sub-menu) li.menu-item-has-children > ul.sub-menu li a { font-size: .9375rem; color: #002042; padding: 6px 30px; border: none; width: 100%; }
-  nav#site-navigation ul:not(.sub-menu) li.menu-item-has-children > ul.sub-menu li a:before { content: "\f105"; font-family: FontAwesome; margin-right: 5px; }
+  nav#site-navigation ul:not(.sub-menu) li.menu-item-has-children > ul.sub-menu li a:before { content: ""; font-family: FontAwesome; margin-right: 5px; }
   nav#site-navigation ul:not(.sub-menu) li.menu-item-has-children:hover > ul.sub-menu { display: none; background: #444; border: none; box-shadow: none; height: inherit; width: 100%; margin: 0; padding: 8px 0; position: relative; top: 0; left: 0; right: 0; bottom: 0; transition: all .3s ease-in-out; }
   .menu-open #content, .menu-open header.site-header { right: 320px !important; }
   #content, header.site-header { right: 0 !important; transition: all .3s ease-in-out; } }

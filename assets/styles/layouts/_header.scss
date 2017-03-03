@@ -74,15 +74,14 @@
   margin-right: 1.5em;
   &:after{
     font-family: FontAwesome;
-    font-size: .75rem;
-    content: '\f0d7';
+    font-size: 1rem;
+    content: "\f107";
     color: #ef6f00;
     position: absolute;
-    top: .3rem;
-    right: -.85rem;
+    top: 0em;
+    right: -1.25rem;
   }
 }
-
 .main-navigation{
   box-flex: 3;
   -moz-flex: 3;
@@ -179,10 +178,14 @@ a#menu-icon {
     position: absolute;
     top: 1.125rem;
     left: -999em;
-    box-shadow: 0 3px 3px rgba(0,0,0,.4);
     float: left;
     z-index: 99999;
-    padding: 2.4375rem 0 0;
+    padding-top:2.6rem;
+    transform: translateY(-2em);
+    z-index: -1;
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+    opacity: 0;
+    visibility: hidden;
     a{
       height: auto;
       width: 12.5rem;
@@ -193,19 +196,23 @@ a#menu-icon {
     }
     li{
       margin: 0;
-      background: #000;
+      background: #e3e3e3;
+      width: 100%;
+      box-shadow: 4px 4px 5px rgba(0,0,0,.6);
+      border-bottom:1px solid grey;
       &:first-child{
-        border-top: .125rem solid #c13333;
-        padding-top: .75em;
+        border-top: 2px solid #ef6f00;
+        //padding-top: .75em;
       }
       &:last-child{
         padding-right: .75em!important;
-        padding-bottom: .75em;
+        //padding-bottom: .75em;
       }
       a{
         padding: .75em;
+        color: #595959;
         &:hover{
-          color: #c13333;
+          color: #ef6f00;
         }
       }
     }
@@ -227,6 +234,11 @@ a#menu-icon {
 
 .menu.dropdown .focus>ul,.menu.dropdown li:hover>ul {
     left: auto;
+    visibility: visible; /* shows sub-menu */
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s;
 }
 
 .menu-toggle,.menu a {
@@ -246,6 +258,30 @@ a#menu-icon {
 }
 
 @media screen and (max-width: 1024px) {
+
+    .menu-item-has-children{
+      &:after{
+        font-family: FontAwesome;
+        font-size: 1rem;
+        content: "\f138";
+        color: #002042;
+        position: absolute;
+        top: .3rem;
+        right: -1rem;
+      }
+    }
+
+    .menu.dropdown{
+      ul.sub-menu{
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+        li{
+          box-shadow: none;
+        }
+      }
+    }
+
     a#menu-icon {
         display:block;
         position: absolute;
@@ -367,6 +403,10 @@ a#menu-icon {
             }
           }
           &.active{
+            &:after{
+              transform: rotate(90deg);
+              transform-origin: 96% 30%;
+            }
             >ul.sub-menu{
               display: block;
             }
@@ -401,7 +441,7 @@ a#menu-icon {
                 border: none;
                 width: 100%;
                 &:before{
-                  content: "\f105";
+                  content: "";
                   font-family: FontAwesome;
                   margin-right: 5px;
                 }
