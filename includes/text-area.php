@@ -25,23 +25,28 @@ style="background: url('<?php echo $bgImage; ?>') <?php echo $bgRepeat;?>;backgr
 ?>
 <div class="container<?php echo $fullWidth; ?>">
 	<section id="text-box">
-		<div class="row">
-			<?php
-			if($sideBar === true){ ?>
+<?php
+			if($sideBar === true):
+?>
+			<div class="row">
 				<div class="col-md-8">
 					<?php echo $textBox; ?>
 				</div>
-			<?php
-					get_template_part('template/sidebar');
-					echo '</div><!--end row-->';
-					echo '</section><!--end #text-box-->';
-			}else{
-				echo '<div class="col-md-12">';
-			}
-			 ?>
-				<?php echo $textBox; ?>
+				<div class="col-md-4">
+					<?php get_template_part('templates/sidebar');?>
+				</div>
 			</div>
-		</div>
-	</section>
-</div>
-</section>
+<?php
+			else:
+?>
+			<div class="row">
+				<div class="col-md-12">
+					<?php echo $textBox; ?>
+				</div>
+			</div>
+<?php endif; ?>
+
+
+		</section><!--#textbox-->
+	</div><!--container-->
+</section><!--text-box-wrap-->	

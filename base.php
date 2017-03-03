@@ -35,8 +35,8 @@ use Roots\Sage\Wrapper;
     <?php
       do_action('get_builder');
       get_template_part('includes/builder');
-      do_action('get_sidebar');
-      get_template_part('templates/sidebar');
+      //do_action('get_sidebar');
+      //get_template_part('templates/sidebar');
       do_action('get_footer');
       get_template_part('templates/footer');
       wp_footer();

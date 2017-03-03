@@ -1,3 +1,3 @@
-<aside class="col-md-4">
+<aside class="sidebar">
   <h1>Hello</h1>
-</aside>  
+</aside>
