@@ -4,7 +4,7 @@
 
 .wrap .navigation { margin: 35px 0; }
 
-.site-header { background: #012144; padding: 2.25em .75em; outline: none; box-align: stretch; -moz-align-items: stretch; -ms-align-items: stretch; -o-align-items: stretch; align-items: stretch; -ms-flex-align: stretch; display: -webkit-box; display: -moz-box; display: flex; display: -moz-flex; display: -ms-flexbox; display: flex; box-orient: horizontal; box-direction: normal; -moz-flex-direction: row; flex-direction: row; -ms-flex-direction: row; box-pack: start; -moz-justify-content: flex-start; -ms-justify-content: flex-start; -o-justify-content: flex-start; justify-content: flex-start; -ms-flex-pack: start; z-index: 3; }
+.site-header { background: #012144; padding: 2.25em .75em; outline: none; box-align: stretch; -moz-align-items: stretch; -ms-align-items: stretch; -o-align-items: stretch; align-items: stretch; -ms-flex-align: stretch; display: -webkit-box; display: -moz-box; display: flex; display: -moz-flex; display: -ms-flexbox; display: flex; box-orient: horizontal; box-direction: normal; -moz-flex-direction: row; flex-direction: row; -ms-flex-direction: row; box-pack: start; -moz-justify-content: flex-start; -ms-justify-content: flex-start; -o-justify-content: flex-start; justify-content: flex-start; -ms-flex-pack: start; z-index: 3; box-shadow: 0px 1px 15px #000; }
 
 .site-header .wrap { width: 75em; position: relative; padding: 0; }
 
@@ -32,7 +32,8 @@ a#menu-icon { display: none; visibility: hidden; }
 
 .menu-open .menu-overlay { right: 320px; }
 
-#content, header.site-header { position: relative; transition: all .3s ease-in-out; }
+/************** CHANGED TO FIXED 3/3/17 ADDED WIDTH 100 PERCENT *****/
+#content, header.site-header { position: fixed; width: 100%; transition: all .3s ease-in-out; }
 
 .menu { margin: 0; padding: 0; list-style: none; float: right; }
 

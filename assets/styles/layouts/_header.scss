@@ -42,6 +42,7 @@
   justify-content: flex-start;
   -ms-flex-pack: start;
   z-index: 3;
+  box-shadow: 0px 1px 15px #000;
   .wrap{
     width: 75em;
     position: relative;
@@ -128,9 +129,10 @@ a#menu-icon {
 .menu-open .menu-overlay {
     right: 320px;
 }
-
+/************** CHANGED TO FIXED 3/3/17 ADDED WIDTH 100 PERCENT *****/
 #content,header.site-header {
-    position: relative;
+    position: fixed;
+    width: 100%;
     transition: all .3s ease-in-out
 }
 
