@@ -7,19 +7,20 @@ body{
 }
 
 #cta-content{
-  h1,h2,h3,h4,h5,h6{
+  h1,h2,h3,h4,h5,h6,p{
     color: white;
     text-shadow: 1px 1px 1px #000;
+    text-align: left;
   }
   .head{
-    margin-top: 200px !important;
+    margin-top: 150px !important;
   }
   .sub-head{
     margin-top: 30px;
   }
 }
 .video-btn{
-  padding: 20px;
+  padding: 12px;
   border: 1px solid white;
   border-radius: 5px;
   color: white;
@@ -37,11 +38,20 @@ body{
     box-shadow: none;
   }
 }
-
-
 .sidebar-tile{
   background: #e3e3e3;
   height: 160px;
   border: 2px solid #999;
   margin-top: 10px;
+}
+#text-box{
+  padding: 40px 0px 40px 0px;
+}
+.image-white{
+  h2,p{
+    color: white !important;
+  }
+}
+.pad-150{
+  padding: 100px 50px;
 }

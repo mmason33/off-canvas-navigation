@@ -7,15 +7,16 @@ $bgImage = get_sub_field('bg_image');
 $bgRepeat = (get_sub_field('bg_repeat') == 1 ? 'repeat' : 'no-repeat');
 $bgPosition = get_sub_field('bg_position');
 $sideBar = get_sub_field('sidebar_checkbox');
+$padding = (get_sub_field('padding') == 1 ? 'pad-150' : '');
 
 ?>
-<section class="text-box-wrap"
+<section class="text-box-wrap <?php echo $padding; ?>"
 <?php
 
 	if(!empty($bgImage)){
 
 ?>
-style="background: url('<?php echo $bgImage; ?>') <?php echo $bgRepeat;?>;background-position:<?php echo $bgPosition;?>>;background-size:cover;">
+style="background: url('<?php echo $bgImage; ?>') <?php echo $bgRepeat;?>;background-position:<?php echo $bgPosition;?>;background-size:cover;">
 <?php
 }else{
 ?>
@@ -49,4 +50,4 @@ style="background: url('<?php echo $bgImage; ?>') <?php echo $bgRepeat;?>;backgr
 
 		</section><!--#textbox-->
 	</div><!--container-->
-</section><!--text-box-wrap-->	
+</section><!--text-box-wrap-->
