@@ -1,19 +1,19 @@
-.wrap {
+.nav-wrap {
   max-width: 75em;
   margin-left: auto;
   margin-right: auto;
   padding: 0 1.5em;
 }
-.wrap:after {
+.nav-wrap:after {
   clear: both;
   content: "";
   display: block;
 }
-.wrap .navigation {
+.nav-wrap .navigation {
   margin: 35px 0;
 }
 
-.site-header {
+.header {
   background: #000;
   padding: 2.25em .75em;
   outline: none;
@@ -41,14 +41,15 @@
   justify-content: flex-start;
   -ms-flex-pack: start;
   z-index: 3;
+  box-shadow: 0px 1px 15px #000;
 }
-.site-header .wrap {
+.header .nav-wrap {
   width: 75em;
   position: relative;
   padding: 0;
 }
-.site-header .wrap #logo {
-  /*background: url("") top no-repeat;*//*for a brand image */
+.header .nav-wrap #nav-brand {
+  /*background: url("") top no-repeat;*/
   background-size: contain;
   display: block;
   position: absolute;
@@ -57,19 +58,13 @@
   height: 50px;
   width: 203px;
   margin: 0;
-  /*overflow: hidden;*/ /*used if brand image present*/
-  text-indent: 110%;
-  white-space: nowrap;
+  overflow: hidden;
+  /*text-indent: 110%;*/      /*used for background-image*/
+  white-space: nonav-wrap;
+  color: white;
   transform: translateY(-50%);
 }
-/*************** Styles for Brand Link w/o brand image **********************/
-#logo a {
-    color: white; /* text color for brand text with not brand image present*/
-    text-decoration: none;
-    overflow: inherit;
-}
-/***************************** End brand text styles ***********************/
-.site-header .wrap #logo a {
+.header .nav-wrap #nav-brand a {
   display: block;
   height: 100%;
   width: 100%;
@@ -83,43 +78,43 @@
   font-family: FontAwesome;
   font-size: 1rem;
   content: "\f107";
-  color: #fff;
+  color: #ef6f00;
   position: absolute;
   top: 0em;
   right: -1.25rem;
 }
 
-.main-navigation {
+.primary-navigation {
   box-flex: 3;
   -moz-flex: 3;
   -ms-flex: 3;
   flex: 3;
 }
-.main-navigation .menu-header-navigation-container .menu li:last-child {
+.primary-navigation .menu-header-navigation-container .menu li:last-child {
   margin-right: 0;
   padding-right: 0;
 }
-.main-navigation .menu-header-navigation-container a {
+.primary-navigation .menu-header-navigation-container a {
   font-size: 1.125rem;
   font-weight: 400;
   color: #fff;
   -webkit-font-smoothing: antialiased;
   transition: all .2s ease;
 }
-.main-navigation .menu-header-navigation-container a:hover {
+.primary-navigation .menu-header-navigation-container a:hover {
   color: #c13333;
   cursor: pointer;
 }
-.main-navigation .menu-header-navigation-container li {
+.primary-navigation .menu-header-navigation-container li {
   padding: 0 .75em;
 }
 
-a#menu-icon {
+a#nav-icon {
   display: none;
   visibility: hidden;
 }
 
-.menu-overlay {
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -130,12 +125,14 @@ a#menu-icon {
   transition: all .25s ease-in-out;
 }
 
-.menu-open .menu-overlay {
+.nav-open .overlay {
   right: 320px;
 }
 
-#content, header.site-header {
-  position: relative;
+/************** CHANGED TO FIXED 3/3/17 ADDED WIDTH 100 PERCENT *****/
+#content, header.header {
+  position: fixed;
+  width: 100%;
   transition: all 0.3s ease-in-out;
 }
 
@@ -178,7 +175,7 @@ a#menu-icon {
 
 .menu.dropdown ul.sub-menu {
   position: absolute;
-  top: 1.125rem;
+  top: .85rem;
   left: -999em;
   float: left;
   z-index: 99999;
@@ -205,7 +202,7 @@ a#menu-icon {
   border-bottom: 1px solid grey;
 }
 .menu.dropdown ul.sub-menu li:first-child {
-  border-top: 2px solid #000;
+  border-top: 2px solid #ef6f00;
 }
 .menu.dropdown ul.sub-menu li:last-child {
   padding-right: 0.75em !important;
@@ -215,13 +212,13 @@ a#menu-icon {
   color: #595959;
 }
 .menu.dropdown ul.sub-menu li a:hover {
-  color: #000;
+  color: #ef6f00;
 }
 .menu.dropdown li {
   float: left;
   position: relative;
   margin-right: 3rem;
-  font-size: 105%;
+  font-size: 90% !important;
 }
 .menu.dropdown li a {
   color: #969696;
@@ -246,12 +243,12 @@ a#menu-icon {
 }
 
 @media screen and (min-width: 1360px) {
-  .wrap {
+  .nav-wrap {
     padding: 0;
   }
 }
 @media screen and (max-width: 640px) {
-  .menu-open .menu-overlay {
+  .nav-open .overlay {
     right: 260px !important;
   }
 }
@@ -275,7 +272,7 @@ a#menu-icon {
     box-shadow: none;
   }
 
-  a#menu-icon {
+  a#nav-icon {
     display: block;
     position: absolute;
     top: 50%;
@@ -287,44 +284,44 @@ a#menu-icon {
     transform: translateY(-50%);
     transition: all .3s ease-in-out;
   }
-  a#menu-icon span, a#menu-icon span:after, a#menu-icon span:before {
+  a#nav-icon span, a#nav-icon span:after, a#nav-icon span:before {
     display: block;
     position: absolute;
     height: 3px;
     width: 35px;
     top: 0;
-    background: #fff;
+    background: #ef6f00;
     border-radius: 1px;
     cursor: pointer;
     transition: all .5s ease-in-out;
     content: '';
   }
-  a#menu-icon span:before {
+  a#nav-icon span:before {
     top: 8px;
   }
-  a#menu-icon span:after {
+  a#nav-icon span:after {
     top: 16px;
   }
 
-  a#menu-icon.active span {
+  a#nav-icon.open span {
     background-color: transparent;
   }
-  a#menu-icon.active span:after {
+  a#nav-icon.open span:after {
     top: 8px;
     left: 0;
     transform: rotate(-45deg);
   }
-  a#menu-icon.active span:before {
+  a#nav-icon.open span:before {
     top: 8px;
     left: 0;
     transform: rotate(45deg);
   }
 
-  .scrolled a#menu-icon {
+  .scrolled a#nav-icon {
     top: 40px;
   }
 
-  .site-header .wrap {
+  .header .nav-wrap {
     position: absolute;
     top: 0;
     left: 0;
@@ -333,14 +330,14 @@ a#menu-icon {
     max-width: none;
     margin: 0;
   }
-  .site-header .wrap #logo {
+  .header .nav-wrap #nav-brand {
     left: 1.25rem;
   }
 
-  nav#site-navigation.active ul:not(.sub-menu) {
+  nav#off-canvas-nav.open ul:not(.sub-menu) {
     right: 0 !important;
   }
-  nav#site-navigation ul:not(.sub-menu) {
+  nav#off-canvas-nav ul:not(.sub-menu) {
     position: fixed;
     background: #969696;
     border-left: 1px solid #000;
@@ -355,7 +352,7 @@ a#menu-icon {
     overflow-x: hidden;
     transition: all .3s ease-in-out;
   }
-  nav#site-navigation ul:not(.sub-menu) li {
+  nav#off-canvas-nav ul:not(.sub-menu) li {
     float: none;
     clear: both;
     width: 100%;
@@ -363,41 +360,40 @@ a#menu-icon {
     padding: 0 !important;
     border-bottom: 1px solid #000;
   }
-  nav#site-navigation ul:not(.sub-menu) li:last-child > a {
+  nav#off-canvas-nav ul:not(.sub-menu) li:last-child > a {
     display: block;
     line-height: 1.5;
     margin: 0;
     padding: 15px 30px;
     border: none;
   }
-  nav#site-navigation ul:not(.sub-menu) li a {
+  nav#off-canvas-nav ul:not(.sub-menu) li a {
     display: block;
     line-height: 1.5;
     margin: 0;
     padding: 15px 30px;
     border: none;
     color: #000;
-    text-decoration: none !important;
   }
-  nav#site-navigation ul:not(.sub-menu) li.menu-item-has-children ul.sub-menu {
+  nav#off-canvas-nav ul:not(.sub-menu) li.menu-item-has-children ul.sub-menu {
     box-shadow: inset 0px 0px 4px #000 !important;
   }
-  nav#site-navigation ul:not(.sub-menu) li.menu-item-has-children.active:hover > ul.sub-menu {
+  nav#off-canvas-nav ul:not(.sub-menu) li.menu-item-has-children.open:hover > ul.sub-menu {
     display: block;
   }
-  nav#site-navigation ul:not(.sub-menu) li.menu-item-has-children.active:after {
+  nav#off-canvas-nav ul:not(.sub-menu) li.menu-item-has-children.open:after {
     transform: rotate(90deg);
     transform-origin: 96% 30%;
   }
-  nav#site-navigation ul:not(.sub-menu) li.menu-item-has-children.active > ul.sub-menu {
+  nav#off-canvas-nav ul:not(.sub-menu) li.menu-item-has-children.open > ul.sub-menu {
     display: block;
   }
-  nav#site-navigation ul:not(.sub-menu) li.menu-item-has-children:after {
+  nav#off-canvas-nav ul:not(.sub-menu) li.menu-item-has-children:after {
     top: 50%;
     right: 1.25rem;
     transform: translateY(-50%);
   }
-  nav#site-navigation ul:not(.sub-menu) li.menu-item-has-children > ul.sub-menu {
+  nav#off-canvas-nav ul:not(.sub-menu) li.menu-item-has-children > ul.sub-menu {
     display: none;
     background: #878787 !important;
     border: none;
@@ -413,23 +409,23 @@ a#menu-icon {
     bottom: 0;
     transition: all .3s ease-in-out;
   }
-  nav#site-navigation ul:not(.sub-menu) li.menu-item-has-children > ul.sub-menu li {
+  nav#off-canvas-nav ul:not(.sub-menu) li.menu-item-has-children > ul.sub-menu li {
     border: none;
     background: none;
   }
-  nav#site-navigation ul:not(.sub-menu) li.menu-item-has-children > ul.sub-menu li a {
+  nav#off-canvas-nav ul:not(.sub-menu) li.menu-item-has-children > ul.sub-menu li a {
     font-size: .9375rem;
     color: #000;
     padding: 6px 30px;
     border: none;
     width: 100%;
   }
-  nav#site-navigation ul:not(.sub-menu) li.menu-item-has-children > ul.sub-menu li a:before {
+  nav#off-canvas-nav ul:not(.sub-menu) li.menu-item-has-children > ul.sub-menu li a:before {
     content: "";
     font-family: FontAwesome;
     margin-right: 5px;
   }
-  nav#site-navigation ul:not(.sub-menu) li.menu-item-has-children:hover > ul.sub-menu {
+  nav#off-canvas-nav ul:not(.sub-menu) li.menu-item-has-children:hover > ul.sub-menu {
     display: none;
     background: #444;
     border: none;
@@ -446,22 +442,22 @@ a#menu-icon {
     transition: all .3s ease-in-out;
   }
 
-  .menu-open #content, .menu-open header.site-header {
+  .nav-open #content, .nav-open header.header {
     right: 320px !important;
   }
 
-  #content, header.site-header {
+  #content, header.header {
     right: 0 !important;
     transition: all .3s ease-in-out;
   }
 }
 @media screen and (max-width: 1024px) and (max-width: 640px) {
-  nav#site-navigation ul:not(.sub-menu) {
+  nav#off-canvas-nav ul:not(.sub-menu) {
     width: 260px !important;
     right: -260px !important;
   }
 
-  .menu-open #content, .menu-open header.site-header {
+  .nav-open #content, .nav-open header.header {
     right: 260px !important;
   }
 }

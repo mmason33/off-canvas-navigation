@@ -1,22 +1,22 @@
 $(document).ready(function(){
     var body = $("body"),
-         menuOverlay = $(".menu-overlay"),
-         menu = $("nav#site-navigation"),
-         menuIcon = $("#menu-icon"),
-         subTrigger = $("li.menu-item-has-children > a");
-    menuIcon.click(function(e) {
+         navOverlay = $(".overlay"),
+         nav = $("nav#off-canvas-nav"),
+         navIcon = $("#nav-icon"),
+         subMenu = $("li.menu-item-has-children > a");
+    navIcon.click(function(e) {
         e.preventDefault();
-        $(this).toggleClass("active");
-        body.toggleClass("menu-open");
-        menu.toggleClass("active");
+        $(this).toggleClass("open");
+        body.toggleClass("nav-open");
+        nav.toggleClass("open");
     });
-    menuOverlay.click(function() {
-        menuIcon.removeClass("active");
-        body.removeClass("menu-open");
-        menu.removeClass("active");
+    navOverlay.click(function() {
+        navIcon.removeClass("open");
+        body.removeClass("nav-open");
+        nav.removeClass("open");
     });
-    subTrigger.click(function(drop) {
+    subMenu.click(function(drop) {
         drop.preventDefault();
-        $(this).parent().toggleClass("active");
+        $(this).parent().toggleClass("open");
     });
   });
