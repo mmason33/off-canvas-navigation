@@ -29,8 +29,8 @@ $parallax = get_field('parallax');
               ?>
                   <section id="cta-content">
                     <div class="container">
-                        <div class="row">
-                          <div class="col-xs-12">
+                        <div class="row justify-content-center">
+                          <div class="col-xs-12 head text-sm-center">
                           <?php echo $CTAcontent; ?>
                           </div>
                         </div>

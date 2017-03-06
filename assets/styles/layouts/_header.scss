@@ -14,7 +14,7 @@
     }
 }
 
-.site-header {
+.header {
   background: rgba(1,33,68,1);
   padding: 2.25em .75em;
   outline: none;
@@ -47,7 +47,7 @@
     width: 75em;
     position: relative;
     padding: 0;
-    #logo{
+    #nav-brand{
       background: url('/wp-content/uploads/2017/01/logo_big2-e1484762995874.png') top no-repeat;
       background-size: contain;
       display: block;
@@ -83,7 +83,7 @@
     right: -1.25rem;
   }
 }
-.main-navigation{
+.primary-navigation{
   box-flex: 3;
   -moz-flex: 3;
   -ms-flex: 3;
@@ -110,12 +110,12 @@
   }
 }
 
-a#menu-icon {
+a#nav-icon {
     display: none;
     visibility: hidden
 }
 
-.menu-overlay {
+.overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -126,11 +126,11 @@ a#menu-icon {
     transition: all .25s ease-in-out;
 }
 
-.menu-open .menu-overlay {
+.nav-open .overlay {
     right: 320px;
 }
 /************** CHANGED TO FIXED 3/3/17 ADDED WIDTH 100 PERCENT *****/
-#content,header.site-header {
+#content,header.header {
     position: fixed;
     width: 100%;
     transition: all .3s ease-in-out
@@ -178,7 +178,7 @@ a#menu-icon {
 .menu.dropdown{
   ul.sub-menu {
     position: absolute;
-    top: 1.125rem;
+    top: .85rem;
     left: -999em;
     float: left;
     z-index: 99999;
@@ -223,7 +223,7 @@ a#menu-icon {
     float: left;
     position: relative;
     margin-right: 3rem;
-    font-size: 105%;
+    font-size: 90% !important;
     a{
       color: #969696;
     }
@@ -254,7 +254,7 @@ a#menu-icon {
 }
 
 @media screen and (max-width: 640px) {
-    .menu-open .menu-overlay {
+    .nav-open .overlay {
         right: 260px!important
     }
 }
@@ -284,7 +284,7 @@ a#menu-icon {
       }
     }
 
-    a#menu-icon {
+    a#nav-icon {
         display:block;
         position: absolute;
         top: 50%;
@@ -315,7 +315,7 @@ a#menu-icon {
         }
     }
 
-    a#menu-icon.active{
+    a#nav-icon.open{
        span {
         background-color: transparent;
         &:after{
@@ -331,11 +331,11 @@ a#menu-icon {
       }
     }
 
-    .scrolled a#menu-icon {
+    .scrolled a#nav-icon {
         top: 40px
     }
 
-    .site-header{
+    .header{
       .wrap {
         position: absolute;
         top: 0;
@@ -344,14 +344,14 @@ a#menu-icon {
         width: 100%;
         max-width: none;
         margin: 0;
-        #logo{
+        #nav-brand{
           left: 1.25rem;
         }
       }
     }
 
-    nav#site-navigation{
-      &.active{
+    nav#off-canvas-nav{
+      &.open{
         ul:not(.sub-menu){
             right: 0!important;
         }
@@ -399,12 +399,12 @@ a#menu-icon {
           ul.sub-menu{
             box-shadow: inset 0px 0px 4px #000 !important;
           }
-          &.active:hover{
+          &.open:hover{
             >ul.sub-menu{
               display: block;
             }
           }
-          &.active{
+          &.open{
             &:after{
               transform: rotate(90deg);
               transform-origin: 96% 30%;
@@ -472,13 +472,13 @@ a#menu-icon {
       }
     }
 
-    .menu-open{
-      #content,header.site-header{
+    .nav-open{
+      #content,header.header{
         right: 320px!important;
       }
     }
 
-    #content,header.site-header {
+    #content,header.header {
         right: 0!important;
         transition: all .3s ease-in-out;
     }
@@ -486,15 +486,15 @@ a#menu-icon {
 
 @media screen and (max-width: 1024px) and (max-width:640px) {
 
-    nav#site-navigation{
+    nav#off-canvas-nav{
       ul:not(.sub-menu){
         width:260px!important;
         right: -260px!important;
       }
     }
 
-    .menu-open{
-        #content,header.site-header{
+    .nav-open{
+        #content,header.header{
           right: 260px!important;
         }
     }

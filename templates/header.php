@@ -1,9 +1,8 @@
-<header class="site-header" id="top">
+<header class="header" id="nav-header">
 		<div class="wrap">
-
-			<h1 id="logo"><a href="#">Northbound</a></h1>
-      			<nav id="site-navigation" class="main-navigation">
-                      <a id="menu-icon" href="#" class=""><span></span></a>
+			<h1 id="nav-brand"><a href="#">Northbound</a></h1>
+      			<nav id="off-canvas-nav" class="primary-navigation">
+                      <a id="nav-icon" href="#" class=""><span></span></a>
             <?php
                  wp_nav_menu( array(
                      'menu'              => 'Main Menu',
@@ -13,8 +12,8 @@
                      'depth'             => 3
                  ));
              ?>
-      	    </nav><!-- #site-navigation -->
+      	    </nav><!-- #off-canvas-nav -->
 
       		</div><!-- .wrap -->
       	</header>
-        <div class="menu-overlay"></div>
+				<div class="overlay"></div>

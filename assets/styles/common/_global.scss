@@ -5,3 +5,43 @@ body{
 #hero{
   height: 500px;
 }
+
+#cta-content{
+  h1,h2,h3,h4,h5,h6{
+    color: white;
+    text-shadow: 1px 1px 1px #000;
+  }
+  .head{
+    margin-top: 200px !important;
+  }
+  .sub-head{
+    margin-top: 30px;
+  }
+}
+.video-btn{
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  font-size: 110%;
+  margin-top: 20px;
+  transition: ease all 0.3s;
+  &:before{
+    content: "\f144";
+    font-family: FontAwesome;
+    margin-right: 0.75rem;
+  }
+  &:hover,&:focus{
+    border: 1px solid #ef6f00;
+    color: #ef6f00;
+    box-shadow: none;
+  }
+}
+
+
+.sidebar-tile{
+  background: #e3e3e3;
+  height: 160px;
+  border: 2px solid #999;
+  margin-top: 10px;
+}
