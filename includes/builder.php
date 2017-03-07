@@ -18,9 +18,14 @@
 				require('image-slider.php');
 			endif;
 
+			/************ Half and Half ***************/
+
+			if( get_row_layout() == 'half_and_half'):
+				require('full-width-half-half.php');
+			endif;
+
 		endwhile;
-	else : 
+	else :
 		//no layouts found
 	endif;
 ?>
-
