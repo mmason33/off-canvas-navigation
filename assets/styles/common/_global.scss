@@ -35,6 +35,10 @@ p{
   padding: 10px;
   text-decoration: none;
   margin: 20px 0px;
+  &:hover{
+    color: white;
+    text-decoration: none;
+  }
 }
 #cta-content{
   h1,h2,h3,h4,h5,h6,p{

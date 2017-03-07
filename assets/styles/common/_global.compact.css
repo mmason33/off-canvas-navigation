@@ -14,6 +14,8 @@ p { font-size: 1.1em; line-height: 1.45em; }
 
 .check-coverage { border: 1px solid white; border-radius: 5px; color: white; padding: 10px; text-decoration: none; margin: 20px 0px; }
 
+.check-coverage:hover { color: white; text-decoration: none; }
+
 #cta-content h1, #cta-content h2, #cta-content h3, #cta-content h4, #cta-content h5, #cta-content h6, #cta-content p { color: white; text-shadow: 1px 1px 1px #000; text-align: left; }
 
 #cta-content .head { margin-top: 150px !important; }
