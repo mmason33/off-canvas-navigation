@@ -15,22 +15,22 @@ $parallax = get_field('parallax');
                   <?php
                   // If hero image is not empty, echo $HeroImage, $bgRepeat, $bgColor
                   // Else echo background color
-                    if(!empty($HeroImage) && $parallax === false){
+                  if(!empty($HeroImage) && $parallax === false){
                   ?>
                   <section id="hero" style="background: url('<?php echo $HeroImage; ?>') <?php echo $bgRepeat; ?>;background-position:<?php echo $bgPositionX; ?> <?php echo $bgPositionY; ?>;background-size:cover;">
                   <?php
                   //Checkbox conditional for parallax scrolling
-                }elseif($parallax === true){
-                      echo '<section id="hero" data-parallax="scroll" data-image-src="'.$HeroImage.'">';
+                  }elseif($parallax === true){
+                        echo '<section id="hero" data-parallax="scroll" data-image-src="'.$HeroImage.'" data-positionX="'.$bgPositionX.'" data-positionY="'.$bgPositionY.'">';
                   //If first two params are false, echo background color - default == white
-                    }else{
-                      echo $bgColor.'>';
-                    }
+                  }else{
+                    echo $bgColor.'>';
+                  }
               ?>
                   <section id="cta-content">
                     <div class="container">
                         <div class="row justify-content-center">
-                          <div class="col-xs-12 head text-sm-center">
+                          <div class="col-xs-12 head">
                           <?php echo $CTAcontent; ?>
                           </div>
                         </div>

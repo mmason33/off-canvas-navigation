@@ -1,13 +1,41 @@
 body{
-  font-family: 'Lato';
+  font-family: 'Montserrat';
+  font-size: 1em;
+  line-height: 1.2em;
+}
+@media screen and(max-width:1024px){
+  body{
+    font-size:.8em;
+  }
 }
 h1,h2,h3,h4,h5,h6{
   font-family: 'Montserrat';
+  line-height: 1.2em;
+  color: #002042;
+}
+p{
+  font-size: 1.1em;
+  line-height: 1.45em;
+}
+.white{
+  color:white;
+}
+#text-box{
+  .fa{
+    color: #002042;
+  }
 }
 #hero{
-  height: 500px;
+  height: 600px;
 }
-
+.check-coverage{
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  margin: 20px 0px;
+}
 #cta-content{
   h1,h2,h3,h4,h5,h6,p{
     color: white;
@@ -18,7 +46,7 @@ h1,h2,h3,h4,h5,h6{
     margin-top: 150px !important;
   }
   .sub-head{
-    margin-top: 30px;
+    margin-top: 15px;
   }
 }
 .video-btn{
@@ -27,7 +55,7 @@ h1,h2,h3,h4,h5,h6{
   border-radius: 5px;
   color: white;
   font-size: 110%;
-  margin-top: 20px;
+  margin-top: 15px;
   transition: ease all 0.3s;
   &:before{
     content: "\f144";

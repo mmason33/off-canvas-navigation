@@ -4,7 +4,7 @@
 
 .nav-wrap .navigation { margin: 35px 0; }
 
-.header { background: white; /*rgba(1,33,68,1);*/ padding: 1.75em .75em; outline: none; box-align: stretch; -moz-align-items: stretch; -ms-align-items: stretch; -o-align-items: stretch; align-items: stretch; -ms-flex-align: stretch; display: -webkit-box; display: -moz-box; display: flex; display: -moz-flex; display: -ms-flexbox; display: flex; box-orient: horizontal; box-direction: normal; -moz-flex-direction: row; flex-direction: row; -ms-flex-direction: row; box-pack: start; -moz-justify-content: flex-start; -ms-justify-content: flex-start; -o-justify-content: flex-start; justify-content: flex-start; -ms-flex-pack: start; z-index: 3; box-shadow: 0px 1px 15px #000; }
+.header { background: white; /*rgba(1,33,68,1);*/ padding: 1.75em .75em; outline: none; box-align: stretch; -moz-align-items: stretch; -ms-align-items: stretch; -o-align-items: stretch; align-items: stretch; -ms-flex-align: stretch; display: -webkit-box; display: -moz-box; display: flex; display: -moz-flex; display: -ms-flexbox; display: flex; box-orient: horizontal; box-direction: normal; -moz-flex-direction: row; flex-direction: row; -ms-flex-direction: row; box-pack: start; -moz-justify-content: flex-start; -ms-justify-content: flex-start; -o-justify-content: flex-start; justify-content: flex-start; -ms-flex-pack: start; z-index: 3; box-shadow: 0px 1px 15px #000; line-height: 1.5em; }
 
 .header .nav-wrap { width: 75em; position: relative; padding: 0; }
 
@@ -89,7 +89,7 @@ a#nav-icon { display: none; visibility: hidden; }
 
 @media screen and (max-width: 640px) { .nav-open .overlay { right: 260px !important; } }
 
-@media screen and (max-width: 1024px) { .header { padding: 2.25em .75em; }
+@media screen and (max-width: 1024px) { .header { padding: 2.75em .75em !important; }
   .menu-item-has-children:after { font-family: FontAwesome; font-size: 1rem; content: "\f138"; color: #002042; position: absolute; top: .3rem; right: -1rem; }
   .menu.dropdown ul.sub-menu { transform: none; opacity: 1; visibility: visible; }
   .menu.dropdown ul.sub-menu li { box-shadow: none; }

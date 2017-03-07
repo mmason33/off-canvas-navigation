@@ -43,6 +43,7 @@
   -ms-flex-pack: start;
   z-index: 3;
   box-shadow: 0px 1px 15px #000;
+  line-height: 1.5em;
   .nav-wrap{
     width: 75em;
     position: relative;
@@ -285,7 +286,7 @@ a#nav-icon {
 @media screen and (max-width: 1024px) {
 
     .header{
-      padding: 2.25em .75em;
+      padding: 2.75em .75em !important;
     }
 
     .menu-item-has-children{

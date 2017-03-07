@@ -8,6 +8,7 @@ $bgRepeat = (get_sub_field('bg_repeat') == 1 ? 'repeat' : 'no-repeat');
 $bgPosition = get_sub_field('bg_position');
 $sideBar = get_sub_field('sidebar_checkbox');
 $padding = (get_sub_field('padding') == 1 ? 'pad-150' : '');
+$textCenter = (get_sub_field('text_center') == 1 ? 'text-center' : '');
 
 ?>
 <section class="text-box-wrap <?php echo $padding; ?>"
@@ -30,10 +31,10 @@ style="background: url('<?php echo $bgImage; ?>') <?php echo $bgRepeat;?>;backgr
 			if($sideBar === true):
 ?>
 			<div class="row">
-				<div class="col-md-8">
+				<div class="col-md-8 <?php echo $textCenter; ?>">
 					<?php echo $textBox; ?>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 <?php echo $textCenter; ?>">
 					<?php get_template_part('templates/sidebar');?>
 				</div>
 			</div>
@@ -41,7 +42,7 @@ style="background: url('<?php echo $bgImage; ?>') <?php echo $bgRepeat;?>;backgr
 			else:
 ?>
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-md-12 <?php echo $textCenter; ?>">
 					<?php echo $textBox; ?>
 				</div>
 			</div>
