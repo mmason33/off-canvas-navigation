@@ -209,7 +209,7 @@ a#nav-icon {
 .menu.dropdown{
   ul.sub-menu {
     position: absolute;
-    top: .85rem;
+    top: .65rem;
     left: -999em;
     float: left;
     z-index: 99999;
@@ -283,6 +283,10 @@ a#nav-icon {
 }
 
 @media screen and (max-width: 1024px) {
+
+    .header{
+      padding: 2.25em .75em;
+    }
 
     .menu-item-has-children{
       &:after{

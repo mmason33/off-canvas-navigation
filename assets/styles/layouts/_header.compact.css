@@ -63,7 +63,7 @@ a#nav-icon { display: none; visibility: hidden; }
 
 .menu.menu-vertical a { border-bottom: 1px solid #ccc; padding: .625rem; }
 
-.menu.dropdown ul.sub-menu { position: absolute; top: .85rem; left: -999em; float: left; z-index: 99999; padding-top: 2.6rem; transform: translateY(-2em); z-index: -1; transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s; opacity: 0; visibility: hidden; }
+.menu.dropdown ul.sub-menu { position: absolute; top: .65rem; left: -999em; float: left; z-index: 99999; padding-top: 2.6rem; transform: translateY(-2em); z-index: -1; transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s; opacity: 0; visibility: hidden; }
 
 .menu.dropdown ul.sub-menu a { height: auto; width: 12.5rem; }
 
@@ -89,7 +89,8 @@ a#nav-icon { display: none; visibility: hidden; }
 
 @media screen and (max-width: 640px) { .nav-open .overlay { right: 260px !important; } }
 
-@media screen and (max-width: 1024px) { .menu-item-has-children:after { font-family: FontAwesome; font-size: 1rem; content: "\f138"; color: #002042; position: absolute; top: .3rem; right: -1rem; }
+@media screen and (max-width: 1024px) { .header { padding: 2.25em .75em; }
+  .menu-item-has-children:after { font-family: FontAwesome; font-size: 1rem; content: "\f138"; color: #002042; position: absolute; top: .3rem; right: -1rem; }
   .menu.dropdown ul.sub-menu { transform: none; opacity: 1; visibility: visible; }
   .menu.dropdown ul.sub-menu li { box-shadow: none; }
   a#nav-icon { display: block; position: absolute; top: 50%; right: 1.25rem; margin: 0; padding: 10px 35px 10px 0; cursor: pointer; visibility: visible; transform: translateY(-50%); transition: all .3s ease-in-out; }
