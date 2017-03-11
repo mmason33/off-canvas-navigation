@@ -12,7 +12,7 @@
 			endif;
 
 
-			/************ Slider in process of being ***************/
+			/************ Slider in process of being built ***************/
 
 			if( get_row_layout() == 'image_slider'):
 				require('image-slider.php');
@@ -23,6 +23,14 @@
 			if( get_row_layout() == 'half_and_half'):
 				require('full-width-half-half.php');
 			endif;
+
+			/************ Columns ***************/
+
+			if( get_row_layout() == 'columns'):
+				require('columns.php');
+			endif;
+
+
 
 		endwhile;
 	else :

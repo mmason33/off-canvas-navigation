@@ -9,15 +9,6 @@ $bgPosition = get_sub_field('bg_position');
 $sideBar = get_sub_field('sidebar_checkbox');
 $textCenter = (get_sub_field('text_center') == 1 ? 'text-center' : '');
 $padding = get_sub_field('padding');
-if ($padding === 150){
-	echo 'pad-150';
-}elseif($padding === 40){
-	echo 'pad-40';
-}elseif($padding === 20){
-	echo 'pad-20';
-}else{
-	echo '';
-}
 ?>
 <section class="text-box-wrap <?php echo $padding; ?>"
 <?php
