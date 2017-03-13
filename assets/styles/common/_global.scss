@@ -12,11 +12,13 @@ h1,h2,h3,h4,h5,h6{
   font-family: 'Montserrat';
   line-height: 1.2em;
   color: #002042;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
+  font-weight: 500;
 }
 p{
   font-size: 1.1em;
   line-height: 1.75em;
+  color: #6b6b6b;
 }
 .white{
   color:white;
@@ -116,9 +118,14 @@ p{
   font-size: 1em;
   margin-bottom: 1em;
   padding: 0;
+  color: #6b6b6b;
 }
 .column-headline{
   margin-top: .5em;
+  font-weight: bold;
+}
+.column-icon{
+  color: #2777B1;
 }
 blockquote{
   padding: 1rem;
@@ -127,10 +134,10 @@ blockquote{
     color: #999999;
   }
   h3{
-    font-size: 2.75em;
+    font-size: 2.25em;
     line-height: 1.25em;
   }
-  &:before{
+  /*&:before{
     content: open-quote;
     font-size: 3em;
     position: relative;
@@ -143,8 +150,8 @@ blockquote{
     position: relative;
     top: -5.5rem;
     left: 19rem;
-  }
+  }*/
 }
 h2.white{
-  font-size: 2.75em;
+  font-size: 2.5em;
 }

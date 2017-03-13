@@ -29,8 +29,8 @@ $justifyContentCenter = (get_sub_field('justify_content_center') != '' ? ' justi
   $i = 1;
   if(have_rows('column_content') ):
     while( have_rows('column_content') ) : the_row();
-      $columnIcon = (get_sub_field('column_icon') != '' ? '<i class="fa '.get_sub_field('column_icon').' fa-4x"></i>' : '');
-      $columnHeadline = (get_sub_field('column_headline') != '' ? '<h3 class="column-headline">'.get_sub_field('column_headline').'</h3>' : '');
+      $columnIcon = (get_sub_field('column_icon') != '' ? '<i class="fa '.get_sub_field('column_icon').' fa-4x column-icon"></i>' : '');
+      $columnHeadline = (get_sub_field('column_headline') != '' ? '<h2 class="column-headline">'.get_sub_field('column_headline').'</h2>' : '');
       $columnBody = (get_sub_field('column_body') != '' ? '<p class="column-body">'.get_sub_field('column_body').'</p>' : '');
       $columnImage = (get_sub_field('column_image') != '' ? '<div class="column-image" style="background:url('.get_sub_field('column_image').') no-repeat center center; background-size:cover;"></div>' : '');
       if($i == 1):

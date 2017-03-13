@@ -2,9 +2,9 @@ body { font-family: 'Montserrat'; font-size: 1em; line-height: 1.2em; }
 
 @media screen and (max-width: 1024px) { body { font-size: .8em; } }
 
-h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat'; line-height: 1.2em; color: #002042; margin-bottom: 10px; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat'; line-height: 1.2em; color: #002042; margin-bottom: 1rem; font-weight: 500; }
 
-p { font-size: 1.1em; line-height: 1.75em; }
+p { font-size: 1.1em; line-height: 1.75em; color: #6b6b6b; }
 
 .white { color: white; }
 
@@ -46,18 +46,16 @@ p { font-size: 1.1em; line-height: 1.75em; }
 
 .half-content { padding: 50px; }
 
-.column-body { font-size: 1em; margin-bottom: 1em; padding: 0; }
+.column-body { font-size: 1em; margin-bottom: 1em; padding: 0; color: #6b6b6b; }
 
-.column-headline { margin-top: .5em; }
+.column-headline { margin-top: .5em; font-weight: bold; }
 
-blockquote { padding: 1rem; }
+.column-icon { color: #2777B1; }
+
+blockquote { padding: 1rem; /*&:before{ content: open-quote; font-size: 3em; position: relative; top: 3rem; left: -27rem; } &:after{ content: close-quote; font-size: 3em; position: relative; top: -5.5rem; left: 19rem; }*/ }
 
 blockquote small { font-size: 125%; color: #999999; }
 
-blockquote h3 { font-size: 2.75em; line-height: 1.25em; }
+blockquote h3 { font-size: 2.25em; line-height: 1.25em; }
 
-blockquote:before { content: open-quote; font-size: 3em; position: relative; top: 3rem; left: -27rem; }
-
-blockquote:after { content: close-quote; font-size: 3em; position: relative; top: -5.5rem; left: 19rem; }
-
-h2.white { font-size: 2.75em; }
+h2.white { font-size: 2.5em; }
