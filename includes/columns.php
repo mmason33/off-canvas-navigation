@@ -13,17 +13,11 @@ $rowCount = count($columnRows);
 $columnTitle = get_sub_field('column_title');
 $bgImage = (get_sub_field('bg_image') != '' ? 'style="background:url('.get_sub_field('bg_image').') no-repeat center center;background-size:cover;"' : '');
 $bgColor = (get_sub_field('bg_color') != '' && $bgImage == '' ? ' style="background-color:'.get_sub_field('bg_color').'"' : '');
-//==================================================================================================
-//==================================================================================================
-//==================================================================================================
-$padding = get_sub_field('padding');//PROBLEM WITH PADDING FIELD NEEDS TO BE REWORKED NEXT WEEK
-//====================================================================================================
-//====================================================================================================
-//====================================================================================================
+$padding = get_sub_field('padding_class');
 $fullWidth = (get_sub_field('full_width') != '' ? '-fluid' : '');
 $justifyContentCenter = (get_sub_field('justify_content_center') != '' ? ' justify-content-center' : '');
 ?>
-<section class="columns-section"<?php echo $bgImage; ?><?php echo $bgColor; ?>>
+<section class="columns-section <?php echo $padding; ?>"<?php echo $bgImage; ?><?php echo $bgColor; ?>>
   <div class="container<?php echo $fullWidth; ?>">
     <?php if(!empty($columnTitle)){ ?>
       <div class="row">
@@ -35,8 +29,8 @@ $justifyContentCenter = (get_sub_field('justify_content_center') != '' ? ' justi
   $i = 1;
   if(have_rows('column_content') ):
     while( have_rows('column_content') ) : the_row();
-      $columnIcon = (get_sub_field('column_icon') != '' ? '<i class="fa '.get_sub_field('column_icon').' fa-5x"></i>' : '');
-      $columnHeadline = (get_sub_field('column_headline') != '' ? '<h4 class="column-headline">'.get_sub_field('column_headline').'</h4>' : '');
+      $columnIcon = (get_sub_field('column_icon') != '' ? '<i class="fa '.get_sub_field('column_icon').' fa-4x"></i>' : '');
+      $columnHeadline = (get_sub_field('column_headline') != '' ? '<h3 class="column-headline">'.get_sub_field('column_headline').'</h3>' : '');
       $columnBody = (get_sub_field('column_body') != '' ? '<p class="column-body">'.get_sub_field('column_body').'</p>' : '');
       $columnImage = (get_sub_field('column_image') != '' ? '<div class="column-image" style="background:url('.get_sub_field('column_image').') no-repeat center center; background-size:cover;"></div>' : '');
       if($i == 1):
