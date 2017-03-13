@@ -2,9 +2,9 @@ body { font-family: 'Montserrat'; font-size: 1em; line-height: 1.2em; }
 
 @media screen and (max-width: 1024px) { body { font-size: .8em; } }
 
-h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat'; line-height: 1.2em; color: #002042; margin-bottom: 1rem; font-weight: 500; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat'; line-height: 1.2em; color: #002042; margin-bottom: .5rem; font-weight: 500; }
 
-p { font-size: 1.1em; line-height: 1.75em; color: #6b6b6b; }
+p { font-size: 1.1em; line-height: 1.85em; color: #6b6b6b; }
 
 .white { color: white; }
 
@@ -22,11 +22,11 @@ p { font-size: 1.1em; line-height: 1.75em; color: #6b6b6b; }
 
 #cta-content .sub-head { margin-top: 15px; }
 
-.video-btn { padding: 12px; border: 1px solid white; border-radius: 5px; color: white; font-size: 110%; margin-top: 15px; transition: ease all 0.3s; }
+.video-btn { padding: 12px; background: #ef6f00; border-radius: 5px; color: white; font-size: 110%; margin-top: 15px; transition: ease all 0.3s; }
 
 .video-btn:before { content: "\f144"; font-family: FontAwesome; margin-right: 0.75rem; }
 
-.video-btn:hover, .video-btn:focus { border: 1px solid #ef6f00; color: #ef6f00; box-shadow: none; }
+.video-btn:hover, .video-btn:focus { box-shadow: none; text-decoration: none; color: white; }
 
 .sidebar-tile { background: #e3e3e3; height: 160px; border: 2px solid #999; margin-top: 10px; }
 
@@ -45,6 +45,8 @@ p { font-size: 1.1em; line-height: 1.75em; color: #6b6b6b; }
 .half-left, .half-right { min-height: 350px; }
 
 .half-content { padding: 50px; }
+
+.half-content.has-text > * { margin-top: 30px; }
 
 .column-body { font-size: 1em; margin-bottom: 1em; padding: 0; color: #6b6b6b; }
 

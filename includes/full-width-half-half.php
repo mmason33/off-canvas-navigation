@@ -15,7 +15,7 @@ $bgPositionRight = get_sub_field('bg_position_right');
   <div class="col-md-6 half-left <?php echo $textCenter; ?>" <?php echo $bgImageLeft; ?><?php echo $bgColorLeft;?>>
     <?php
       if(!empty($contentLeft)):
-        echo '<div class="half-content">';
+        echo '<div class="half-content has-text">';
         echo $contentLeft;
         echo '</div>';
       else:
@@ -26,7 +26,7 @@ $bgPositionRight = get_sub_field('bg_position_right');
   <div class="col-md-6 half-right <?php echo $textCenter;?>" <?php echo $bgImageRight; ?><?php echo $bgColorRight;?>>
     <?php
       if(!empty($contentRight)):
-        echo '<div class="half-content">';
+        echo '<div class="half-content has-text">';
         echo $contentRight;
         echo '</div>';
       else:

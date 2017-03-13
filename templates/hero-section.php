@@ -7,11 +7,9 @@ $bgRepeat = (get_field('bg_repeat') == 1 ? 'repeat;' : 'no-repeat;');
 $bgPositionX = get_field('bg_position_x');
 $bgPositionY = get_field('bg_position_y');
 $parallax = get_field('parallax');
+$fullWidth = (get_field('full_width') != 0 ? '-fluid' : '');
 
 ?>
-
-
-
                   <?php
                   // If hero image is not empty, echo $HeroImage, $bgRepeat, $bgColor
                   // Else echo background color
@@ -26,18 +24,20 @@ $parallax = get_field('parallax');
                   }else{
                     echo $bgColor.'>';
                   }
+
+                  if(!empty($HeroImage)):
               ?>
                   <section id="cta-content">
-                    <div class="container">
+                    <div class="container<?php echo $fullWidth; ?>">
                         <div class="row justify-content-center">
                           <div class="col-xs-12 head">
                           <?php echo $CTAcontent; ?>
                           </div>
                         </div>
                     </div><!--end container-->
-                    </section><!--end cta-content-->
-                  </section><!--end cta-header-->
-                  </section>
+                  </section><!--end cta-content-->
+                </section><!--end hero-->
+              <?php endif; ?>
 <?php
  // dynamic_sidebar('sidebar-primary');
 ?>

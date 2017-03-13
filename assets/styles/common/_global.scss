@@ -12,12 +12,12 @@ h1,h2,h3,h4,h5,h6{
   font-family: 'Montserrat';
   line-height: 1.2em;
   color: #002042;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
   font-weight: 500;
 }
 p{
   font-size: 1.1em;
-  line-height: 1.75em;
+  line-height: 1.85em;
   color: #6b6b6b;
 }
 .white{
@@ -59,7 +59,7 @@ p{
 }
 .video-btn{
   padding: 12px;
-  border: 1px solid white;
+  background: #ef6f00;
   border-radius: 5px;
   color: white;
   font-size: 110%;
@@ -71,9 +71,9 @@ p{
     margin-right: 0.75rem;
   }
   &:hover,&:focus{
-    border: 1px solid #ef6f00;
-    color: #ef6f00;
     box-shadow: none;
+    text-decoration: none;
+    color: white;
   }
 }
 .sidebar-tile{
@@ -113,6 +113,9 @@ p{
 }
 .half-content{
   padding: 50px;
+}
+.half-content.has-text > *{
+  margin-top: 30px;
 }
 .column-body{
   font-size: 1em;
