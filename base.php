@@ -14,33 +14,18 @@ use Roots\Sage\Wrapper;
         <?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'sage'); ?>
       </div>
     <![endif]-->
-  <div id="page">
     <?php
       do_action('get_header');
       get_template_part('templates/header');
       get_template_part('templates/hero-section');
     ?>
-    <div class="wrap container" role="document">
-      <div class="content row">
-        <main class="main">
-          <?php include Wrapper\template_path(); ?>
-        </main><!-- /.main -->
-        <!--<?php //if (Setup\display_sidebar()) : ?>
-          <aside class="sidebar">
-            <?php //include Wrapper\sidebar_path(); ?>
-          </aside><!-- /.sidebar -->
-        <?php //endif; ?>
-      </div><!-- /.content -->
-    </div><!-- /.wrap -->
+    <?php include Wrapper\template_path(); ?>
     <?php
       do_action('get_builder');
       get_template_part('includes/builder');
-      //do_action('get_sidebar');
-      //get_template_part('templates/sidebar');
       do_action('get_footer');
       get_template_part('templates/footer');
       wp_footer();
     ?>
-  </div><!--end page id -->
   </body>
 </html>

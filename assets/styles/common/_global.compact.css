@@ -16,7 +16,17 @@ p { font-size: 1.1em; line-height: 1.85em; color: #6b6b6b; }
 
 .check-coverage:hover { color: white; text-decoration: none; }
 
+.btn-orange { color: white; background: #ef6f00; box-shadow: 1px 1px 1px #000; padding: 10px; border-radius: 5px; }
+
+.btn-orange:hover, .btn-orange:focus { color: white; text-decoration: none; }
+
+.page-template-page-with-sidebar #cta-content .head { padding-top: 50px; }
+
+.page-template-page-with-sidebar #cta-content .container-fluid { margin: 0px 160px; }
+
 #cta-content h1, #cta-content h2, #cta-content h3, #cta-content h4, #cta-content h5, #cta-content h6, #cta-content p { color: white; text-shadow: 1px 1px 1px #000; text-align: left; }
+
+#cta-content h1 { font-size: 3em; }
 
 #cta-content .head { margin-top: 150px !important; }
 
@@ -28,7 +38,9 @@ p { font-size: 1.1em; line-height: 1.85em; color: #6b6b6b; }
 
 .video-btn:hover, .video-btn:focus { box-shadow: none; text-decoration: none; color: white; }
 
-.sidebar-tile { background: #e3e3e3; height: 160px; border: 2px solid #999; margin-top: 10px; }
+.sidebar-tile { background: #e3e3e3; height: 160px; border-top: 2px solid #999; border-bottom: 2px solid #999; border-left: 2px solid #999; border-right: 2px solid #999; margin-top: 10px; border-radius: 5px; }
+
+.sidebar-tile h5 { margin-top: 65px; }
 
 #text-box { padding: 40px 0px 40px 0px; }
 
@@ -50,7 +62,7 @@ p { font-size: 1.1em; line-height: 1.85em; color: #6b6b6b; }
 
 .column-body { font-size: 1em; margin-bottom: 1em; padding: 0; color: #6b6b6b; }
 
-.column-headline { margin-top: .5em; font-weight: bold; }
+.column-headline { margin-top: .5em; }
 
 .column-icon { color: #2777B1; }
 
@@ -61,3 +73,17 @@ blockquote small { font-size: 125%; color: #999999; }
 blockquote h3 { font-size: 2.25em; line-height: 1.25em; }
 
 h2.white { font-size: 2.5em; }
+
+.hero-overlay { background: url("/wp-content/uploads/2017/03/DARK-BLUE-GRADIENT-2.png") no-repeat center center; background-size: cover; position: absolute; top: 0; left: 0; width: 100%; min-height: 600px; }
+
+ul.white { color: white; }
+
+ul.white li, ul.white a, ul.white p { color: white; }
+
+ul.white li { list-style-type: none; }
+
+.page-template-page-with-sidebar #hero { height: 400px !important; }
+
+.page-template-page-with-sidebar .hero-overlay { min-height: 400px; }
+
+.page-template-page-with-sidebar .wrap.container-fluid { padding: 30px 160px; }
