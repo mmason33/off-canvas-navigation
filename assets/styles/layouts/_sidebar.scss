@@ -1,19 +1,4 @@
 .sidebar{
-  .questions{
-    padding: 30px 40px;
-    background: #2777B1;
-    margin:20px 0px 0px 0px;
-    box-shadow: 0px 3px 6px #6b6b6b;
-    h2{
-      color: #fff;
-      margin-bottom: 20px;
-      line-height: 1.5em;
-      text-shadow: 1px 1px 1px #000;
-    }
-    .btn-orange{
-
-    }
-  }
   .tiles{
     .tile-overlay{
       position: absolute;
@@ -31,7 +16,8 @@
       margin-top: 10px;
       border-radius: 5px;
       box-shadow: 0px 3px 5px #000;
-      transition: ease all 0.7s;
+      margin-top: 2em;
+      transition: transform 0.5s;
       h5{
         position: relative;
         margin-top: 4em;
@@ -39,7 +25,7 @@
         z-index: 1;
       }
       &:hover{
-        background-size: 105% !important;
+        transform: scale(1.05);
       }
     }
     a{

@@ -16,11 +16,12 @@
 
 .wpcf7{
   font-family: 'Montserrat', sans-serif;
-  h2{
+  h3{
     color: #2777B1;
+    margin-bottom: .5em;
   }
   .wpcf7-form{
-    padding: 20px 45px 45px 45px;
+    padding: 3em;
     background: #f6f6f6;
     box-shadow: 0px 3px 6px #6b6b6b;
     .row.sub{
@@ -41,7 +42,7 @@
     }
     .wpcf7-form-control-wrap{
       .wpcf7-form-control{
-        padding: 15px 15px 0px 0px;
+        padding: 15px 15px 5px 5px;
         margin-bottom: 2em;
         border-top: none;
         border-left: none;
@@ -62,6 +63,11 @@
         }
       }
     }
+    .box{
+      color: #2777B1;
+      text-decoration: none;
+      margin-bottom: .5em;
+    }
   }
 }
 
@@ -69,19 +75,19 @@
 .box {
   position:relative;
   vertical-align: middle;
-  color: #fff;
+  color: #2777B1;
   display: inline-block;
-  padding: 10px 15px;
+  padding: 4px 15px;
   text-align: center;
   transition: 0.5s;
-  border: 2px solid #fff;
+  border: 2px solid #2777B1;
   -webkit-transition:0.5s;
   border-radius: 5px;
 }
 
 .box:hover {
-  border: 2px solid rgba(0,160,80,0);
-  color: #FFF;
+  border: 2px solid RGBA(39,119,177,0);
+  color: #2777B1;
 }
 
 .box::before, .box::after {
@@ -123,7 +129,7 @@
 }
 
 .curmudgeon::before {
-  border-bottom: 3px solid #FFF;
+  border-bottom: 3px solid #2777B1;
   border-left: 0;
   -webkit-transform-origin: 0% 100%;
 }

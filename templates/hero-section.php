@@ -8,7 +8,7 @@ $bgPositionX = get_field('bg_position_x');
 $bgPositionY = get_field('bg_position_y');
 $parallax = get_field('parallax');
 $fullWidth = (get_field('full_width') != 0 ? '-fluid' : '');
-$centerContent = (get_field('center_contnent') != 0 ? ' justify-content-center' : '' );
+$centerContent = (get_field('center_content') != 0 ? ' justify-content-center' : '' );
 $heroOverlay = (get_field('hero_overlay') != 0 ? '<div class="hero-overlay"></div>' : '');
 
 ?>

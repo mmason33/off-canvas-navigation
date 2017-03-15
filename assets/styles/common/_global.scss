@@ -12,13 +12,22 @@ h1,h2,h3,h4,h5,h6{
   font-family: 'Montserrat';
   line-height: 1.2em;
   color: #002042;
-  margin-bottom: .5rem;
+  margin-bottom: .65em;
   font-weight: 500;
 }
 p{
   font-size: 1.1em;
   line-height: 1.85em;
   color: #6b6b6b;
+}
+
+ul,ol{
+      margin: 1.5em 0;
+  li{
+    line-height: 1.75em;
+    font-size: 1.2em;
+    color: #6b6b6b;
+  }
 }
 .white{
   color:white;
@@ -201,6 +210,11 @@ ul.white{
     min-height: 400px;
   }
   .wrap.container-fluid{
-    padding: 30px 160px;
+    padding: 4em;
+  }
+}
+@media screen and (max-width:1441px){
+  .page-template-page-with-sidebar .wrap.container-fluid{
+    padding: 4em;
   }
 }
