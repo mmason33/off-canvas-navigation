@@ -1,0 +1,59 @@
+.sidebar{
+  .questions{
+    padding: 30px 40px;
+    background: #2777B1;
+    margin:20px 0px 0px 0px;
+    box-shadow: 0px 3px 6px #6b6b6b;
+    h2{
+      color: #fff;
+      margin-bottom: 20px;
+      line-height: 1.5em;
+      text-shadow: 1px 1px 1px #000;
+    }
+    .btn-orange{
+
+    }
+  }
+  .tiles{
+    .tile-overlay{
+      position: absolute;
+      width: 100%;
+      height: 200px;
+      background: rgba(1, 33, 68, 0.55);
+      border-radius: 5px;
+      top: 0;
+    }
+    .sidebar-tile{
+      position: relative;
+      background: #e3e3e3;
+      height: 200px;
+      border: 1px solid #999;
+      margin-top: 10px;
+      border-radius: 5px;
+      box-shadow: 0px 3px 5px #000;
+      transition: ease all 0.7s;
+      h5{
+        position: relative;
+        margin-top: 4em;
+        color: #fff !important;
+        z-index: 1;
+      }
+      &:hover{
+        background-size: 105% !important;
+      }
+    }
+    a{
+      &:hover{
+        text-decoration: none !important;
+      }
+      &:after{
+        position: absolute;
+        width: 88.5%;
+        height: 160px;
+        background: rgba(1, 33, 68, 0.55);
+        border-radius: 5px;
+        top: 0.65em;
+      }
+    }
+  }
+}
