@@ -11,7 +11,7 @@ body{
 h1,h2,h3,h4,h5,h6{
   font-family: 'Montserrat';
   line-height: 1.2em;
-  color: #002042;
+  color: $brand-secondary;
   margin-bottom: .65em;
   font-weight: 500;
 }
@@ -84,7 +84,7 @@ ul,ol{
     font-size: 3em;
   }
   .head{
-    margin-top: 150px !important;
+    margin-top: 185px !important;
   }
   .sub-head{
     margin-top: 15px;
@@ -156,6 +156,9 @@ ul,ol{
 .column-icon{
   color: #2777B1;
 }
+.column-content{
+  margin-bottom: 4em;
+}
 blockquote{
   padding: 1rem;
   small{
@@ -204,7 +207,7 @@ ul.white{
 }
 .page-template-page-with-sidebar{
   #hero{
-    height: 400px !important;
+    height: 500px !important;
   }
   .hero-overlay{
     min-height: 400px;

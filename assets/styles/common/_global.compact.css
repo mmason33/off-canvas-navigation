@@ -32,7 +32,7 @@ ul li, ol li { line-height: 1.75em; font-size: 1.2em; color: #6b6b6b; }
 
 #cta-content h1 { font-size: 3em; }
 
-#cta-content .head { margin-top: 150px !important; }
+#cta-content .head { margin-top: 185px !important; }
 
 #cta-content .sub-head { margin-top: 15px; }
 
@@ -66,6 +66,8 @@ ul li, ol li { line-height: 1.75em; font-size: 1.2em; color: #6b6b6b; }
 
 .column-icon { color: #2777B1; }
 
+.column-content { margin-bottom: 4em; }
+
 blockquote { padding: 1rem; /*&:before{ content: open-quote; font-size: 3em; position: relative; top: 3rem; left: -27rem; } &:after{ content: close-quote; font-size: 3em; position: relative; top: -5.5rem; left: 19rem; }*/ }
 
 blockquote small { font-size: 125%; color: #999999; }
@@ -82,7 +84,7 @@ ul.white li, ul.white a, ul.white p { color: white; }
 
 ul.white li { list-style-type: none; }
 
-.page-template-page-with-sidebar #hero { height: 400px !important; }
+.page-template-page-with-sidebar #hero { height: 500px !important; }
 
 .page-template-page-with-sidebar .hero-overlay { min-height: 400px; }
 

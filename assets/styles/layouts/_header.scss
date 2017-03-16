@@ -42,8 +42,9 @@
   justify-content: flex-start;
   -ms-flex-pack: start;
   z-index: 3;
-  box-shadow: 0px 1px 15px #000;
+  box-shadow: 0px 4px 15px #6b6b6b;
   line-height: 1.5em;
+  margin-top: 35px;
   .nav-wrap{
     width: 75em;
     position: relative;
@@ -531,3 +532,30 @@ a#nav-icon {
 
 
 /*=============== Sticky Top Section======================*/
+
+
+#nav-top{
+  height: 35px;
+  position: fixed;
+  width: 100%;
+  background: #f6f6f6;
+  z-index: 3;
+  ul{
+    display: inline-flex;
+    list-style-type: none;
+    float:right;
+    margin: 0 1em 0 0;
+    li{
+      margin-right: 1.5em;
+      a{
+        color: #696969;
+        font-size: 90%;
+        text-decoration: none;
+        transition: ease all 0.3s;
+        &:hover{
+          color: #ef6f00;
+        }
+      }
+    }
+  }
+}

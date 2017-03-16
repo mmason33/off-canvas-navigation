@@ -1,4 +1,4 @@
-.sidebar{
+.sidebar-main{
   .tiles{
     .tile-overlay{
       position: absolute;
@@ -23,6 +23,8 @@
         margin-top: 4em;
         color: #fff !important;
         z-index: 1;
+        text-shadow: 2px 3px 5px #000;
+        font-weight: 300;
       }
       &:hover{
         transform: scale(1.05);

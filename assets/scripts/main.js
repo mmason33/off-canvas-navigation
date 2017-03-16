@@ -47,6 +47,16 @@
                 easing: 'ease-in-sine',
                 delay: 100,
               });
+
+              $(window).scroll(function(){
+                if ($(this).scrollTop() > 0){
+                  $('#nav-top').fadeOut();
+                  $('#nav-header').css('margin-top', 0);
+                }else{
+                  $('#nav-top').fadeIn();
+                  $('#nav-header').css('margin-top', 35);
+                }
+              });
           });
 
 
