@@ -4,7 +4,7 @@
 
 .nav-wrap .navigation { margin: 35px 0; }
 
-.header { background: white; /*rgba(1,33,68,1);*/ padding: 1.75em .75em; outline: none; box-align: stretch; -moz-align-items: stretch; -ms-align-items: stretch; -o-align-items: stretch; align-items: stretch; -ms-flex-align: stretch; display: -webkit-box; display: -moz-box; display: flex; display: -moz-flex; display: -ms-flexbox; display: flex; box-orient: horizontal; box-direction: normal; -moz-flex-direction: row; flex-direction: row; -ms-flex-direction: row; box-pack: start; -moz-justify-content: flex-start; -ms-justify-content: flex-start; -o-justify-content: flex-start; justify-content: flex-start; -ms-flex-pack: start; z-index: 3; box-shadow: 0px 4px 15px #6b6b6b; line-height: 1.5em; margin-top: 35px; }
+.header { background: white; /*rgba(1,33,68,1);*/ padding: 1.75em .75em; outline: none; box-align: stretch; -moz-align-items: stretch; -ms-align-items: stretch; -o-align-items: stretch; align-items: stretch; -ms-flex-align: stretch; display: -webkit-box; display: -moz-box; display: flex; display: -moz-flex; display: -ms-flexbox; display: flex; box-orient: horizontal; box-direction: normal; -moz-flex-direction: row; flex-direction: row; -ms-flex-direction: row; box-pack: start; -moz-justify-content: flex-start; -ms-justify-content: flex-start; -o-justify-content: flex-start; justify-content: flex-start; -ms-flex-pack: start; z-index: 3; box-shadow: 0px 4px 15px #6b6b6b; line-height: 1.5em; margin-top: 25px; }
 
 .header .nav-wrap { width: 75em; position: relative; padding: 0; }
 
@@ -125,12 +125,14 @@ a#nav-icon { display: none; visibility: hidden; }
   .nav-open #content, .nav-open header.header { right: 260px !important; } }
 
 /*=============== Sticky Top Section======================*/
-#nav-top { height: 35px; position: fixed; width: 100%; background: #fff; z-index: 3; }
+#nav-top { height: 25px; position: fixed; width: 100%; background: #333; z-index: 3; }
 
-#nav-top ul { display: inline-flex; list-style-type: none; float: right; margin: 0 1em 0 0; }
+#nav-top ul { display: inline-flex; list-style-type: none; float: right; margin: 0 1.5em 0 0; }
 
-#nav-top ul li { margin-right: 1.5em; }
+#nav-top ul li { margin-right: .5em; position: relative; top: -0.195em; }
 
-#nav-top ul li a { color: #ef6f00; font-size: 90%; text-decoration: none; transition: ease all 0.3s; }
+#nav-top ul li a { color: #b2b2b2; font-size: 90%; text-decoration: none; transition: ease all 0.3s; }
 
 #nav-top ul li a:hover { color: #ef6f00; }
+
+.cta-overlay { position: absolute; width: 50%; height: 500px; background: #ebebeb; top: 0; left: 0; }

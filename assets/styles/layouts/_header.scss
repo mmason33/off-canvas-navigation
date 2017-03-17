@@ -44,7 +44,7 @@
   z-index: 3;
   box-shadow: 0px 4px 15px #6b6b6b;
   line-height: 1.5em;
-  margin-top: 35px;
+  margin-top: 25px;
   .nav-wrap{
     width: 75em;
     position: relative;
@@ -535,20 +535,22 @@ a#nav-icon {
 
 
 #nav-top{
-  height: 35px;
+  height: 25px;
   position: fixed;
   width: 100%;
-  background: #fff;
+  background: #333;
   z-index: 3;
   ul{
     display: inline-flex;
     list-style-type: none;
     float:right;
-    margin: 0 1em 0 0;
+    margin: 0 1.5em 0 0;
     li{
-      margin-right: 1.5em;
+      margin-right: .5em;
+      position: relative;
+      top: -0.195em;
       a{
-        color: #ef6f00;
+        color: #b2b2b2;
         font-size: 90%;
         text-decoration: none;
         transition: ease all 0.3s;
@@ -558,4 +560,12 @@ a#nav-icon {
       }
     }
   }
+}
+.cta-overlay{
+  position: absolute;
+  width: 50%;
+  height: 500px;
+  background: #ebebeb;
+  top: 0;
+  left: 0;
 }
