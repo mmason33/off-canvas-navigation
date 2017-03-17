@@ -1,12 +1,8 @@
 <section id="nav-top">
 	<div class="nav-wrap">
 	<ul>
-		<li><a href="#">Blog</a>
-		<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-		<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-		<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-		<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-		<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+		<li><a href="#">Blog</a></li>
+		<li><a href="#">Articles</a></li>
 	</ul>
 	</div>
 </section>

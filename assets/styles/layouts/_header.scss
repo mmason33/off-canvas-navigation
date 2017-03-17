@@ -167,7 +167,7 @@ a#nav-icon {
 
 #primary-menu{
   li{
-    font-size: 100%;
+    font-size: 97%;
     float: left;
     position: relative;
     margin-right: 2.35rem;
@@ -538,7 +538,7 @@ a#nav-icon {
   height: 35px;
   position: fixed;
   width: 100%;
-  background: #f6f6f6;
+  background: #fff;
   z-index: 3;
   ul{
     display: inline-flex;
@@ -548,7 +548,7 @@ a#nav-icon {
     li{
       margin-right: 1.5em;
       a{
-        color: #696969;
+        color: #ef6f00;
         font-size: 90%;
         text-decoration: none;
         transition: ease all 0.3s;

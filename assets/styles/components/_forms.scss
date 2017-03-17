@@ -16,24 +16,30 @@
 
 .wpcf7{
   font-family: 'Montserrat', sans-serif;
-  h3{
-    color: #2777B1;
+  h2{
+    color: #002042;
     margin-bottom: .5em;
   }
+  h6{
+    margin: 0;
+    font-weight: 400;
+    color: #6b6b6b;
+  }
   .wpcf7-form{
-    padding: 3em;
-    background: #f6f6f6;
-    box-shadow: 0px 3px 6px #6b6b6b;
-    border-radius: 25px;
+    padding: 1em 2em;
+    background: #ebebeb;
     .row.sub{
       margin-top: 1em;
     }
     .wpcf7-submit{
       font-family: 'Montserrat', sans-serif;
       background: transparent;
-      color: #2777B1;
-      font-size:1.5em;
+      color: #fff;
       border:none;
+      background: $brand-complimentary;
+      width: 100%;
+      padding: 15px;
+      border-radius: 10px;
       &:focus{
         outline: none;
       }
@@ -43,31 +49,27 @@
     }
     .wpcf7-form-control-wrap{
       .wpcf7-form-control{
-        padding: 15px 15px 5px 5px;
-        margin-bottom: 2em;
+        padding: .75em;
+        margin-bottom: 1em;
         border-top: none;
         border-left: none;
         border-right: none;
-        border-bottom: 2px solid #9e9e9e;
+        border: 1px solid #b2b2b2;
+        border-radius: 10px;
         font-size: 1.15em;
-        color: #444444;
-        background: #f6f6f6;
+        color: #6b6b6b;
+        background: #fff;
         width: 100%;
         font-weight: 300;
         font-family: inherit;
         &:focus{
           outline: none;
-          border-bottom: 2px solid #2777B1;
+          border-bottom: 1px solid #2777B1;
         }
         &::placeholder{
           color:#b5b5b5;
         }
       }
-    }
-    .box{
-      color: #2777B1;
-      text-decoration: none;
-      margin-bottom: .5em;
     }
   }
 }
@@ -78,17 +80,20 @@
   vertical-align: middle;
   color: #2777B1;
   display: inline-block;
-  padding: 4px 15px;
+  height: 60px;
+  line-height: 60px;
   text-align: center;
   transition: 0.5s;
+  cursor: pointer;
   border: 2px solid #2777B1;
-  -webkit-transition:0.5s;
   border-radius: 5px;
+  width: 100%;
+  -webkit-transition:0.5s;
 }
 
 .box:hover {
-  border: 2px solid RGBA(39,119,177,0);
-  color: #2777B1;
+  border: 2px solid rgba(0,160,80,0);
+  color: #FFF;
 }
 
 .box::before, .box::after {
@@ -100,6 +105,7 @@
   top:0;
   left:0;
   box-sizing: border-box;
+  border-radius: 5px;
   -webkit-transform: scale(0);
   transition: 0.5s;
 }
@@ -107,30 +113,19 @@
 .foo::before {
   border-bottom: 3px solid #FFF;
   border-left: 3px solid #FFF;
+  border-radius: 5px;
   -webkit-transform-origin: 0 100%;
 }
 
 .foo::after {
   border-top: 3px solid #FFF;
   border-right: 3px solid #FFF;
+  border-radius: 5px;
   -webkit-transform-origin: 100% 0%;
-}
-
-
-.bar::before {
-  border-bottom: 3px solid #FFF;
-  border-left: 3px solid #FFF;
-  -webkit-transform-origin: 100% 0%;
-}
-
-.bar::after {
-  border-top: 3px solid #FFF;
-  border-right: 3px solid #FFF;
-  -webkit-transform-origin: 0% 100%;
 }
 
 .curmudgeon::before {
-  border-bottom: 3px solid #2777B1;
+  border-bottom: 3px solid #FFF;
   border-left: 0;
   -webkit-transform-origin: 0% 100%;
 }
@@ -143,20 +138,4 @@
 
 .box:hover::after, .box:hover::before {
   -webkit-transform: scale(1);
-}
-
-.link {
-  line-height: 1em;
-  position: absolute;
-  bottom: 0;
-  right: 20px;
-  width: 300px;
-  height: 50px;
-  font-family: "Open Sans","Roboto",Arial,sans-serif;
-  text-align: right;
-}
-
-.link > a {
-  text-decoration: none;
-  color: #FF0;
 }

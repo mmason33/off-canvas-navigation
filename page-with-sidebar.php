@@ -8,7 +8,7 @@
 <?php get_template_part('templates/page', 'header'); ?>
 <div class="wrap container-fluid">
   <div class="content row">
-    <main class="col-xl-6 offset-xl-1 col-lg-6 offset-lg-1 col-md-7">
+    <main class="col-xl-8 col-lg-8 col-md-7">
         <?php get_template_part('templates/content', 'page'); ?>
     </main>
     <aside class="col-xl-4 col-lg-4 col-md-5 sidebar-main">
