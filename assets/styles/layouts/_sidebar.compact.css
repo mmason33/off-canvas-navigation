@@ -1,18 +1,37 @@
-.sidebar-main .tiles .tile-overlay { position: absolute; width: 100%; height: 200px; background: rgba(1, 33, 68, 0.55); border-radius: 5px; top: 0; }
+.sidebar-main .tiles .tile-overlay { position: absolute; width: 100%; height: 315px; background: rgba(1, 33, 68, 0.45); border-radius: 5px; top: 0; transition: transform 0.5s; }
 
-.sidebar-main .tiles .sidebar-tile { position: relative; background: #e3e3e3; height: 200px; border: 1px solid #999; margin-top: 10px; border-radius: 5px; box-shadow: 0px 3px 5px #000; margin-top: 2em; transition: transform 0.5s; }
+.sidebar-main .tiles .tile-overlay:hover { background: rgba(1, 33, 68, 0.65); }
 
-.sidebar-main .tiles .sidebar-tile h3 { position: relative; margin-top: 2.5em; color: #fff !important; z-index: 1; text-shadow: 0px 2px 3px #000; }
+.sidebar-main .tiles .sidebar-tile { position: relative; background: #e3e3e3; height: 315px; border: 1px solid #999; margin-top: 10px; border-radius: 5px; box-shadow: 0px 3px 5px #000; margin-top: 2em; }
 
-.sidebar-main .tiles .sidebar-tile:hover { transform: scale(1.05); }
+.sidebar-main .tiles .sidebar-tile h2 { position: relative; margin-top: 4em; color: #fff !important; z-index: 1; text-shadow: 0px 2px 3px #000; }
+
+.sidebar-main .tiles .sidebar-tile h2:hover + .tile-overlay { background: rgba(1, 33, 68, 0.65); }
 
 .sidebar-main .tiles a:hover { text-decoration: none !important; }
 
 .sidebar-main .tiles a:after { position: absolute; width: 88.5%; height: 160px; background: rgba(1, 33, 68, 0.55); border-radius: 5px; top: 0.65em; }
 
 /*====================== SIDEBAR HERO SECTION ===============*/
-.image-right-hero { position: relative; height: 500px; width: 50%; float: right; }
+.image-right-hero { position: relative; height: 500px; width: 50%; }
 
-.content-left-hero { position: absolute; height: 500px; width: 50%; background: #ebebeb; top: 0; left: 0; }
+.content-left-hero { position: absolute; height: 500px; width: 50%; background: #ebebeb; top: 0; }
 
-.content-left-hero .row { position: relative; top: 10em; left: 8em; }
+.content-left-hero .row { padding-left: 4em; margin-top: 11em; }
+
+@media screen and (min-width: 1920px) { .content-left-hero .row { padding-left: 11em; } }
+
+@media screen and (min-width: 1875px) and (max-width: 1919px) { .content-left-hero .row { padding-left: 10em; } }
+
+@media screen and (max-width: 768px) { .image-right-hero { width: 100%; float: clear; position: static; }
+  .image-right-hero:after { content: ''; position: absolute; background: rgba(0, 0, 0, 0.6); top: 0; left: 0; height: 500px; width: 100%; }
+  .content-left-hero { background: transparent; z-index: 1; width: 75%; }
+  .content-left-hero h1, .content-left-hero h2, .content-left-hero h3, .content-left-hero h4, .content-left-hero h5, .content-left-hero p { color: #fff !important; }
+  .content-left-hero .row { padding: 2em; } }
+
+@media screen and (max-width: 1300px) and (min-width: 1025px) { .content-left-hero { width: 62% !important; }
+  .content-left-hero .row { margin-top: 8em !important; } }
+
+@media screen and (max-width: 1000px) and (min-width: 769px) { .content-left-hero .row { padding-right: 1em; } }
+
+@media screen and (max-width: 576px) { .page-template-page-with-sidebar .image-right-hero, .page-template-page-with-sidebar .image-right-hero::after, .page-template-page-with-sidebar .content-left-hero, .page-template-page-with-sidebar #hero { height: 300px !important; } }

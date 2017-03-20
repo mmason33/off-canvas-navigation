@@ -3,30 +3,33 @@
     .tile-overlay{
       position: absolute;
       width: 100%;
-      height: 200px;
-      background: rgba(1, 33, 68, 0.55);
+      height: 315px;
+      background: rgba(1, 33, 68, 0.45);
       border-radius: 5px;
       top: 0;
+      transition: transform 0.5s;
+      &:hover{
+        background: rgba(1,33,68,.65);
+      }
     }
     .sidebar-tile{
       position: relative;
       background: #e3e3e3;
-      height: 200px;
+      height: 315px;
       border: 1px solid #999;
       margin-top: 10px;
       border-radius: 5px;
       box-shadow: 0px 3px 5px #000;
       margin-top: 2em;
-      transition: transform 0.5s;
-      h3{
+      h2{
         position: relative;
-        margin-top: 2.5em;
+        margin-top: 4em;
         color: #fff !important;
         z-index: 1;
         text-shadow: 0px 2px 3px #000;
-      }
-      &:hover{
-        transform: scale(1.05);
+        &:hover + .tile-overlay{
+          background: rgba(1,33,68,.65);
+        }
       }
     }
     a{
@@ -53,7 +56,6 @@
   position: relative;
   height: 500px;
   width: 50%;
-  float: right;
 }
 .content-left-hero{
   position: absolute;
@@ -61,11 +63,73 @@
   width: 50%;
   background: #ebebeb;
   top: 0;
-  left: 0;
   .row{
-    position: relative;
-    top: 10em;
-    left: 8em;
+      padding-left: 4em;
+      margin-top: 11em;
 
+  }
+}
+@media screen and (min-width:1920px){
+  .content-left-hero{
+    .row{
+      padding-left: 11em;
+    }
+  }
+}
+@media screen and (min-width:1875px) and (max-width:1919px){
+  .content-left-hero{
+    .row{
+      padding-left: 10em;
+    }
+  }
+}
+@media screen and (max-width:768px){
+  .image-right-hero{
+    width: 100%;
+    float: clear;
+    position: static;
+    &:after{
+      content: '';
+      position: absolute;
+      background: rgba(0,0,0,.6);
+      top: 0;
+      left: 0;
+      height: 500px;
+      width: 100%;
+    }
+  }
+  .content-left-hero{
+    background: transparent;
+    z-index: 1;
+    width: 75%;
+    h1,h2,h3,h4,h5,p{
+      color: #fff !important;
+
+    }
+    .row{
+      padding: 2em;
+    }
+  }
+}
+@media screen and (max-width:1300px) and (min-width:1025px){
+  .content-left-hero{
+    width: 62% !important;
+    .row{
+      margin-top: 8em !important;
+    }
+  }
+}
+@media screen and (max-width:1000px) and (min-width:769px){
+  .content-left-hero{
+    .row{
+      padding-right: 1em;
+    }
+  }
+}
+@media screen and (max-width:576px){
+  .page-template-page-with-sidebar{
+    .image-right-hero, .image-right-hero::after,.content-left-hero,#hero{
+      height: 300px !important;
+    }
   }
 }

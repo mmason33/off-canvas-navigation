@@ -11,7 +11,7 @@
     <main class="col-xl-8 col-lg-8 col-md-7">
         <?php get_template_part('templates/content', 'page'); ?>
     </main>
-    <aside class="col-xl-4 col-lg-4 col-md-5 sidebar-main">
+    <aside class="col-xl-4 offset-xl-0 col-lg-4 offset-lg-0 col-md-5 offset-md-0 col-sm-8 offset-sm-2 sidebar-main">
       <?php do_action('get_sidebar');?>
       <?php get_template_part('templates/sidebar');?>
     </aside>

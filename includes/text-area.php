@@ -1,7 +1,7 @@
 <?php
 
 $textBox = get_sub_field('text_box');
-$fullWidth = (get_sub_field('full_width') == 1 ? '-fluid' : '');
+$fullWidth = (get_sub_field('full_width') == 1 ? '-fluid wrap' : '');
 $bgColor = get_sub_field('bg_color');
 $bgImage = get_sub_field('bg_image');
 $bgRepeat = (get_sub_field('bg_repeat') == 1 ? 'repeat' : 'no-repeat');

@@ -7,8 +7,9 @@ $bgRepeat = (get_field('bg_repeat') == 1 ? 'repeat;' : 'no-repeat;');
 $bgPositionX = get_field('bg_position_x');
 $bgPositionY = get_field('bg_position_y');
 $parallax = get_field('parallax');
-$fullWidth = (get_field('full_width') != 0 ? '-fluid' : '');
+$fullWidth = (get_field('full_width') != 0 ? '-fluid wrap' : '');
 $centerContent = (get_field('center_content') != 0 ? ' justify-content-center' : '' );
+$contentRelative = (get_field('cta_content_relative') == 1 ? 'style="position:relative;top:50%;left:0;"' : '' );
 
 ?>
                   <?php
@@ -30,14 +31,18 @@ $centerContent = (get_field('center_content') != 0 ? ' justify-content-center' :
 
                   if(!empty($HeroImage)):
               ?>
-                  <section id="cta-content">
+                  <section id="cta-content"<?php echo $contentRelative; ?>>
                     <?php if( is_page_template('page-with-sidebar.php') ): ?>
                         <div class="wrap container-fluid">
                     <?php else: ?>
-                        <div class="container">
+                        <div class="container<?php echo $fullWidth; ?>">
                     <?php endif; ?>
-                        <div class="row <?php echo $centerContent; ?>">
-                          <div class="col-xs-12 head">
+                        <div class="row<?php echo $centerContent; ?>">
+                          <?php if($contentRelative == true):?>
+                            <div class="col-xs-12">
+                          <?php else: ?>
+                            <div class="col-xs-12 head">
+                          <?php endif; ?>
                           <?php echo $CTAcontent; ?>
                           </div>
                         </div>
