@@ -8,7 +8,6 @@
         <div class="col-md-2 text-center">
             <img src="/wp-content/uploads/2017/03/NTS-FOOTERS-1.png" class="img-fluid">
             <p class="address">4343 Von Karman Ave Suite 100, Newport Beach, CA 92660</p>
-            <p class="address">© 2017 Northbound Addiction Treatment. All rights reserved.</p>
           </div>
 
           <div class="col-md-2 offset-md-1">
@@ -42,5 +41,8 @@
 
 
   </div>
+</div>
+<div class="footer-bottom">
+<small>© 2017 Northbound Addiction Treatment. All rights reserved.</small>
 </div>
 </footer>

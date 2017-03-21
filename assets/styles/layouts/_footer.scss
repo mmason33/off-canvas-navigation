@@ -73,3 +73,21 @@ p.address{
   background: rgba(255,255,255,.1);
   left: 38%;
 }
+
+
+/*======================== FOOTER BOTTOM =================== */
+
+
+.footer-bottom{
+  height: 30px;
+  width: 100%;
+  background: $brand-primary;
+  border-bottom: 2px solid $brand-complimentary;
+  small{
+    color: #fff;
+    position: relative;
+    left: 42.5%;
+    top: 4px;
+    font-size: 70%;
+  }
+}
