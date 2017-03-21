@@ -7,12 +7,13 @@ $heroContent = get_field('hero_content');
 $heroHeadline = get_field('hero_headline');
 $herPosition = get_field('hero_position');
 $switchPostion = (get_field('content_right_image_left') != 1 ? 'float:right;' : 'float:left;');
+$contentBGcolor = get_field('content_bg_color');
 ?>
 <section id="hero">
 <?php if($switchPostion == 'float:right;'): ?>
-  <div class="content-left-hero" style="left:0;">
+  <div class="content-left-hero" style="left:0;background:<?php echo $contentBGcolor; ?>;">
 <?php else: ?>
-  <div class="content-left-hero" style="left:50%;">
+  <div class="content-left-hero" style="left:50%;background:<?php echo $contentBGcolor; ?>;">
 <?php endif; ?>
     <div class="row">
       <div class="col-md-12">

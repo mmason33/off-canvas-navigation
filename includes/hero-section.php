@@ -10,7 +10,6 @@ $parallax = get_field('parallax');
 $fullWidth = (get_field('full_width') != 0 ? '-fluid wrap' : '');
 $centerContent = (get_field('center_content') != 0 ? ' justify-content-center' : '' );
 $contentRelative = (get_field('cta_content_relative') == 1 ? 'style="position:relative;top:50%;left:0;"' : '' );
-
 ?>
                   <?php
                   // If hero image is not empty, echo $HeroImage, $bgRepeat, $bgColor
@@ -26,7 +25,7 @@ $contentRelative = (get_field('cta_content_relative') == 1 ? 'style="position:re
 
                   //If first two params are false, echo background color - default == white
                   }else{
-                    echo $bgColor.'>';
+
                   }
 
                   if(!empty($HeroImage)):
@@ -50,8 +49,4 @@ $contentRelative = (get_field('cta_content_relative') == 1 ? 'style="position:re
                   </section><!--end cta-content-->
                 </section><!--end hero-->
               <?php endif; ?>
-<?php
- // dynamic_sidebar('sidebar-primary');
-?>
-</div>
-<!--</div>-->
+            </div><!--</div>-->

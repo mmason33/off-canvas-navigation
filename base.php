@@ -23,13 +23,15 @@ use Roots\Sage\Wrapper;
         get_template_part('includes/hero-section');
       endif;
     ?>
+    <div class='container-fluid wrap'>
     <?php include Wrapper\template_path(); ?>
     <?php
       do_action('get_builder');
       get_template_part('includes/builder');
       do_action('get_footer');
-      get_template_part('templates/footer');
-      wp_footer();
     ?>
+  </div>
+  get_template_part('templates/footer');
+  wp_footer();
   </body>
 </html>
