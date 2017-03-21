@@ -24,9 +24,7 @@ $contentRelative = (get_field('cta_content_relative') == 1 ? 'style="position:re
                         echo '<section id="hero" data-parallax="scroll" data-image-src="'.$HeroImage.'" data-positionX="'.$bgPositionX.'" data-positionY="'.$bgPositionY.'">';
 
                   //If first two params are false, echo background color - default == white
-                  }else{
-
-                  }
+                }
 
                   if(!empty($HeroImage)):
               ?>
