@@ -74,6 +74,17 @@
   }
 }
 
+@media screen and (max-width:1440px){
+  .single-post-wrap{
+    .wpcf7{
+      h2{
+        font-size:2em;
+      }  
+    }
+  }
+}
+
+/*================ COOL BUTTON STYLES ============= */
 
 .box {
   position:relative;
