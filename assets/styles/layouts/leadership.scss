@@ -1,0 +1,38 @@
+// styles for some hero sections, our-team and leadership
+.page-template-leadership,.page-template-our-team{
+  #hero{
+    height: 500px;
+  }
+  .leadership-image{
+    padding: 0;
+  }
+  .col-md-8{
+
+  }
+  h4{
+    font-weight: 400;
+  }
+  h3,h4{
+    margin-bottom: .5rem;
+  }
+  .leadership-bio{
+    padding:4.4em;
+  }
+}
+// STYLES ONLY FOR LEADERSHIP - MAINLY @MEDIA
+
+@media screen and (max-width:1023px){
+  .page-template-leadership{
+    .content-left-hero,.image-right-hero,.image-right-hero::after,#hero{
+      height: 400px !important;
+    }
+    // .leadership-bio{
+    //   padding: 1em !important;
+    // }
+    // .leadership-image{
+    //   margin-right: -15px;
+    //   margin-left: -15px;
+    //   background: #fff !important;
+    // }
+  }
+}

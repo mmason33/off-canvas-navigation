@@ -17,9 +17,7 @@ use Roots\Sage\Wrapper;
     <?php
       do_action('get_header');
       get_template_part('templates/header');
-      if(is_page_template('page-with-sidebar.php')):
-        get_template_part('includes/sidebar-hero');
-      else:
+      if(is_page_template('page-with-sidebar.php') && is_page_template('leadership.php')):
         get_template_part('includes/hero-section');
       endif;
     ?>

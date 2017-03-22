@@ -64,9 +64,24 @@
       }
     },
     // Home page
-    'home': {
+    'page_template_leadership': {
       init: function() {
         // JavaScript to be fired on the home page
+        $(document).ready(function(){
+          //cool little function ill reuse someday
+          // function getWidth( ele, w){
+          //   if ( w >= 1875 ){
+          //     $(ele).css('padding-left', 160);
+          //   }else{
+          //     $(ele).css('padding-left', 64);
+          //   }
+          // }
+          // getWidth('.leadership-bio:odd', $(window).width() );
+
+          $('.leadership-bio:odd').css('padding-left', 64);
+          $('.leadership-grid .col-lg-9:odd,.leadership-grid .col-lg-3:odd').css('background','#ebebeb');
+
+        });
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS

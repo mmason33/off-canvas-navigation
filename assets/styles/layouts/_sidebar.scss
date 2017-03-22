@@ -68,20 +68,6 @@
 
   }
 }
-@media screen and (min-width:1920px){
-  .content-left-hero{
-    .row{
-      padding-left: 11em;
-    }
-  }
-}
-@media screen and (min-width:1875px) and (max-width:1919px){
-  .content-left-hero{
-    .row{
-      padding-left: 10em;
-    }
-  }
-}
 @media screen and (max-width:768px){
   .image-right-hero{
     width: 100%;
@@ -98,12 +84,12 @@
     }
   }
   .content-left-hero{
-    background: transparent;
+    background: transparent !important;
     z-index: 1;
     width: 75%;
+    left: 0 !important;
     h1,h2,h3,h4,h5,p{
       color: #fff !important;
-
     }
     .row{
       padding: 2em;

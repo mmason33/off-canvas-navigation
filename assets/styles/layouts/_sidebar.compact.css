@@ -19,13 +19,9 @@
 
 .content-left-hero .row { padding-left: 4em; margin-top: 11em; }
 
-@media screen and (min-width: 1920px) { .content-left-hero .row { padding-left: 11em; } }
-
-@media screen and (min-width: 1875px) and (max-width: 1919px) { .content-left-hero .row { padding-left: 10em; } }
-
 @media screen and (max-width: 768px) { .image-right-hero { width: 100%; float: clear; position: static; }
   .image-right-hero:after { content: ''; position: absolute; background: rgba(0, 0, 0, 0.6); top: 0; left: 0; height: 500px; width: 100%; }
-  .content-left-hero { background: transparent; z-index: 1; width: 75%; }
+  .content-left-hero { background: transparent !important; z-index: 1; width: 75%; left: 0 !important; }
   .content-left-hero h1, .content-left-hero h2, .content-left-hero h3, .content-left-hero h4, .content-left-hero h5, .content-left-hero p { color: #fff !important; }
   .content-left-hero .row { padding: 2em; } }
 

@@ -1,13 +1,13 @@
 <?php //sidebar hero acf partial ?>
 
 <?php
-
-$heroImage = (get_field('hero_image') != '' ? "background:url('".get_field('hero_image')."') no-repeat ".get_field('hero_position').";" : '');
+$heroPosition = get_field('hero_position');
+$heroImage = (get_field('hero_image') != '' ? "background:url('".get_field('hero_image')."') no-repeat " : '');
 $heroContent = get_field('hero_content');
 $heroHeadline = get_field('hero_headline');
-$herPosition = get_field('hero_position');
 $switchPostion = (get_field('content_right_image_left') != 1 ? 'float:right;' : 'float:left;');
 $contentBGcolor = get_field('content_bg_color');
+$heroSize = (get_field('hero_size') != '' ? 'background-size:'.get_field('hero_size').';' : '');
 ?>
 <section id="hero">
 <?php if($switchPostion == 'float:right;'): ?>
@@ -24,5 +24,5 @@ $contentBGcolor = get_field('content_bg_color');
       </div>
     </div>
   </div>
-  <div class="image-right-hero" style="<?php echo $heroImage; ?><?php echo $switchPostion; ?>"></div>
+  <div class="image-right-hero" style="<?php echo $heroImage; ?><?php echo $heroPosition; ?>;<?php echo $switchPostion; ?><?php echo $heroSize; ?>"></div>
 </section>

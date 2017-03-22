@@ -1,0 +1,11 @@
+.page-template-leadership #hero, .page-template-our-team #hero { height: 500px; }
+
+.page-template-leadership .leadership-image, .page-template-our-team .leadership-image { padding: 0; }
+
+.page-template-leadership .col-md-8:nth-of-type(odd), .page-template-leadership .leadership-image:nth-of-type(even), .page-template-our-team .col-md-8:nth-of-type(odd), .page-template-our-team .leadership-image:nth-of-type(even) { background: #ebebeb; }
+
+.page-template-leadership h4, .page-template-our-team h4 { font-weight: 400; }
+
+.page-template-leadership h3, .page-template-leadership h4, .page-template-our-team h3, .page-template-our-team h4 { margin-bottom: .5rem; }
+
+.page-template-leadership .leadership-bio, .page-template-our-team .leadership-bio { padding: 3em 3em 0 0; }
