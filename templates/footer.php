@@ -42,7 +42,7 @@
 
   </div>
 </div>
-<div class="footer-bottom">
+<!-- <div class="footer-bottom">
 <small>© 2017 Northbound Addiction Treatment. All rights reserved.</small>
 </div>
-</footer>
+</footer> -->

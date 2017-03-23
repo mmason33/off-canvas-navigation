@@ -63,23 +63,22 @@
         // JavaScript to be fired on all pages, after page specific JS is fired
       }
     },
-    // Home page
+    // LEADERSHIP TEMPLATE
     'page_template_leadership': {
       init: function() {
         // JavaScript to be fired on the home page
         $(document).ready(function(){
-          //cool little function ill reuse someday
-          // function getWidth( ele, w){
-          //   if ( w >= 1875 ){
-          //     $(ele).css('padding-left', 160);
-          //   }else{
-          //     $(ele).css('padding-left', 64);
-          //   }
-          // }
-          // getWidth('.leadership-bio:odd', $(window).width() );
+          function getWidth( ele, w){
+            if ( w >= 575 ){
+              $(ele).css('background','#ebebeb');
+            }else{
+              $(ele).css('background','#fff');
+            }
+          }
+          getWidth('.leadership-grid .col-lg-9:odd,.leadership-grid .col-lg-3:odd', $(window).width() );
 
           $('.leadership-bio:odd').css('padding-left', 64);
-          $('.leadership-grid .col-lg-9:odd,.leadership-grid .col-lg-3:odd').css('background','#ebebeb');
+
 
         });
       },
@@ -87,10 +86,16 @@
         // JavaScript to be fired on the home page, after the init JS
       }
     },
-    // About us page, note the change from about-us to about_us.
-    'about_us': {
+    // Our Team us page, note the change from our-team to our_team.
+    'page_id_20305': {
       init: function() {
-        // JavaScript to be fired on the about us page
+        // JavaScript to be fired on the our team us page
+        AOS.init({
+          offset: 200,
+          duration: 600,
+          easing: 'ease',
+          delay: 100,
+        });
       }
     }
   };

@@ -5,10 +5,10 @@
 ?>
 <div class="container-fluid">
   <div class="row our-team-hero">
-    <div class="col-md-4 our-team-hero leadership-image">
+    <div class="col-md-3 leadership-image">
       <img src="/wp-content/uploads/2017/03/kaufman-400x400.jpg" class="img-fluid float-left">
     </div>
-    <div class="col-md-8 our-team-hero">
+    <div class="col-md-9">
       <div class="leadership-bio">
         <h3>Dr. Edward Kaufman</h3>
         <h4>Medical Director</h4>
@@ -42,14 +42,14 @@
         <?php //start the loop ?>
         <?php while ( $loop->have_posts() ) : $loop->the_post();?>
 
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center" data-aos="zoom-in" data-aos-once="true">
                   <img src="<?php the_post_thumbnail_url(); ?>">
-                      <h6><?php the_title(); ?></h6>
+                      <h5><?php the_title(); ?></h5>
                   <p><?php echo $categorie->slug; ?></p>
                 </div>
-        <?php endwhile;
-          wp_reset_postdata();
+        <?php endwhile;?>
+        </div>
+      </section>
+        <?php wp_reset_postdata();
     }?>
-      </div>
-    </section>
 </div>
