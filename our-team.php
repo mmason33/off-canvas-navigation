@@ -18,7 +18,7 @@
   </div>
 </div>
 
-<div class="container">
+<div id="our-team" class="container">
 
 
   <?php $categories = get_terms('staff_category', array(
@@ -42,8 +42,8 @@
         <?php //start the loop ?>
         <?php while ( $loop->have_posts() ) : $loop->the_post();?>
 
-                <div class="col-md-4 text-center" data-aos="zoom-in" data-aos-once="true">
-                  <img src="<?php the_post_thumbnail_url(); ?>">
+                <div class="col-md-3 text-center">
+                  <img src="<?php the_post_thumbnail_url(); ?>" class="img-fluid rounded">
                       <h5><?php the_title(); ?></h5>
                   <p><?php echo $categorie->slug; ?></p>
                 </div>
