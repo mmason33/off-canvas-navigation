@@ -12,6 +12,6 @@
     "animate.css": "^3.5.2",
     "parallax.js": "^1.4.2",
     "aos": "^2.1.1",
-    "tiltedpage_scroll": "https://github.com/peachananr/tiltedpage_scroll.git"
+    "matchHeight": "matchheight#^0.7.2"
   }
 }

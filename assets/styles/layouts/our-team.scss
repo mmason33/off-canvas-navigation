@@ -1,6 +1,65 @@
 .page-template-our-team{
   .our-team-hero{
-    background: #ebebeb !important;
     padding-top: 6.4em;
+  }
+  h4{
+    margin-top: 1rem;
+  }
+  .clinical-staff,.therapist,.case-manager,.client-services{
+    padding: 5em 0;
+  }
+  #our-team section:nth-of-type(even){
+    background: #ebebeb;
+  }
+  .our-team-hero .col-lg-9:nth-of-type(odd), .our-team-hero .col-lg-3:nth-of-type(even){
+    background: #ebebeb;
+  }
+  .staff-section-title{
+    background: $brand-secondary;
+    padding: 2em 0;
+    .white{
+      margin: 0;
+    }
+  }
+  .staff-member{
+    .staff-title{
+      padding: 0 4em;
+    }
+    .staff-name,.staff-title,.staff-anchor{
+      text-decoration: none;
+    }
+  }
+}
+.read-bio{
+  position: absolute;
+  background: $brand-complimentary;
+  color: #ebebeb;
+  border-radius: 5px;
+  display: none;
+  top: 0;
+  left: 3em;
+  padding: .25em 1em;
+  transition: ease display 0.4s;
+  transform: rotate(-33deg);
+}
+.staff-member{
+  img{
+    transition: ease all 0.2s;
+  }
+  &:hover{
+    img{
+      transform: scale(1.1);
+      margin-bottom: .5em;
+    }
+    .read-bio{
+      display: inline;
+    }
+  }
+}
+
+
+@media screen and (max-width:576px){
+  .our-team-hero .col-lg-9:nth-of-type(odd), .our-team-hero .col-lg-3:nth-of-type(even){
+    background: #fff;
   }
 }
