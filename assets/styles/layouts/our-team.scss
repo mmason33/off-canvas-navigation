@@ -32,23 +32,21 @@
 }
 .read-bio{
   position: absolute;
-  background: $brand-complimentary;
-  color: #ebebeb;
+  // background: url('/wp-content/uploads/2017/03/read-bio.png') no-repeat center center;
   border-radius: 5px;
   display: none;
-  top: 0;
-  left: 3em;
+  top: -4px;
+  left: 4.45em;
   padding: .25em 1em;
-  transition: ease display 0.4s;
-  transform: rotate(-33deg);
+  transition: ease all 0.3s;
 }
-.staff-member{
+.staff-name,.staff-title,.staff-anchor{
   img{
-    transition: ease all 0.2s;
+    transition: ease all 0.3s;
   }
   &:hover{
     img{
-      transform: scale(1.1);
+      opacity: 0.85;
       margin-bottom: .5em;
     }
     .read-bio{

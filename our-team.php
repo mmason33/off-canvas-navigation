@@ -34,7 +34,6 @@
       <div class="visible-xs-down hidden-sm-up">
       <h3>Illana Zuchavich</h3>
       <h4>Clinical Director</h4>
-      <a href="#">Read Bio</a>
       </div>
     </div>
 </div>
@@ -80,7 +79,7 @@
                     <img src="<?php the_post_thumbnail_url(); ?>" class="img-fluid rounded">
                         <h4 class="staff-name"><?php the_title(); ?></h4>
                       <p class="staff-title"><?php echo $title; ?></p>
-                      <span class="read-bio">Read Bio</span>
+                      <span class="read-bio"><img src="/wp-content/uploads/2017/03/bio-ribbon.png"></span>
                     </div>
                   </a>
                 </div>
