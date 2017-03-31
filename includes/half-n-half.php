@@ -1,4 +1,4 @@
-<?php //sidebar hero acf partial ?>
+<?php //Hero section for sidebar pages and other templates ** Not part of the builder ?>
 
 <?php
 $heroPosition = get_field('hero_position');
@@ -16,10 +16,12 @@ $heroSize = (get_field('hero_size') != '' ? 'background-size:'.get_field('hero_s
   <div class="content-left-hero" style="left:50%;background:<?php echo $contentBGcolor; ?>;">
 <?php endif; ?>
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-lg-9 col-xl-9 col-md-12">
         <?php echo $heroHeadline; ?>
       </div>
-      <div class="col-lg-9 col-xl-9 col-md-12 hidden-xs-down">
+    </div>
+    <div class="row">
+      <div class="col-lg-9 col-xl-19 col-md-12 hidden-xs-down">
         <?php echo $heroContent; ?>
       </div>
     </div>

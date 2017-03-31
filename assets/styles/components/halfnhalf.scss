@@ -1,3 +1,5 @@
+//STYLE FOR HALF AND HALF IN THE BUILDER
+
 .half-left,.half-right{
   min-height: 350px;
 }
@@ -5,5 +7,78 @@
   padding: 50px;
 }
 .half-content.has-text > *{
-  margin-top: 30px;
+  margin-top: 15px;
+}
+
+
+/*====================== HALF AND HALF HERO SECTION(NON-BUILDER) ===============*/
+
+.image-right-hero{
+  position: relative;
+  height: 500px;
+  width: 50%;
+}
+.content-left-hero{
+  position: absolute;
+  height: 500px;
+  width: 50%;
+  top: 0;
+  .row{
+      padding-left: 4em;
+  }
+  .row:nth-of-type(1){
+    margin-top: 10em;
+  }
+}
+
+@media screen and (max-width:768px){
+  .image-right-hero{
+    width: 100%;
+    float: clear;
+    position: static;
+    &:after{
+      content: '';
+      position: absolute;
+      background: rgba(0,0,0,.6);
+      top: 0;
+      left: 0;
+      height: 500px;
+      width: 100%;
+    }
+  }
+  .content-left-hero{
+    background: transparent !important;
+    z-index: 1;
+    width: 75%;
+    left: 0 !important;
+    h1,h2,h3,h4,h5,p{
+      color: #fff !important;
+      text-shadow: 0px 3px 5px #333;
+    }
+    .row{
+      padding: 0em 2em;
+    }
+  }
+}
+@media screen and (max-width:1300px) and (min-width:1025px){
+  .content-left-hero{
+    width: 62% !important;
+    .row:nth-of-type(1){
+      margin-top: 8em !important;
+    }
+  }
+}
+@media screen and (max-width:1000px) and (min-width:769px){
+  .content-left-hero{
+    .row{
+      padding-right: 1em;
+    }
+  }
+}
+@media screen and (max-width:576px){
+  .page-template-page-with-sidebar{
+    .image-right-hero, .image-right-hero::after,.content-left-hero,#hero{
+      height: 300px !important;
+    }
+  }
 }

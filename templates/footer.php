@@ -1,3 +1,25 @@
+<?php if (!is_page_template('contact.php')): ?>
+  <section class="text-box-wrap " style="background-color:#ef6f00;">
+    <div class="container">
+      <section id="text-box">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <div class="row">
+              <div class="col-md-12">
+                <h2 class="white">Schedule a consultation today</h2>
+              </div>
+            </div>
+            <div class="row pad-20">
+              <div class="col-md-12">
+                <a href="#" class="check-coverage">Get In Touch</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--#textbox-->
+    </div><!--container-->
+  </section>
+<?php endif; ?>
 <footer class="content-info" style="background:url('/wp-content/uploads/2017/03/4343-von-karman-avenue-black-overlay-dark-blue.jpg') no-repeat top center;background-size:cover;background-attachment:fixed;">
   <div class="wrap container-fluid">
 
