@@ -34,6 +34,7 @@
       <div class="visible-xs-down hidden-sm-up">
       <h3>Illana Zuchavich</h3>
       <h4>Clinical Director</h4>
+      <a href="#">Read Bio</a>
       </div>
     </div>
 </div>
@@ -73,15 +74,15 @@
         <?php //start the loop ?>
         <?php while ( $loop->have_posts() ) : $loop->the_post();?>
                 <?php $title = get_field('staff_title'); ?>
-                <div class="col-md-3 text-center staff-member" data-aos="zoom-in" data-aos-once="true">
-                  <a href="<?php the_permalink(); ?>" class="staff-anchor">
+                <div class="col-md-6 col-xl-3 col-lg-4 text-center staff-member" data-aos="zoom-in" data-aos-once="true">
                     <div class="staff-image">
-                    <img src="<?php the_post_thumbnail_url(); ?>" class="img-fluid rounded">
-                        <h4 class="staff-name"><?php the_title(); ?></h4>
-                      <p class="staff-title"><?php echo $title; ?></p>
-                      <span class="read-bio"><img src="/wp-content/uploads/2017/03/bio-ribbon.png"></span>
-                    </div>
-                  </a>
+                      <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url(); ?>" class="img-fluid rounded"></a>
+                        <h4 class="staff-name"><a href="<?php the_permalink(); ?>" class="staff-anchor"><?php the_title(); ?></a></h4>
+                      <p class="staff-title"><a href="<?php the_permalink(); ?>" class="staff-anchor"><?php echo $title; ?></a></p>
+                  </div>
+                  <div class="hidden-sm-up">
+                    <a href="<?php the_permalink(); ?>">Read Bio</a>
+                  </div>
                 </div>
         <?php endwhile;?>
           </div>

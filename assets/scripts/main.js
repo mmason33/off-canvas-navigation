@@ -48,13 +48,14 @@
                 delay: 100,
               });
 
-              $(window).scroll(function(){
-                if ($(this).scrollTop() > 0){
-                  $('#nav-header').css('margin-top', 0);
-                }else{
-                  $('#nav-header').css('margin-top', 25);
-                }
-              });
+              //RETHINKING THE NAV-TOP SECTION COMMENTED OUT ON 3/30
+              // $(window).scroll(function(){
+              //   if ($(this).scrollTop() > 0){
+              //     $('#nav-header').css('margin-top', 0);
+              //   }else{
+              //     $('#nav-header').css('margin-top', 25);
+              //   }
+              // });
           });
 
 
@@ -92,6 +93,10 @@
         // OUR TEAM
         $(function() {
           $('.staff-member').matchHeight();
+
+          $('.staff-image').hover(function(){
+            $(this).toggleClass('animated swing');
+          });
         });
 
 

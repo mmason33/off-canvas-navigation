@@ -1,4 +1,5 @@
-<section id="nav-top">
+<!-- REVISIT THIS NAV-TOP PART COMMENTED OUT ON 3/30 -->
+<!-- <section id="nav-top">
 	<div class="nav-wrap">
 	<ul>
 		<li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -8,7 +9,7 @@
 		<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
 	</ul>
 	</div>
-</section>
+</section> -->
 <header class="header" id="nav-header">
 		<div class="nav-wrap">
 			<h1 id="nav-brand"><a href="#">Northbound</a></h1>

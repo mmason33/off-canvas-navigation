@@ -22,42 +22,87 @@
     }
   }
   .staff-member{
+    a{
+      text-decoration: none;
+    }
+    &:after{
+      content: '';
+      border: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      transition: width ease 0.3s;
+      transform-origin: left;
+
+    }
+    .staff-image{
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      &:before{
+        content: url('/wp-content/uploads/2017/03/bio-ribbon.png');
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        height: 0;
+        transition: ease all 0.3s;
+      }
+    }
     .staff-title{
       padding: 0 4em;
     }
-    .staff-name,.staff-title,.staff-anchor{
-      text-decoration: none;
+    &:hover .staff-image::before{
+      opacity: 1;
     }
   }
-}
-.read-bio{
-  position: absolute;
-  // background: url('/wp-content/uploads/2017/03/read-bio.png') no-repeat center center;
-  border-radius: 5px;
-  display: none;
-  top: -4px;
-  left: 4.45em;
-  padding: .25em 1em;
-  transition: ease all 0.3s;
-}
-.staff-name,.staff-title,.staff-anchor{
-  img{
-    transition: ease all 0.3s;
-  }
-  &:hover{
-    img{
-      opacity: 0.85;
-      margin-bottom: .5em;
-    }
-    .read-bio{
-      display: inline;
+  .hidden-sm-up{
+    a{
+      border: 1px solid #333;
+      padding: 8px 20px;
+      font-size: 1rem;
+      background: #002042;
+      color: #fff;
+      border-radius: 5px;
     }
   }
 }
 
+@media screen and (max-width:1440px){
+  .page-template-our-team{
+    .leadership-bio{
+      padding: 2.25em;
+    }
+    .staff-title{
+      padding: 0 1em;
+    }
+  }
+}
 
+@media screen and (max-width:1330px){
+.page-template-our-team .staff-image::before{
+    content: '' !important;
+  }
+}
+@media screen and (max-width:768px){
+  .page-template-our-team{
+    .staff-member{
+      margin-top:2.5em;
+    }
+    .clinical-staff,.therapist,.case-manager,.client-services{
+      padding: 0 !important;
+      margin: 3em 0;
+    }
+    #our-team section:nth-of-type(even){
+      background: #fff !important;
+    }
+  }
+}
 @media screen and (max-width:576px){
   .our-team-hero .col-lg-9:nth-of-type(odd), .our-team-hero .col-lg-3:nth-of-type(even){
-    background: #fff;
+    background: #fff !important;
   }
 }

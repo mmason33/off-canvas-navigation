@@ -1,4 +1,5 @@
 <?php
+//Half and Half Hero section for page-with-sidebar template
 $bgImageLeft = (get_sub_field('bg_image_left') != '' ? 'style="background:url('.get_sub_field('bg_image_left').') no-repeat '.get_sub_field('bg_position_left').';background-size:cover;"' : '');
 $bgImageRight = (get_sub_field('bg_image_right') != '' ? 'style="background:url('.get_sub_field('bg_image_right').') no-repeat '.get_sub_field('bg_position_right').';background-size:cover;"' : '');
 $contentLeft = (get_sub_field('content_left') != '' ? get_sub_field('content_left') : '');

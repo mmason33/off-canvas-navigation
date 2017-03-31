@@ -1,0 +1,48 @@
+/* ==== BUTTONS ==== */
+
+//.check-coverage homepage
+.check-coverage{
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  padding: 15px;
+  font-size: 1.2em;
+  text-decoration: none;
+  margin: 20px 0px;
+  &:hover{
+    color: white;
+    text-decoration: none;
+  }
+}
+//.btn-orange homepage
+.btn-orange{
+  color: white;
+  background: #ef6f00;
+  box-shadow: 1px 1px 1px #000;
+  padding: 10px;
+  border-radius: 5px;
+  &:hover,&:focus{
+    color: white;
+    text-decoration: none;
+  }
+}
+//.video-btn homepage
+.video-btn{
+  padding: 12px;
+  background: #ef6f00;
+  border-radius: 5px;
+  color: white;
+  font-size: 110%;
+  margin-top: 15px;
+  transition: ease all 0.3s;
+  &:before{
+    content: "\f144";
+    font-family: FontAwesome;
+    margin-right: 0.75rem;
+  }
+  &:hover,&:focus{
+    box-shadow: none;
+    text-decoration: none;
+    color: white;
+  }
+}
