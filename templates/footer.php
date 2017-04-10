@@ -9,7 +9,7 @@
                 <h2 class="white">Schedule a consultation today</h2>
               </div>
             </div>
-            <div class="row pad-20">
+            <div class="row">
               <div class="col-md-12">
                 <a href="#" class="check-coverage">Get In Touch</a>
               </div>

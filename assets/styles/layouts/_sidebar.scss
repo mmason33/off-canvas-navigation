@@ -3,7 +3,7 @@
     .tile-overlay{
       position: absolute;
       width: 100%;
-      height: 315px;
+      height: 240px;
       background: rgba(1, 33, 68, 0.45);
       border-radius: 5px;
       top: 0;
@@ -15,7 +15,7 @@
     .sidebar-tile{
       position: relative;
       background: #e3e3e3;
-      height: 315px;
+      height: 240px;
       border: 1px solid #999;
       margin-top: 10px;
       border-radius: 5px;
@@ -50,9 +50,9 @@
 
 /* === page-template-page-with-sidebar styles === */
 
-.page-template-page-with-sidebar{
+.page-template-page-with-sidebar, .page-template-page-with-sidebar-mental-health, .page-template-page-with-sidebar-addiction {
   #hero{
-    height: 500px !important;
+    height: 500px;
     .wrap.container-fluid{
       padding: 0 !important;
     }
@@ -68,5 +68,48 @@
     .head{
       padding-top: 0;
     }
+  }
+}
+
+.page-template-page-with-sidebar-mental-health, .page-template-page-with-sidebar-addiction {
+  .wrap.container-fluid{
+    .content.row{
+      margin-top: 15rem;
+    }
+  }
+}
+
+/*=== MENTAL HEALTH MENU ===*/
+
+.menu-mental-container, .menu-addiction-container {
+  margin: 4rem 0 0 0;
+}
+
+ul.mental-health, ul.addiction-nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  li {
+    border: 1px solid #6b6b6b;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    padding: 2rem 0;
+    transition: ease all 0.3s;
+    text-align: center;
+    a {
+      color: #6b6b6b;
+      padding: 2rem 6rem;
+    }
+    &:hover, &:hover a, &:focus {
+      border-color: $brand-primary;
+      color: $brand-primary;
+      text-decoration: none;
+    }
+  }
+}
+
+@media screen and (max-width:576px) {
+  #hero {
+    height: 300px;
   }
 }

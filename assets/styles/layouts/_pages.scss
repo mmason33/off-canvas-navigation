@@ -1,8 +1,14 @@
 
 //HOMEPAGE 20280
 
-.page-id-20280{
-  .head{
+.page-id-20280 {
+  .head {
     margin-top: 10em !important;
+  }
+}
+
+.page-id-22242 {
+  #text-box:nth-of-type(even) {
+    padding: 10px 0;
   }
 }

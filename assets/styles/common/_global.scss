@@ -4,6 +4,10 @@
 //$brand-secondary = #2777B1
 //$brand-complimentary = #ef6f00
 
+html{
+  font-size: 62.5%
+}
+
 *::selection{
     background: #ef6f00 !important;
 }
@@ -14,86 +18,92 @@
 
 body{
   font-family: 'Montserrat';
-  font-size: 1em;
-  line-height: 1.2em;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  margin: 0;
+  padding: 0;
 }
 
 h1,h2,h3,h4,h5,h6{
   font-family: 'Montserrat';
-  line-height: 1.2em;
+  line-height: 4rem;
   color: #353535;
-  // margin-bottom: .65em;
+  // margin-bottom: .65rem;
   font-weight: 500;
 }
 
 h1{
-  font-size: 3em;
+  font-size: 3.5rem;
 }
 
 h2{
-  font-size: 2.5em;
+  font-size: 3rem;
 }
 
 h3{
-  font-size: 2em;
+  font-size: 2.5rem;
 }
 
 h4{
-  font-size: 1.5em;
+  font-size: 2rem;
 }
 
 h5{
-  font-size: 1em;
-}
-
-@media screen and(max-width:1025px){
-  body{
-    font-size:.9em;
-  }
-  h1{
-    font-size: 2.5em !important;
-  }
-  h2{
-    font-size: 2em !important;
-  }
-  h3{
-    font-size: 1.5em !important;
-  }
-  h4{
-    font-size: 1.2em !important;
-  }
-  h5{
-    font-size: 1em !important;
-  }
+  font-size: 1.5rem;
 }
 
 p{
-  font-size: 1.1em;
-  line-height: 1.85em;
+  font-size: 1.85rem;
+  line-height: 3.35rem;
   color: #6b6b6b;
 }
-
+ul.list, ol.list {
+  font-size: 1.95rem !important;
+  line-height: 4rem !important;
+  color: #6b6b6b;
+}
 blockquote{
   padding: 1rem;
+  line-height: 2.5rem;
+  *{
+    line-height: 5rem;
+  }
   small{
     font-size: 125%;
     color: #999999;
-  }
-  h3{
-    font-size: 2.25em;
-    line-height: 1.25em;
   }
 }
 
 .wrap.container-fluid{
   margin-left: auto;
   margin-right: auto;
-  max-width: 105em;
-  padding: 4em;
+  max-width: 160rem;
+  padding: 4rem;
+}
+
+@media screen and(max-width:1025px){
+  body{
+    font-size:1.35rem;
+  }
+  // h1{
+  //   font-size: 2.5rem !important;
+  // }
+  // h2{
+  //   font-size: 2rem !important;
+  // }
+  // h3{
+  //   font-size: 1.5rem !important;
+  // }
+  // h4{
+  //   font-size: 1.2rem !important;
+  // }
+  // h5{
+  //   font-size: 1rem !important;
+  // }
 }
 
 @media screen and (max-width:768px){
   .wrap.container-fluid{
-      padding: 2em;
+      padding: 2rem;
     }
 }

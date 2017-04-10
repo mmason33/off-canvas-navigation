@@ -94,9 +94,9 @@
         $(function() {
           $('.staff-member').matchHeight();
 
-          $('.staff-image').hover(function(){
-            $(this).toggleClass('animated swing');
-          });
+          // $('.staff-image').hover(function(){
+          //   $(this).toggleClass('animated swing');
+          // });
         });
 
 
