@@ -1,10 +1,7 @@
 // styles for some hero sections, our-team and leadership
 .page-template-leadership,.page-template-our-team{
-  #hero{
-    height: 500px;
-  }
   .leadership-image{
-    padding: 0;
+    padding: 4rem 0;
   }
   .col-md-8{
 
@@ -16,7 +13,7 @@
     margin-bottom: .5rem;
   }
   .leadership-bio{
-    padding:4em;
+    padding:4rem 0;
   }
 }
 // STYLES ONLY FOR LEADERSHIP - MAINLY @MEDIA

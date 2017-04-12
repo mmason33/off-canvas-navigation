@@ -6,7 +6,7 @@
 <div class="container-fluid">
   <div class="row our-team-hero">
     <div class="col-lg-3 col-md-3 col-sm-3 leadership-image">
-      <img src="/wp-content/uploads/2017/03/kaufman-400x400.jpg" class="img-fluid">
+      <img src="/wp-content/uploads/2017/04/kaufman-400x400.jpg" class="img-fluid">
       <div class="visible-xs-down hidden-sm-up">
       <h3>Dr. Edward Kaufman</h3>
       <h4>Medical Director</h4>
@@ -17,20 +17,18 @@
       <div class="leadership-bio">
       <h3>Dr. Edward Kaufman</h3>
       <h4>Medical Director</h4>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-      </p>
+      <p>Dr. Kaufman brings a wealth of knowledge to our staff and has been practicing psychiatry in the behavioral health field for over 40 years. He blends his knowledge of psychology, family systems and psychopharmacology to address a wide array of disorders and meet our client’s individual needs. His commitment to helping those struggling with co-occurring disorders reinforces Northbound’s vision for providing quality care in an environment that’s conducive to recovery. He received his medical training from Jefferson University, USC and Columbia University, College of Physicians and Surgeons. He has previously served as the president of the American Academy of Addiction Psychiatry, the editor of American Journal of Drug and Alcohol Abuse and the Director of Psychiatric Services at the University of California, Irvine. Dr. Kaufman has authored 3 books, edited 5 more and contributed over 200 articles on addiction, mental health disorders and family therapy.</p>
     </div>
     </div>
     <div class="col-lg-9 col-md-9 col-sm-9 hidden-xs-down">
       <div class="leadership-bio">
       <h3>Illana Zukavich</h3>
       <h4>Clinical Director</h4>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-      </p>
+      <p>Ilana Zivkovich joined Northbound in January 2015. An experienced clinician, executive, and clinical development officer, Ilana celebrates and emboldens Northbound’s renowned focus on fostering a flourishing and healthy organizational culture. Trained in positive psychology, Ilana believes in the strengths and potential of every client and team member she has the opportunity to work with. She utilizes her signature strengths of curiosity, love, and honesty to help others identify and build upon their unique set of strengths to live within the upper reaches of their potential. In recovery herself since the age of 16, Ilana is grateful for the opportunity to help young and emerging adults develop a fulfilling lifestyle of recovery. In her role as Northbound’s Chief Clinical Officer Ilana oversees the clinical service development and delivery, and does her part to ensure that Northbound’s ethos of transparency, authenticity, and collaborative leadership are able to flourish. Prior to joining Northbound Ilana held a variety of leadership roles within the addiction field, most recently serving as the Executive Director for Promises Austin. Ilana holds a Master of Science in Social Work from the University of Texas at Austin, and is a Licensed Clinical Social Worker (LCSW), Licensed Chemical Dependency Counselor (LCDC), and a Certified Daring Way Facilitator Consultant (CDWF-C). Additional areas of clinical specialization include shame resiliency, dual diagnosis, family of origin and family dynamic issues, and positive psychology.</p>
     </div>
     </div>
     <div class="col-lg-3 col-md-3 col-sm-3 leadership-image text-lg-right">
-      <img src="/wp-content/uploads/2017/03/illana-400x400.jpg" class="img-fluid">
+      <img src="/wp-content/uploads/2017/04/illana-400x400.jpg" class="img-fluid">
       <div class="visible-xs-down hidden-sm-up">
       <h3>Illana Zuchavich</h3>
       <h4>Clinical Director</h4>

@@ -20,7 +20,7 @@
     </div><!--container-->
   </section>
 <?php endif; ?>
-<footer class="content-info" style="background:url('/wp-content/uploads/2017/03/4343-von-karman-avenue-black-overlay-dark-blue.jpg') no-repeat top center;background-size:cover;background-attachment:fixed;">
+<footer class="content-info" style="background:url('/wp-content/uploads/2017/04/4343-von-karman-avenue-black-overlay-dark-blue.jpg') no-repeat top center;background-size:cover;background-attachment:fixed;">
   <div class="wrap container-fluid">
 
           <h4>Our Mission is to assist our clients in achieving 1 Year of continuous sobriety.</h4>
@@ -28,7 +28,7 @@
 
     <div class="row">
         <div class="col-md-2 text-center">
-            <img src="/wp-content/uploads/2017/03/NTS-FOOTERS-1.png" class="img-fluid">
+            <img src="/wp-content/uploads/2017/04/NTS-FOOTERS-1.png" class="img-fluid">
             <p class="address">4343 Von Karman Ave Suite 100, Newport Beach, CA 92660</p>
           </div>
 

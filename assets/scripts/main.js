@@ -71,6 +71,8 @@
 
           $('.leadership-bio:odd').css('padding-left', 64);
 
+          $('.leadership-bio').matchHeight();
+
 
         });
       },
