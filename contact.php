@@ -7,7 +7,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-5 head" data-aos="fade" data-aos-once="true">
-      <div class="contact-info">
+      <div class="contact-info contact">
       <div class="row">
         <div class="col-md-12">
           <h4>Von Karman</h4>
@@ -38,7 +38,9 @@
     </div>
   </div>
     <div class="col-md-5 offset-md-2 offset-lg-2 offset-xl-2 head" data-aos="fade" data-aos-once="true">
-      <?php echo do_shortcode('[contact-form-7 id="4" title="Contact form 1"]'); ?>
+      <div class="contact">
+        <?php echo do_shortcode('[contact-form-7 id="4" title="Contact form 1"]'); ?>
+      </div>
     </div>
   </div>
 </div>

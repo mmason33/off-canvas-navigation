@@ -57,6 +57,12 @@ p{
   line-height: 3.35rem;
   color: #6b6b6b;
 }
+
+a, button {
+  &:focus, &:hover {
+    text-decoration: none;
+  }
+}
 ul.list, ol.list {
   font-size: 1.95rem !important;
   line-height: 4rem !important;

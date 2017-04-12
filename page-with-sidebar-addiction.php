@@ -3,7 +3,7 @@
  * Template Name: Page W/Sidebar Addiction
  */
 ?>
-<?php get_template_part('includes/half-n-half'); ?>
+<?php //get_template_part('includes/half-n-half'); ?>
 <?php while (have_posts()) : the_post(); ?>
 <?php get_template_part('templates/page', 'header'); ?>
 <div class="wrap container-fluid">

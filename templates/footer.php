@@ -60,11 +60,24 @@
             <li><img src="/wp-content/uploads/2017/03/DCCHS.png" class="img-fluid"></li>
           </ul>
           </div>
-
-
+      </div>
+  </div>
+</footer>
+<!-- Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!-- <h5 class="modal-title">Modal title</h5> -->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="text-center">
+          <iframe width="640" height="360" src="https://www.youtube.com/embed/I0cbrQUCHJ4" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-<!-- <div class="footer-bottom">
-<small>© 2017 Northbound Addiction Treatment. All rights reserved.</small>
-</div>
-</footer> -->
