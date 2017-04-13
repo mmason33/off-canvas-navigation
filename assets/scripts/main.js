@@ -47,7 +47,11 @@
                 easing: 'ease-in-sine',
                 delay: 100,
               });
+
+                $('.column-content').matchHeight();
+
           });
+
 
 
       },

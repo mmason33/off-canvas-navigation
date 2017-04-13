@@ -50,9 +50,14 @@
 
 /* === page-template-page-with-sidebar styles === */
 
+.page-template-page-with-sidebar, .page-template-page-with-sidebar-mental-health, .page-template-page-with-sidebar-addiction, .page-template-page-with-sidebar-admissions, .page-template-leadership {
+  #hero{
+    height: 500px !important;
+  }
+}
+
 .page-template-page-with-sidebar, .page-template-page-with-sidebar-mental-health, .page-template-page-with-sidebar-addiction, .page-template-page-with-sidebar-admissions {
   #hero{
-    height: 500px;
     .wrap.container-fluid{
       padding: 0 !important;
     }
@@ -110,7 +115,9 @@ ul.mental-health, ul.addiction-nav, ul.admissions-nav {
 }
 
 @media screen and (max-width:576px) {
-  #hero {
-    height: 300px;
+  .page-template-page-with-sidebar, .page-template-page-with-sidebar-mental-health, .page-template-page-with-sidebar-addiction, .page-template-page-with-sidebar-admissions, .page-template-leadership {
+    #hero{
+      height: 300px !important;
+    }
   }
 }

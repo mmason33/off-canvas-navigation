@@ -17,11 +17,6 @@
   }
 }
 
-.page-template-leadership {
-  #hero, .content-left-hero, .image-right-hero {
-    height: 600px;
-  }
-}
 // STYLES ONLY FOR LEADERSHIP - MAINLY @MEDIA
 
 @media screen and (max-width:1023px){
@@ -68,8 +63,8 @@
       }
       a{
         border: 1px solid #333;
-        padding: 8px 20px;
-        font-size: 1rem;
+        padding: 11px 25px;
+        font-size: 1.6rem;
         background: $brand-primary;
         color: #fff;
         border-radius: 5px;
@@ -80,12 +75,7 @@
     padding-top: 0 !important;
   }
   .leadership-mobile{
-    padding: 2em;
+    padding: 2rem;
     text-align: center;
-  }
-  .page-template-leadership{
-    .content-left-hero,.image-right-hero,.image-right-hero::after,#hero{
-      height: 300px !important;
-    }
   }
 }

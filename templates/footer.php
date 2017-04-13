@@ -1,7 +1,6 @@
 <?php if (!is_page_template('contact.php')): ?>
-  <section class="text-box-wrap " style="background-color:#ef6f00;">
+  <section class="contact-us">
     <div class="container">
-      <section id="text-box">
         <div class="row">
           <div class="col-md-12 text-center">
             <div class="row">
@@ -11,12 +10,11 @@
             </div>
             <div class="row">
               <div class="col-md-12">
-                <a href="#" class="check-coverage">Get In Touch</a>
+                <a href="/contact" class="check-coverage">Get In Touch</a>
               </div>
             </div>
           </div>
         </div>
-      </section><!--#textbox-->
     </div><!--container-->
   </section>
 <?php endif; ?>
@@ -63,21 +61,22 @@
       </div>
   </div>
 </footer>
+<?php if (is_page('home')): ?>
 <!-- Modal -->
 <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <!-- <h5 class="modal-title">Modal title</h5> -->
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <div class="text-center">
-          <iframe width="640" height="360" src="https://www.youtube.com/embed/I0cbrQUCHJ4" frameborder="0" allowfullscreen></iframe>
+        <div class="text-center embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" width="640" height="360" src="https://www.youtube.com/embed/I0cbrQUCHJ4" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
     </div>
   </div>
 </div>
+<?php endif; ?>

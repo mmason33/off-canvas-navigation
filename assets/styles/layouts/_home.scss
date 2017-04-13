@@ -1,0 +1,17 @@
+
+.home {
+  .column-content {
+    background: #ebebeb;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px #666666;
+    padding: 3rem 2rem;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .home{
+    #hero {
+      height: 100vh;
+    }
+  }
+}

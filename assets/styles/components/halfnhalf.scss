@@ -23,11 +23,17 @@
   height: 500px;
   width: 50%;
   top: 0;
-  .row{
-      padding-left: 4em;
-  }
-  .row:nth-of-type(1){
-    margin-top: 12.5rem;
+  .content-left{
+    position: relative;
+    top: 50%;
+    left: 25%;
+    h1 {
+      font-size: 5rem;
+      margin-bottom: 2rem;
+    }
+    h3 {
+      font-size: 3rem;
+    }
   }
 }
 
@@ -49,36 +55,55 @@
   .content-left-hero{
     background: transparent !important;
     z-index: 1;
-    width: 75%;
+    width: 90%;
     left: 0 !important;
     h1,h2,h3,h4,h5,p{
       color: #fff !important;
       text-shadow: 0px 3px 5px #333;
     }
-    .row{
-      padding: 0em 2em;
+    .content-left{
+
     }
   }
 }
 @media screen and (max-width:1300px) and (min-width:1025px){
   .content-left-hero{
     width: 62% !important;
-    .row:nth-of-type(1){
-      margin-top: 8em !important;
+    .content-left{
+
     }
   }
 }
-@media screen and (max-width:1000px) and (min-width:769px){
-  .content-left-hero{
-    .row{
-      padding-right: 1em;
-    }
-  }
-}
+
 @media screen and (max-width:576px){
   .page-template-page-with-sidebar{
     .image-right-hero, .image-right-hero::after,.content-left-hero,#hero{
       height: 300px !important;
     }
+  }
+}
+
+@media screen and (max-width:1440px){
+  .content-left-hero .content-left {
+    left: 14% !important;
+  }
+}
+
+@media screen and (max-width:1024px){
+  .content-left-hero .content-left {
+    top: 39% !important;
+    left: 10% !important;
+    h1 {
+      font-size: 4rem;
+    }
+    h3 {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@media screen and (max-width:768px){
+  .content-left-hero .content-left {
+    left: 5% !important;
   }
 }

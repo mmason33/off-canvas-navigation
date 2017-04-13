@@ -34,15 +34,27 @@ if(have_rows('column_content') ):
     $columnHeadline = get_sub_field('column_headline');
     $columnBody = (get_sub_field('column_body') != '' ? '<p class="column-body">'.get_sub_field('column_body').'</p>' : '');
     $columnImage = (get_sub_field('column_image') != '' ? '<div class="column-image" style="background:url('.get_sub_field('column_image').') no-repeat center center; background-size:cover;"></div>' : '');
+    $columnLink = get_sub_field('column_link');
     if($i == 1):
       echo '<div class="row'.$justifyContentCenter.'">';
     endif;
 ?>
-          <div class="col-sm-<?php echo $num; ?> text-center column-content">
-            <?php echo $columnImage; ?>
-            <?php echo $columnIcon; ?>
-            <?php echo $columnHeadline; ?>
-            <?php echo $columnBody; ?>
+          <div class="col-sm-<?php echo $num; ?> text-center" data-aos="fade" data-aos-once="true">
+            <div class="column-content">
+              <?php if (!empty($columnLink)): ?>
+                <a href="<?php echo $columnLink; ?>">
+                  <?php echo $columnImage; ?>
+                  <?php echo $columnIcon; ?>
+                  <?php echo $columnHeadline; ?>
+                  <?php echo $columnBody; ?>
+                </a>
+              <?php else: ?>
+                <?php echo $columnImage; ?>
+                <?php echo $columnIcon; ?>
+                <?php echo $columnHeadline; ?>
+                <?php echo $columnBody; ?>
+              <?php endif; ?>
+            </div>
           </div>
 <?php if($i === $rowCount):
             echo '</div><!--end row-->';

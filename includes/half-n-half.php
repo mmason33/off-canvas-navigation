@@ -4,7 +4,6 @@
 $heroPosition = get_field('hero_position');
 $heroImage = (get_field('hero_image') != '' ? "background:url('".get_field('hero_image')."') no-repeat " : '');
 $heroContent = get_field('hero_content');
-$heroHeadline = get_field('hero_headline');
 $switchPostion = (get_field('content_right_image_left') != 1 ? 'float:right;' : 'float:left;');
 $contentBGcolor = get_field('content_bg_color');
 $heroSize = (get_field('hero_size') != '' ? 'background-size:'.get_field('hero_size').';' : '');
@@ -15,18 +14,11 @@ $heroSize = (get_field('hero_size') != '' ? 'background-size:'.get_field('hero_s
 <?php else: ?>
   <div class="content-left-hero" style="left:50%;background:<?php echo $contentBGcolor; ?>;">
 <?php endif; ?>
-    <div class="row">
-      <div class="col-lg-9 col-xl-9 col-md-12">
-        <?php echo $heroHeadline; ?>
-      </div>
-    </div>
-    <?php if (!empty($heroContent)): ?>
-    <div class="row">
-      <div class="col-lg-9 col-xl-9 col-md-12 hidden-xs-down">
+    <div class="row content-left">
+      <div class="col-lg-12 col-xl-12 col-md-12">
         <?php echo $heroContent; ?>
       </div>
     </div>
-  <?php endif; ?>
   </div>
   <div class="image-right-hero" style="<?php echo $heroImage; ?><?php echo $heroPosition; ?>;<?php echo $switchPostion; ?><?php echo $heroSize; ?>"></div>
 </section>
