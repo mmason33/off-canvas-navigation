@@ -3,7 +3,7 @@
  * Template Name: Contact Page Template
  */
 ?>
-<section id="contact" style="background:url('/wp-content/uploads/2016/07/pexels-photo-360698.jpeg')no-repeat center center;background-size:cover;">
+<section id="contact" style="background:url('/wp-content/uploads/2017/04/pexels-photo-360698.jpeg')no-repeat center center;background-size:cover;">
 <div class="container">
   <div class="row">
     <div class="col-md-5 head" data-aos="fade" data-aos-once="true">

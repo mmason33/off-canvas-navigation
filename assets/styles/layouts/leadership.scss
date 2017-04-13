@@ -16,6 +16,12 @@
     padding:4rem 0;
   }
 }
+
+.page-template-leadership {
+  #hero, .content-left-hero, .image-right-hero {
+    height: 600px;
+  }
+}
 // STYLES ONLY FOR LEADERSHIP - MAINLY @MEDIA
 
 @media screen and (max-width:1023px){

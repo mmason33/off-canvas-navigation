@@ -50,7 +50,7 @@
 
 /* === page-template-page-with-sidebar styles === */
 
-.page-template-page-with-sidebar, .page-template-page-with-sidebar-mental-health, .page-template-page-with-sidebar-addiction {
+.page-template-page-with-sidebar, .page-template-page-with-sidebar-mental-health, .page-template-page-with-sidebar-addiction, .page-template-page-with-sidebar-admissions {
   #hero{
     height: 500px;
     .wrap.container-fluid{
@@ -71,7 +71,7 @@
   }
 }
 
-.page-template-page-with-sidebar-mental-health, .page-template-page-with-sidebar-addiction {
+.page-template-page-with-sidebar-mental-health, .page-template-page-with-sidebar-addiction, .page-template-page-with-sidebar-admissions {
   .wrap.container-fluid{
     .content.row{
       margin-top: 15rem;
@@ -82,11 +82,11 @@
 
 /*=== MENTAL HEALTH MENU ===*/
 
-.menu-mental-container, .menu-addiction-container {
+.menu-mental-container, .menu-addiction-container, .menu-admissions-container {
   margin: 4rem 0 0 0;
 }
 
-ul.mental-health, ul.addiction-nav {
+ul.mental-health, ul.addiction-nav, ul.admissions-nav {
   list-style-type: none;
   padding: 0;
   margin: 0;

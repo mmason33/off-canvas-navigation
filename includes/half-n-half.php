@@ -20,11 +20,13 @@ $heroSize = (get_field('hero_size') != '' ? 'background-size:'.get_field('hero_s
         <?php echo $heroHeadline; ?>
       </div>
     </div>
+    <?php if (!empty($heroContent)): ?>
     <div class="row">
-      <div class="col-lg-9 col-xl-19 col-md-12 hidden-xs-down">
+      <div class="col-lg-9 col-xl-9 col-md-12 hidden-xs-down">
         <?php echo $heroContent; ?>
       </div>
     </div>
+  <?php endif; ?>
   </div>
   <div class="image-right-hero" style="<?php echo $heroImage; ?><?php echo $heroPosition; ?>;<?php echo $switchPostion; ?><?php echo $heroSize; ?>"></div>
 </section>
