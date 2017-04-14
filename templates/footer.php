@@ -1,5 +1,5 @@
 <?php if (!is_page_template('contact.php')): ?>
-  <section class="contact-us">
+  <section class="contact-us-cta">
     <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
@@ -17,7 +17,6 @@
         </div>
     </div><!--container-->
   </section>
-<?php endif; ?>
 <footer class="content-info" style="background:url('/wp-content/uploads/2017/04/4343-von-karman-avenue-black-overlay-dark-blue.jpg') no-repeat top center;background-size:cover;background-attachment:fixed;">
   <div class="wrap container-fluid">
 
@@ -61,6 +60,7 @@
       </div>
   </div>
 </footer>
+<?php endif; ?>
 <?php if (is_page('home')): ?>
 <!-- Modal -->
 <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-hidden="true">

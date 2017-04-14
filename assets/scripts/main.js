@@ -75,8 +75,6 @@
 
           $('.leadership-bio:odd').css('padding-left', 64);
 
-          $('.leadership-bio').matchHeight();
-
 
         });
       },
@@ -91,6 +89,7 @@
         $(function() {
           $('.staff-member').matchHeight();
         });
+        $('.leadership-bio:odd').css('padding-left', 64);
       }
     },
 
