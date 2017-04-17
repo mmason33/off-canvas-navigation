@@ -21,6 +21,7 @@
   background: #ebebeb;
   border-radius: 10px;
   box-shadow: 0px 2px 5px #666666;
+
   padding: 3rem 2rem;
 }
 .columns-section {
@@ -36,21 +37,9 @@
   }
 }
 
-.page-template-about {
-  .column-content {
-    background: rgba(0,0,0,.7);
-    box-shadow: none;
-    * {
-      color: #fff;
-    }
-  }
-  .column-body {
-    font-size: 2rem;
-  }
-  .col-sm-4.text-center:hover {
-    transform: scale(1);
-    .column-content {
-      box-shadow: none;
-    }
+.values {
+  padding: 2rem 0;
+  h2, h3, p {
+    color: #fff;
   }
 }

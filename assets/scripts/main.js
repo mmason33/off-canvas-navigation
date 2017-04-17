@@ -50,6 +50,10 @@
 
                 $('.column-content').matchHeight();
 
+                $("#imageGallery").lightGallery();
+
+                // $('#anchor-tag').lightGallery();
+
           });
 
 

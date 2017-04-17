@@ -2,16 +2,16 @@
 
 //.check-coverage homepage
 .check-coverage{
-  border: 1px solid white;
+  border: 1px solid #fff;
   border-radius: 5px;
-  color: white;
+  color: #fff;
   display: inline-block;
   padding: 15px;
   font-size: 1.8rem;
   text-decoration: none;
   margin-top: 2rem;
   &:hover{
-    color: white;
+    color: #fff;
     text-decoration: none;
   }
 }
@@ -20,11 +20,11 @@
   background: #ef6f00;
   border-radius: 5px;
   box-shadow: 1px 1px 1px #000;
-  color: white;
+  color: #fff;
   margin-top: 1rem;
   padding: 10px;
   &:hover,&:focus{
-    color: white;
+    color: #fff;
     text-decoration: none;
   }
 }
@@ -33,7 +33,7 @@
   padding: 12px;
   background: #ef6f00;
   border-radius: 5px;
-  color: white;
+  color: #fff;
   font-size: 110%;
   margin-top: 15px;
   transition: ease all 0.3s;
@@ -45,6 +45,6 @@
   &:hover,&:focus{
     box-shadow: none;
     text-decoration: none;
-    color: white;
+    color: #fff;
   }
 }
