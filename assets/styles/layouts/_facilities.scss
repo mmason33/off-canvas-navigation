@@ -1,0 +1,41 @@
+
+.page-template-facilities {
+  #hero {
+    height: 500px;
+  }
+}
+
+.gallery {
+  margin: 2rem 0;
+  padding: 0 !important;
+}
+
+.gallery-item {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  width: 365px;
+}
+
+@media screen and (max-width:1440px) {
+  .gallery-item {
+    width: 325px;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .gallery-item {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .gallery-item {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .gallery-item {
+    width: 100%;
+  }
+}

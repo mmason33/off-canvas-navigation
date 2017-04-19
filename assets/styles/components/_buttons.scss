@@ -17,14 +17,16 @@
 }
 //.btn-orange homepage
 .btn-orange{
-  background: #ef6f00;
+  background: $brand-complimentary;
   border-radius: 5px;
   box-shadow: 1px 1px 1px #000;
   color: #fff;
   margin-top: 1rem;
   padding: 10px;
+  transition: ease all 0.3s;
   &:hover,&:focus{
-    color: #fff;
+    background: #fff;
+    color: $brand-complimentary;
     text-decoration: none;
   }
 }

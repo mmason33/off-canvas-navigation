@@ -15,10 +15,10 @@
   // Use this variable to set up the common and page specific functions. If you
   // rename this variable, you will also need to rename the namespace below.
   var Sage = {
-    // All pages
+
     'common': {
       init: function() {
-        // JavaScript to be fired on all pages
+
         $(document).ready(function(){
             var body = $("body"),
                  navOverlay = $(".overlay"),
@@ -41,32 +41,26 @@
                 $(this).parent().toggleClass("open");
             });
 
-              AOS.init({
-                offset: 200,
-                duration: 600,
-                easing: 'ease-in-sine',
-                delay: 100,
-              });
+            AOS.init({
+              offset: 200,
+              duration: 600,
+              easing: 'ease-in-sine',
+              delay: 100,
+            });
 
-                $('.column-content').matchHeight();
-
-                $("#imageGallery").lightGallery();
-
-                // $('#anchor-tag').lightGallery();
+            $('.column-content').matchHeight();
 
           });
 
-
-
       },
       finalize: function() {
-        // JavaScript to be fired on all pages, after page specific JS is fired
+
       }
     },
-    // LEADERSHIP TEMPLATE
+
     'page_template_leadership': {
       init: function() {
-        // JavaScript to be fired on the home page
+
         $(document).ready(function(){
           function getWidth( ele, w){
             if ( w >= 575 ){
@@ -75,21 +69,20 @@
               $(ele).css('background','#fff');
             }
           }
-          getWidth('.leadership-grid .col-lg-9:odd,.leadership-grid .col-lg-3:odd', $(window).width() );
-
+          getWidth('.leadership-grid .col-lg-9:odd,.leadership-grid .col-lg-3:odd', $(window).width());
           $('.leadership-bio:odd').css('padding-left', 64);
 
 
         });
+
       },
       finalize: function() {
-        // JavaScript to be fired on the home page, after the init JS
+
       }
     },
 
     'page_template_our_team': {
       init: function() {
-        // OUR TEAM
         $(function() {
           $('.staff-member').matchHeight();
         });
@@ -97,13 +90,19 @@
       }
     },
 
+    'page_template_facilities': {
+      init: function() {
+        $(function() {
+          $("#imageGallery").lightGallery();
+        });
+      }
+    },
+
     'page_template_contact': {
       init: function() {
-        // CONTACT
         $(function() {
           $('.col-md-5.head').matchHeight();
         });
-
       }
     }
   };

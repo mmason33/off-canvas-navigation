@@ -17,11 +17,10 @@ use Roots\Sage\Wrapper;
     <?php
       do_action('get_header');
       get_template_part('templates/header');
-      if(!is_page_template('page-with-sidebar.php') && !is_page_template('page-with-sidebar-mental-health.php') && !is_page_template('page-with-sidebar-addiction.php') && !is_page_template('leadership.php') && !is_page_template('about.php') && !is_page_template('admissions.php')):
+      if(!is_page_template('page-with-sidebar.php') && !is_page_template('page-with-sidebar-mental-health.php') && !is_page_template('page-with-sidebar-addiction.php') && !is_page_template('leadership.php') && !is_page_template('about.php') && !is_page_template('admissions.php') && !is_page_template('facilities.php')):
         get_template_part('includes/hero-section');
       endif;
     ?>
-
     <?php include Wrapper\template_path(); ?>
     <?php
       do_action('get_builder');

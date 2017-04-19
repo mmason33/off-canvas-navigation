@@ -108,15 +108,8 @@ blockquote{
     }
 }
 
-// misc for gallery
-
-.gallery {
-  padding: 0;
-  margin: 2rem 0;
-}
-
-.gallery-item {
-  margin-top: 1rem;
-  margin-right: 1rem;
-  width: 350px;
+@media screen and (max-width:576px) {
+  .content.row {
+    display: inherit;
+  }
 }
