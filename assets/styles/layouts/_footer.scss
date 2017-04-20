@@ -25,40 +25,47 @@ span.blink {
   animation: blink 1s infinite;
 }
 
+.typing {
+  display: block !important;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 95rem;
+  margin-left: 30rem;
+  animation: type 3s steps(80, end);
+}
+
 .mission-statement {
   color: #f3f3f3;
+  display: none;
   text-shadow: 1px 2px 4px #000;
   font-weight: 300;
   line-height: 1.6rem;
   text-align: center;
   margin-bottom: 1rem;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 97rem;
-  margin-left: 30rem;
-  animation: type 4s steps(80, end);
-  &:before {
-    content: '\f10d';
-    font-family: 'FontAwesome';
-    font-size: 50%;
-    margin-right: 1rem;
-    position: relative;
-    top: -1rem;
-  }
-  &:after {
-    content: '\f10e';
-    font-family: 'FontAwesome';
-    font-size: 50%;
-    margin-left: 1rem;
-    position: relative;
-    top: -0.75rem;
-  }
+  padding: 1rem;
+  // &:before {
+  //   content: '\f10d';
+  //   font-family: 'FontAwesome';
+  //   font-size: 50%;
+  //   margin-right: 1rem;
+  //   position: relative;
+  //   top: -1rem;
+  // }
+  // &:after {
+  //   content: '\f10e';
+  //   font-family: 'FontAwesome';
+  //   font-size: 50%;
+  //   margin-left: 1rem;
+  //   position: relative;
+  //   top: -0.75rem;
+  // }
 }
 
 .address {
   color: #f3f3f3;
   font-weight: 400;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .contact-number {

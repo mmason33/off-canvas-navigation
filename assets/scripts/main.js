@@ -50,7 +50,25 @@
 
             $('.column-content').matchHeight();
 
-          });
+
+            //best helper function ever
+            function elementScrolled(elem){
+                var docViewTop = $(window).scrollTop();
+                var docViewBottom = docViewTop + $(window).height();
+                var elemTop = $(elem).offset().top;
+                return ((elemTop <= docViewBottom) && (elemTop >= docViewTop));
+            }
+
+            $(window).scroll(function() {
+              if(elementScrolled('.content-info') === true) {
+                  $('.mission-statement').addClass('typing');
+              }
+              console.log(elementScrolled('.content-info'));
+            });
+
+
+
+          });//end doc.ready
 
       },
       finalize: function() {
