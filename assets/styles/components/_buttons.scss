@@ -1,23 +1,42 @@
 /* ==== BUTTONS ==== */
 
-//.check-coverage homepage
-.check-coverage{
-  border: 1px solid #fff;
+.consultation-white, .consultation-dark-blue, .consultation-grey {
   border-radius: 5px;
-  color: #fff;
   display: inline-block;
-  padding: 15px;
+  padding: 9px;
   font-size: 1.8rem;
   text-decoration: none;
   margin-top: 2rem;
   &:hover{
-    color: #fff;
     text-decoration: none;
   }
 }
-//.btn-orange homepage
-.btn-orange{
-  background: $brand-complimentary;
+
+.consultation-white {
+  border: 1px solid #fff;
+  color: #fff;
+  font-weight: 400;
+  transition: ease all 0.3s;
+  &:hover, &:focus {
+    background: #fff;
+    border: 1px solid $brand-secondary;
+    box-shadow: 0px 3px 5px #000;
+    color: $brand-secondary;
+  }
+}
+
+.consultation-dark-blue {
+  border: 1px solid $brand-primary;
+  color: $brand-primary;
+}
+
+.consultation-grey {
+  border: 1px solid #353535;
+  color: #353535;
+}
+
+
+.btn-orange, .btn-dark-blue, .btn-light-blue {
   border-radius: 5px;
   box-shadow: 1px 1px 1px #000;
   color: #fff;
@@ -25,11 +44,22 @@
   padding: 10px;
   transition: ease all 0.3s;
   &:hover,&:focus{
-    background: #fff;
-    color: $brand-complimentary;
     text-decoration: none;
   }
 }
+
+.btn-orange {
+  background: $brand-complimentary;
+}
+
+.btn-dark-blue {
+  background: $brand-primary;
+}
+
+.btn-light-blue {
+  background: $brand-secondary;
+}
+
 //.video-btn homepage
 .video-btn{
   padding: 12px;
@@ -48,5 +78,17 @@
     box-shadow: none;
     text-decoration: none;
     color: #fff;
+  }
+}
+
+
+//specific instance for the static contact-us-cta section atop footer-nav-title
+.contact-us-cta {
+  .consultation-white {
+    padding: 15px;
+    &:hover, &:focus {
+      border: 1px solid $brand-complimentary;
+      color: $brand-complimentary;
+    }
   }
 }

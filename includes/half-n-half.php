@@ -7,6 +7,7 @@ $heroContent = get_field('hero_content');
 $switchPostion = (get_field('content_right_image_left') != 1 ? 'float:right;' : 'float:left;');
 $contentBGcolor = get_field('content_bg_color');
 $heroSize = (get_field('hero_size') != '' ? 'background-size:'.get_field('hero_size').';' : '');
+$overlayColor = (get_field('overlay_color') != '' ? 'style="background:url(/wp-content/uploads/2017/04/'.get_field('overlay_color').') no-repeat;width:100%;position:absolute;top:0;height:500px;"' : '');
 ?>
 <section id="hero">
 <?php if($switchPostion == 'float:right;'): ?>
@@ -20,5 +21,5 @@ $heroSize = (get_field('hero_size') != '' ? 'background-size:'.get_field('hero_s
       </div>
     </div>
   </div>
-  <div class="image-right-hero" style="<?php echo $heroImage; ?><?php echo $heroPosition; ?>;<?php echo $switchPostion; ?><?php echo $heroSize; ?>"></div>
+  <div class="image-right-hero" style="<?php echo $heroImage; ?><?php echo $heroPosition; ?>;<?php echo $switchPostion; ?><?php echo $heroSize; ?>"><div class="half-overlay" <?php echo $overlayColor; ?>></div></div>
 </section>

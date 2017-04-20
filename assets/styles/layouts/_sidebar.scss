@@ -112,3 +112,35 @@ ul.mental-health, ul.addiction-nav, ul.admissions-nav {
     }
   }
 }
+
+
+/*======= section float experiment ========= */
+
+.page-template-page-with-sidebar {
+  background: url('/wp-content/uploads/2017/04/sidebar-temp-background.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  #hero {
+    position: fixed;
+    width: 100%;
+  }
+  .section-float {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 50px #666;
+    position: relative;
+    top: 450px;
+  }
+  .contact-us-cta, .content-info {
+    position: relative;
+    top: 475px;
+  }
+}
+
+@media screen and (max-width:1440px) {
+  .page-template-page-with-sidebar {
+    .section-float {
+      margin: 0 2rem;
+    }
+  }
+}

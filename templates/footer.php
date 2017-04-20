@@ -10,50 +10,35 @@
             </div>
             <div class="row">
               <div class="col-md-12">
-                <a href="/contact" class="check-coverage">Get In Touch</a>
+                <a href="/contact" class="consultation-white">Get In Touch</a>
               </div>
             </div>
           </div>
         </div>
     </div><!--container-->
   </section>
-<footer class="content-info" style="background:url('/wp-content/uploads/2017/04/4343-von-karman-avenue-black-overlay-dark-blue.jpg') no-repeat top center;background-size:cover;background-attachment:fixed;">
+<footer class="content-info" style="background:url('/wp-content/uploads/2017/04/footer-image-texture-idea-1.jpg') no-repeat center center;">
   <div class="container-fluid wrap">
-    <div class="row mission">
-      <div class="col-md-12">
-          <h3 class="mission-statement">Our Mission is to assist our clients in achieving 1 Year of continuous sobriety.<span class="blink"> |</span></h3>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="/wp-content/uploads/2017/04/footer-image-idea.png" class="img-fluid">
+        <p class="address">4343 Von Karman Ave Ste 200<br>Newport Beach, CA 92660</p>
+          <a class="contact-number" href="tel:888888888"><h4><i class="fa fa-mobile"></i> 888.888.8888</h4></a>
+          <a class="contact-number" href="https://www.google.com/maps/place/4343+Von+Karman+Ave,+Newport+Beach,+CA+92660/data=!4m2!3m1!1s0x80dcde596ca5fb65:0xed6e0bcae91255d1?sa=X&ved=0ahUKEwjnseXqh6_TAhXPq5QKHbfnD3wQ8gEIJTAB" target="_blank"><i class="fa fa-map"></i> Get Directions</a>
+      </div>
+      <div class="col-md-4 offset-md-1">
+        <h3 class="associations-headline">Associations</h3>
+        <ul class="associations">
+          <li><h3 class="associations-title"><a class="associations-anchor" href="#">JCAHO</a><span class="associations-tooltip">Joint Commission on Accreditation of Healthcare Organizations</span></h3></li>
+
+          <li><h3 class="associations-title"><a class="associations-anchor" href="#">DHHS</a><span class="associations-tooltip">Department of Health and Human Services</span></h3></li>
+
+          <li><h3 class="associations-title"><a class="associations-anchor" href="#">NAMI</a><span class="associations-tooltip">National Alliance on Mental Illness</span></h3></li>
+
+          <li><h3 class="associations-title"><a class="associations-anchor" href="#">NAATP</a><span class="associations-tooltip">National Association of Addiction Treatment Providers</span></h3></li>
+        </ul>
       </div>
     </div>
-      <div class="row">
-          <div class="col-md-3" data-aos="fade" data-aos-once="true">
-              <img src="/wp-content/uploads/2017/04/NTS-FOOTERS-1.png" class="img-fluid text-center">
-              <p class="address">4343 Von Karman Ave Ste 200<br>Newport Beach, CA 92660</p>
-              <a class="btn-orange" href="https://www.google.com/maps/place/4343+Von+Karman+Ave,+Newport+Beach,+CA+92660/data=!4m2!3m1!1s0x80dcde596ca5fb65:0xed6e0bcae91255d1?sa=X&ved=0ahUKEwjnseXqh6_TAhXPq5QKHbfnD3wQ8gEIJTAB" target="_blank"><i class="fa fa-map"></i> Get Directions</a>
-          </div>
-          <div class="col-md-3 text-center" data-aos="fade" data-aos-once="true">
-            <h3 class="contact-number">Call Us At</h3>
-            <h2><a href="#" class="contact-number"><i class="fa fa-mobile"> 888.888.8888</i></a></h2>
-          </div>
-            <div class="col-md-2 footer-nav" data-aos="fade" data-aos-once="true">
-              <h3 class="footer-nav-title">More Info</h3>
-              <ul>
-                <li><h4><a class="footer-nav-item" href="/contact-us">Contact</a></h4></li>
-                <li><h4><a class="footer-nav-item" href="/addiction-treatment">Addiction</a></h4></li>
-                <li><h4><a class="footer-nav-item" href="/mental-health-treatment">Mental Health</a></h4></li>
-                <li><h4><a class="footer-nav-item" href="/blog">Blog</a></h4></li>
-              </ul>
-            </div>
-            <div class="col-md-2 associations" data-aos="fade" data-aos-once="true">
-              <h3 class="associations-section-title">Associations</h3>
-              <ul>
-                <li><a href="#"><h4 class="associations-headline">JCAHO</h4><img src="/wp-content/uploads/2017/04/jccaho-2.png" class="img-fluid associations-item"></a></li>
-                <li><a href="#"><h4 class="associations-headline">DHHS</h4><img src="/wp-content/uploads/2017/04/DHHS.png" class="img-fluid associations-item"></a></li>
-                <li><a href="#"><h4 class="associations-headline">NAMI</h4><img src="/wp-content/uploads/2017/04/NAMI.png" class="img-fluid associations-item"></a></li>
-                <li><a href="#"><h4 class="associations-headline">NAATP</h4><img src="/wp-content/uploads/2017/04/naatp-square.png" class="img-fluid associations-item"></a></li>
-              </ul>
-            </ul>
-            </div>
-        </div>
   </div>
 </footer>
 <?php endif; ?>
