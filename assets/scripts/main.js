@@ -41,12 +41,14 @@
                 $(this).parent().toggleClass("open");
             });
 
-            AOS.init({
-              offset: 100,
-              duration: 400,
-              easing: 'ease-in-sine',
-              delay: 100,
-            });
+            // AOS.init({
+            //   offset: 200,
+            //   duration: 600,
+            //   easing: 'ease-in-sine',
+            //   delay: 200,
+            // });
+
+
 
             $('.column-content').matchHeight();
 
@@ -58,14 +60,6 @@
             //     var elemTop = $(elem).offset().top;
             //     return ((elemTop <= docViewBottom) && (elemTop >= docViewTop));
             // }
-
-            // $(window).scroll(function() {
-            //   if(elementScrolled('.content-info') === true) {
-            //       $('.mission-statement').addClass('typing');
-            //   }
-            //   console.log(elementScrolled('.content-info'));
-            // });
-
 
           });//end doc.ready
 
@@ -124,6 +118,39 @@
     },
 
     'page_template_page_with_sidebar': {
+      init: function() {
+        $(function() {
+
+          $(window).scroll(function(){
+            $("#hero").css({
+              "opacity": 1 - $(window).scrollTop() / 250,
+              "z-index" : -3
+            });
+          });
+
+          AOS.init({
+            offset: 300,
+            duration: 800,
+            easing: 'ease',
+            delay: 500,
+          });
+        });
+      }
+    },
+
+    'page_template_home_page': {
+      init: function() {
+        $(function() {
+
+          $(window).scroll(function(){
+            $("#hero").css("opacity", 1 - $(window).scrollTop() / 250);
+          });
+
+        });
+      }
+    },
+
+    'home': {
       init: function() {
         $(function() {
 

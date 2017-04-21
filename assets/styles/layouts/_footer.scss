@@ -43,7 +43,7 @@
 
 .address {
   color: #fff;
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: .5rem;
 }
 
@@ -62,11 +62,12 @@
   }
 }
 
-.associations {
+.associations, .footer-nav {
   padding: 0;
   li {
     display: block;
     list-style-type: none;
+    margin-bottom: 1rem;
   }
 }
 
@@ -80,12 +81,15 @@
   max-width: 55px;
 }
 
-.associations-anchor {
+.associations-anchor, .footer-nav-anchor {
   color: #fff;
   font-size: 1.6rem;
+  &:hover {
+    color: $brand-complimentary;
+  }
 }
 
-.associations-title {
+.associations-title, .footer-nav-item-title {
   margin: 0;
   &:hover {
     span.associations-tooltip {
@@ -107,7 +111,7 @@ span.associations-tooltip {
   position: absolute;
   transition: ease opacity 0.3s;
 }
-.associations-headline {
+.associations-headline, .footer-nav-headline {
   color: #fff;
   text-decoration: underline;
 }
