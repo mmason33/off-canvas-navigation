@@ -1,11 +1,28 @@
 
 .home {
+  .wrap.container-fluid {
+    padding: 4rem 0 0 0;
+  }
+
+  .insurance-cta {
+    top: 575px !important;
+  }
+
+  .content-info {
+    top: 600px;
+  }
+
+  .section-float {
+    top: 550px;
+  }
+
   .column-content {
     background: #ebebeb;
     border-radius: 10px;
     box-shadow: 0px 2px 5px #666666;
     padding: 3rem 2rem;
   }
+
   .columns-section {
     .col-sm-4.text-center {
       transition: ease all 0.3s;
@@ -21,8 +38,8 @@
 
 @media screen and (max-width:576px) {
   .home{
-    #hero {
-      height: 100vh;
+    .wrap.container-fluid {
+      padding: 2rem 0 0 0;
     }
   }
 }

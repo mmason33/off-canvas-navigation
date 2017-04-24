@@ -1,5 +1,26 @@
-.page-template-about{
-  #hero{
+.page-template-about {
+  #hero {
     height: 500px !important;
+  }
+
+  .container-fluid.wrap {
+    padding: 4rem 0 0 0;
+  }
+
+  .pad-150 {
+    &:before {
+      background: rgba(0,0,0,.4);
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 400px;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width:576px) {
+  .page-template-about .container-fluid.wrap {
+    padding: 2rem 0 0 0 !important;
   }
 }

@@ -123,14 +123,14 @@ ul.mental-health, ul.addiction-nav, ul.admissions-nav {
   position: relative;
 }
 
-.page-template-page-with-sidebar, .page-template-home-page, .home {
+body {
   background: url('/wp-content/uploads/2017/04/sidebar-temp-background.jpg') no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
   #hero {
     position: fixed;
     width: 100%;
-    z-index: -1;
+    z-index: 0;
   }
   .section-float {
     top: 450px;
@@ -157,21 +157,27 @@ ul.mental-health, ul.addiction-nav, ul.admissions-nav {
   }
 }
 
-.page-template-page-with-sidebar-mental-health, .page-template-page-with-sidebar-addiction, .page-template-page-with-sidebar-admissions {
+.page-template-page-with-sidebar-mental-health, .page-template-page-with-sidebar-addiction, .page-template-page-with-sidebar-admissions, .page-id-17 {
   background: url('/wp-content/uploads/2017/04/sidebar-temp-background.jpg') no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
   .section-float {
     top: 120px;
   }
+
   .contact-us-cta, .content-info {
     position: relative;
-    top: 150px;
+    top: 180px;
   }
+
+  .insurance-cta {
+    top: 150px !important;
+  }
+
 }
 
 .insurance-cta {
-  background: url('http://testnorth2.staging.wpengine.com/wp-content/uploads/2017/04/pattern-blue-3.jpg') no-repeat center center;
+  background: url('/wp-content/uploads/2017/04/pattern-orange.jpg') no-repeat center center;
   background-size:cover;
   padding: 2rem !important;
   position: relative !important;

@@ -7,6 +7,10 @@
   border-radius: 5px;
 }
 
+.modal-open {
+  overflow: scroll !important;
+}
+
 @media (min-width: 992px) {
   .modal-lg {
     max-width: 700px;

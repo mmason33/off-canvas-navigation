@@ -41,16 +41,35 @@
                 $(this).parent().toggleClass("open");
             });
 
-            // AOS.init({
-            //   offset: 200,
-            //   duration: 600,
-            //   easing: 'ease-in-sine',
-            //   delay: 200,
-            // });
-
-
-
             $('.column-content').matchHeight();
+
+
+            $(window).scroll(function(){
+              $("#hero").css({
+                "opacity": 1 - $(window).scrollTop() / 600,
+                "z-index" : 0,
+                "top": 1 - $(window).scrollTop() / 10
+              });
+            });
+
+
+            AOS.init({
+              offset: 200,
+              duration: 800,
+              easing: 'ease',
+              delay: 200,
+            });
+
+            $('.v-next').click(function() {
+              $('.verification-form').next().one().addClass('active');
+            });
+
+            $('.v-prev').click(function() {
+              $('.verification-form').prev().one().removeClass('active');
+            });
+
+
+
 
 
             //best helper function ever
@@ -81,7 +100,7 @@
             }
           }
           getWidth('.leadership-grid .col-lg-9:odd,.leadership-grid .col-lg-3:odd', $(window).width());
-          $('.leadership-bio:odd').css('padding-left', 64);
+          $('.leadership-bio:odd').css('padding-left', '6.4rem');
 
 
         });
@@ -119,46 +138,19 @@
 
     'page_template_page_with_sidebar': {
       init: function() {
-        $(function() {
 
-          $(window).scroll(function(){
-            $("#hero").css({
-              "opacity": 1 - $(window).scrollTop() / 250,
-              "z-index" : -3
-            });
-          });
-
-          AOS.init({
-            offset: 300,
-            duration: 800,
-            easing: 'ease',
-            delay: 500,
-          });
-        });
       }
     },
 
     'page_template_home_page': {
       init: function() {
-        $(function() {
 
-          $(window).scroll(function(){
-            $("#hero").css("opacity", 1 - $(window).scrollTop() / 250);
-          });
-
-        });
       }
     },
 
     'home': {
       init: function() {
-        $(function() {
 
-          $(window).scroll(function(){
-            $("#hero").css("opacity", 1 - $(window).scrollTop() / 250);
-          });
-
-        });
       }
     }
   };

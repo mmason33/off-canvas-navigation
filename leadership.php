@@ -4,7 +4,7 @@
  */
 ?>
 
-<?php get_template_part('includes/half-n-half'); ?>
+<?php //get_template_part('includes/half-n-half'); ?>
 <div class="container visible-xs-down hidden-sm-up">
 <div class="row leadership-mobile">
   <div class="col-xs-12">
