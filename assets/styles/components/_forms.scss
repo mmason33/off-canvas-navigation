@@ -74,9 +74,6 @@
 //verification form
 
 .verification-form {
-  display: none;
-  opacity: 0;
-  transition: ease all 0.3s;
   .wpcf7 .wpcf7-form .wpcf7-form-control-wrap .wpcf7-form-control {
     padding: 1rem;
   }
@@ -86,9 +83,4 @@
     border: none !important;
   }
 
-}
-
-.verification-form.active {
-  display: block;
-  opacity: 1;
 }

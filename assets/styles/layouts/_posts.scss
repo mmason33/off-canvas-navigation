@@ -92,15 +92,19 @@
 }
 @media screen and (max-width:1441px){
   h3{
-    font-size: 1.5em;
+    font-size: 1.9em;
   }
 }
 
 
 /*====================== SINGLE POSTS ======================*/
+.single-post, .blog {
+    #hero {
+      display: none;
+    }
+}
 
 .single-post-wrap{
-  margin-top: 7em;
   article{
     padding: 0 2em;
   }
@@ -122,11 +126,25 @@
   height: auto;
 }
 .single-post-title{
-  margin-top: 1em;
+  margin-top: 1.5rem;
   font-weight: 400;
 }
+
+@media screen and (max-width:1024px) {
+  .single-post-title {
+    font-size: 2.5rem;
+    margin-top: .5rem
+  }
+}
+
 @media screen and (max-width:996px){
   .single-post-blog,.single-post-wrap article{
     padding: 0;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .single-post-title {
+    font-size: 2.2rem;
   }
 }

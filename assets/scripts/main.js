@@ -60,13 +60,23 @@
               delay: 200,
             });
 
-            $('.v-next').click(function() {
-              $('.verification-form').next().one().addClass('active');
-            });
-
-            $('.v-prev').click(function() {
-              $('.verification-form').prev().one().removeClass('active');
-            });
+            // $('.v-next').click(function() {
+            //   // $('.verification-form').closest().fadeIn('slow').addClass('active');
+            //   // $('.verification-form').closest().css({
+            //   //   'display' : 'none'
+            //   // });
+            //     $('.active').css('display', 'none').next().addClass('active');
+            // });
+            //
+            // $('.v-prev').click(function() {
+            //   // $('.verification-form').closest().fadeIn('slow').removeClass('active');
+            //   // $('.verification-form').next().css({
+            //   //   'display' : 'none'
+            //   // });
+            //
+            //     $('.active').prev().css('display', 'block').addClass('active');
+            //
+            // });
 
 
 

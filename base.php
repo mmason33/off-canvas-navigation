@@ -24,11 +24,17 @@ use Roots\Sage\Wrapper;
         get_template_part('includes/half-n-half');
       endif;
     ?>
-    <div class="container-fluid wrap section-float" data-aos="slide-up" data-aos-once="true">
-      <?php include Wrapper\template_path(); ?>
-      <?php do_action('get_builder'); ?>
-      <?php  get_template_part('includes/builder'); ?>
-    </div>
+    <?php if (!is_home()): ?>
+          <div class="container-fluid wrap section-float" data-aos="slide-up" data-aos-once="true">
+            <?php include Wrapper\template_path(); ?>
+            <?php do_action('get_builder'); ?>
+            <?php  get_template_part('includes/builder'); ?>
+          </div>
+    <?php else: ?>
+          <?php include Wrapper\template_path(); ?>
+          <?php do_action('get_builder'); ?>
+          <?php  get_template_part('includes/builder'); ?>
+    <?php endif; ?>
     <?php get_template_part('templates/ins-cta'); ?>
     <?php  do_action('get_footer'); ?>
     <?php  get_template_part('templates/footer'); ?>
