@@ -17,6 +17,7 @@ $bgColor = (get_sub_field('bg_color') != '' && $bgImage == '' ? ' style="backgro
 $padding = get_sub_field('padding_class');
 $fullWidth = (get_sub_field('full_width') != '' ? '-fluid' : '');
 $justifyContentCenter = (get_sub_field('justify_content_center') != '' ? ' justify-content-center' : '');
+$aos = (get_sub_field('aos_animate') == true ? ' data-aos="fade" data-aos-once="true"' : '');
 ?>
 <section class="columns-section <?php echo $padding; ?>"<?php echo $bgImage; ?><?php echo $bgColor; ?>>
   <div class="container<?php echo $fullWidth; ?>">
@@ -36,10 +37,10 @@ if(have_rows('column_content') ):
     $columnImage = (get_sub_field('column_image') != '' ? '<div class="column-image" style="background:url('.get_sub_field('column_image').') no-repeat center center; background-size:cover;"></div>' : '');
     $columnLink = get_sub_field('column_link');
     if($i == 1):
-      echo '<div class="row'.$justifyContentCenter.'">';
+      echo '<div class="row'.$justifyContentCenter.'"'.$aos.'>';
     endif;
 ?>
-          <div class="col-sm-<?php echo $num; ?> text-center" data-aos="fade" data-aos-once="true">
+          <div class="col-md-<?php echo $num; ?> text-center">
             <div class="column-content">
               <?php if (!empty($columnLink)): ?>
                 <a href="<?php echo $columnLink; ?>">

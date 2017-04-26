@@ -1,6 +1,9 @@
 .blog{
+  .content-info {
+    position: initial !important;
+  }
   .blog-roll{
-    padding-top: 6.75em;
+    padding-top: 8rem;
     margin: 0 !important;
     .col-lg-4,.col-md-6,.col-sm-6,.col-xs-12{
       padding: 0 !important;

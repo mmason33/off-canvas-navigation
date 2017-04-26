@@ -85,14 +85,18 @@
     .content-left {
       margin-top: 13rem !important;
     }
-  .content-left-hero .content-left {
-    h1 {
-      font-size: 3rem !important;
+    .content-left-hero .content-left {
+      h1 {
+        font-size: 3rem !important;
+      }
+      h3 {
+        font-size: 1.8rem !important;
+      }
     }
-    h3 {
-      font-size: 1.8rem !important;
+
+    .half-content {
+      padding: 0 !important;
     }
-  }
 }
 
 @media screen and (max-width:1024px){

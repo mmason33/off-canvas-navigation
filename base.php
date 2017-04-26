@@ -25,7 +25,7 @@ use Roots\Sage\Wrapper;
       endif;
     ?>
     <?php if (!is_home()): ?>
-          <div class="container-fluid wrap section-float" data-aos="slide-up" data-aos-once="true">
+          <div id="page" class="container-fluid wrap section-float" data-aos="slide-up" data-aos-once="true">
             <?php include Wrapper\template_path(); ?>
             <?php do_action('get_builder'); ?>
             <?php  get_template_part('includes/builder'); ?>
@@ -35,9 +35,11 @@ use Roots\Sage\Wrapper;
           <?php do_action('get_builder'); ?>
           <?php  get_template_part('includes/builder'); ?>
     <?php endif; ?>
+    <?php if (!is_home()): ?>
     <?php get_template_part('templates/ins-cta'); ?>
-    <?php  do_action('get_footer'); ?>
-    <?php  get_template_part('templates/footer'); ?>
-    <?php  wp_footer(); ?>
+    <?php endif; ?>
+    <?php do_action('get_footer'); ?>
+    <?php get_template_part('templates/footer'); ?>
+    <?php wp_footer(); ?>
   </body>
 </html>

@@ -58,29 +58,8 @@
               duration: 800,
               easing: 'ease',
               delay: 200,
+              disable: window.innerWidth < 768
             });
-
-            // $('.v-next').click(function() {
-            //   // $('.verification-form').closest().fadeIn('slow').addClass('active');
-            //   // $('.verification-form').closest().css({
-            //   //   'display' : 'none'
-            //   // });
-            //     $('.active').css('display', 'none').next().addClass('active');
-            // });
-            //
-            // $('.v-prev').click(function() {
-            //   // $('.verification-form').closest().fadeIn('slow').removeClass('active');
-            //   // $('.verification-form').next().css({
-            //   //   'display' : 'none'
-            //   // });
-            //
-            //     $('.active').prev().css('display', 'block').addClass('active');
-            //
-            // });
-
-
-
-
 
             //best helper function ever
             // function elementScrolled(elem){

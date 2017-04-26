@@ -10,7 +10,7 @@
               </div>
               <div class="row">
                 <div class="col-md-12">
-                  <img class="img-fluid" src="/wp-content/uploads/2017/04/ins-background-12.png">
+                  <img class="img-fluid hidden-sm-down" src="/wp-content/uploads/2017/04/ins-background-12.png">
                   <a href="#" class="consultation-white">Get In Touch</a>
                 </div>
               </div>

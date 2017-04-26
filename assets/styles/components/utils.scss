@@ -22,3 +22,10 @@
 .white{
   color:#fff;
 }
+
+
+@media screen and (max-width:576px) {
+  .pad-150 {
+    padding: 0 !important;
+  }
+}
