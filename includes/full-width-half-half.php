@@ -13,7 +13,7 @@ $bgPositionRight = get_sub_field('bg_position_right');
 
 <section id="half-and-half" class="container-fluid">
 <div class="row">
-  <div class="col-md-6 half-left <?php echo $textCenter; ?>" <?php echo $bgImageLeft; ?><?php echo $bgColorLeft;?>>
+  <div class="col-md-6 half-left <?php echo $textCenter; ?>" <?php echo $bgImageLeft; ?><?php echo $bgColorLeft;?> data-aos="fade">
     <?php
       if(!empty($contentLeft)):
         echo '<div class="half-content has-text">';
@@ -24,7 +24,7 @@ $bgPositionRight = get_sub_field('bg_position_right');
       endif;
     ?>
   </div>
-  <div class="col-md-6 half-right <?php echo $textCenter;?>" <?php echo $bgImageRight; ?><?php echo $bgColorRight;?>>
+  <div class="col-md-6 half-right <?php echo $textCenter;?>" <?php echo $bgImageRight; ?><?php echo $bgColorRight;?> data-aos="fade">
     <?php
       if(!empty($contentRight)):
         echo '<div class="half-content has-text">';

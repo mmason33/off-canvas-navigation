@@ -58,7 +58,7 @@
               duration: 800,
               easing: 'ease',
               delay: 200,
-              disable: window.innerWidth < 768
+              disable: window.innerWidth < 1024
             });
 
             //best helper function ever

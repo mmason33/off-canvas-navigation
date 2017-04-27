@@ -76,14 +76,25 @@ ul.list, ol.list {
 }
 blockquote{
   padding: 1rem;
-  line-height: 2.5rem;
-  *{
-    line-height: 5rem;
+  h2, h2.white {
+    font-size: 3rem;
+    font-style: italic;
   }
   small{
     font-size: 125%;
-    color: #999999;
   }
+  // &:before {
+  //   content: open-quote;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  // }
+  // &:after {
+  //   content: close-quote;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  // }
 }
 
 .wrap.container-fluid{

@@ -1,9 +1,8 @@
 
 .home {
-  // .wrap.container-fluid {
-  //   padding: 4rem 0 0 0;
-  // }
-
+  #page {
+    padding: 4rem 0 0 0;
+  }
   .insurance-cta {
     top: 575px !important;
   }
@@ -19,9 +18,9 @@
 
 @media screen and (max-width:576px) {
   .home{
-    // .wrap.container-fluid {
-    //   padding: 1.5rem 0 0 0;
-    // }
+    #page {
+      padding: 1.5rem 0 0 0;
+    }
     #hero {
       height: 600px !important;
     }

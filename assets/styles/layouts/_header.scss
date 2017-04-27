@@ -286,6 +286,10 @@ a#nav-icon {
 
 @media screen and (max-width: 1024px) {
 
+    #primary-menu li {
+      font-size: 1.5rem !important;
+    }
+
     .header{
       padding: 2.75em .75em !important;
     }
@@ -293,9 +297,9 @@ a#nav-icon {
     .menu-item-has-children{
       &:after{
         font-family: FontAwesome;
-        font-size: 1rem;
+        font-size: 1.75rem;
         content: "\f138";
-        color: #002042;
+        color: #696969;
         position: absolute;
         top: .3rem;
         right: -1rem;
@@ -419,7 +423,7 @@ a#nav-icon {
             margin: 0;
             padding: 15px 30px;
             border: none;
-            color: rgba(0,32,66,1);
+            color: #696969;
           }
         }
       }
@@ -449,7 +453,7 @@ a#nav-icon {
           }
           >ul.sub-menu{
             display: none;
-            background: #878787 !important;
+            background: #d8d8d8 !important;
             border: none;
             box-shadow: none;
             height: inherit;
@@ -466,8 +470,8 @@ a#nav-icon {
               border: none;
               background: none;
               a{
-                font-size: .9375rem;
-                color: #002042;
+                font-size: 1.4rem;
+                color: #696969;
                 padding: 6px 30px;
                 border: none;
                 width: 100%;
