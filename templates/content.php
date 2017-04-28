@@ -6,7 +6,7 @@
         <h3 class="blog-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
         <?php get_template_part('templates/entry-meta'); ?>
       <div class="blog-summary">
-        <p><?php echo get_excerpt(50); ?></p>
+        <p><?php echo get_excerpt(80); ?></p>
       </div>
 </article>
 </div>
