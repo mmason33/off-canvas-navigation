@@ -20,11 +20,11 @@ use Roots\Sage\Wrapper;
       if (is_page(29)):
         get_template_part('includes/hero-section');
       endif;
-      if (!is_page_template('page-with-sidebar-addiction.php') && !is_page_template('page-with-sidebar-admissions.php') && !is_page_template('page-with-sidebar-mental-health.php') && !is_page(29)):
+      if (!is_page_template('page-with-sidebar-addiction.php') && !is_page_template('page-with-sidebar-admissions.php') && !is_page_template('page-with-sidebar-mental-health.php') && !is_page(29) && !is_page_template('contact.php')):
         get_template_part('includes/half-n-half');
       endif;
     ?>
-    <?php if (!is_home()): ?>
+    <?php if (!is_home() && !is_page_template('contact.php')): ?>
           <div id="page" class="container-fluid wrap section-float" data-aos="slide-up" data-aos-once="true">
             <?php include Wrapper\template_path(); ?>
             <?php do_action('get_builder'); ?>
@@ -35,7 +35,7 @@ use Roots\Sage\Wrapper;
           <?php do_action('get_builder'); ?>
           <?php  get_template_part('includes/builder'); ?>
     <?php endif; ?>
-    <?php if (!is_home()): ?>
+    <?php if (!is_home() && !is_page_template('contact.php')): ?>
     <?php get_template_part('templates/ins-cta'); ?>
     <?php endif; ?>
     <?php do_action('get_footer'); ?>

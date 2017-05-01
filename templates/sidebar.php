@@ -49,7 +49,7 @@
         ));  ?>
 </div>
 <?php endif; ?>
-<?php if ( is_page_template('page-with-sidebar-admissions.php') || is_page(26) || is_page(4)): ?>
+<?php if ( is_page_template('page-with-sidebar-admissions.php') || is_page(4)): ?>
 <div class="col-md-12 align-self-center" data-aos="fade-up" data-aos-once="true">
   <?php wp_nav_menu( array(
           'theme_location'    => 'primary',

@@ -15,7 +15,7 @@
 <div class="container-fluid">
   <div class="row leadership-grid">
   <div class="col-lg-3 col-md-3 col-sm-3 leadership-image">
-    <img src="/wp-content/uploads/2017/04/paul-400x400.jpg" class="img-fluid">
+    <img src="/wp-content/uploads/2017/04/paul-400x400.jpg" class="img-fluid rounded">
     <div class="visible-xs-down hidden-sm-up">
     <h3>Paul Alexander</h3>
     <h4>President and Founder</h4>
@@ -37,7 +37,7 @@
   </div>
   </div>
   <div class="col-lg-3 col-md-3 col-sm-3 leadership-image text-lg-right">
-    <img src="/wp-content/uploads/2017/04/netherton-400x400.jpg" class="img-fluid">
+    <img src="/wp-content/uploads/2017/04/netherton-400x400.jpg" class="img-fluid rounded">
     <div class="visible-xs-down hidden-sm-up">
     <h3>Michael Netherton</h3>
     <h4>Chief Executive Officer</h4>
@@ -45,7 +45,7 @@
     </div>
   </div>
   <div class="col-lg-3 col-md-3 col-sm-3 leadership-image">
-    <img src="/wp-content/uploads/2017/04/kaufman-400x400.jpg" class="img-fluid">
+    <img src="/wp-content/uploads/2017/04/kaufman-400x400.jpg" class="img-fluid rounded">
     <div class="visible-xs-down hidden-sm-up">
     <h3>Dr. Edward Kaufman</h3>
     <h4>Medical Director</h4>
@@ -67,7 +67,7 @@
   </div>
   </div>
   <div class="col-lg-3 col-md-3 col-sm-3 leadership-image text-lg-right">
-    <img src="/wp-content/uploads/2017/04/illana-400x400.jpg" class="img-fluid">
+    <img src="/wp-content/uploads/2017/04/illana-400x400.jpg" class="img-fluid rounded">
     <div class="visible-xs-down hidden-sm-up">
     <h3>Illana Zivkovich</h3>
     <h4>Clinical Director</h4>
@@ -75,7 +75,7 @@
     </div>
   </div>
   <div class="col-lg-3 col-md-3 col-sm-3 leadership-image">
-    <img src="/wp-content/uploads/2017/04/kevin-leadership-400x400-1.jpg" class="img-fluid">
+    <img src="/wp-content/uploads/2017/04/kevin-leadership-400x400-1.jpg" class="img-fluid rounded">
     <div class="visible-xs-down hidden-sm-up">
     <h3>Kevin McCauley</h3>
     <h4>Senior Recovery Advisor</h4>
@@ -99,7 +99,7 @@
   </div>
   </div>
   <div class="col-lg-3 col-md-3 col-sm-3 leadership-image text-lg-right">
-    <img src="/wp-content/uploads/2017/04/devon-400x400.jpg" class="img-fluid">
+    <img src="/wp-content/uploads/2017/04/devon-400x400.jpg" class="img-fluid rounded">
     <div class="visible-xs-down hidden-sm-up">
     <h3>Devon Wayt</h3>
     <h4>Vice President of Operations</h4>
@@ -107,7 +107,7 @@
     </div>
   </div>
   <div class="col-lg-3 col-md-3 col-sm-3 leadership-image">
-    <img src="/wp-content/uploads/2017/04/ray-400x400.jpg" class="img-fluid">
+    <img src="/wp-content/uploads/2017/04/ray-400x400.jpg" class="img-fluid rounded">
     <div class="visible-xs-down hidden-sm-up">
     <h3>Ray Pacini</h3>
     <h4>Chief Financial Officer</h4>
@@ -131,7 +131,7 @@
   </div>
   </div>
   <div class="col-lg-3 col-md-3 col-sm-3 leadership-image text-lg-right">
-      <img src="/wp-content/uploads/2017/04/dustin-400x400.jpg" class="img-fluid">
+      <img src="/wp-content/uploads/2017/04/dustin-400x400.jpg" class="img-fluid rounded">
       <div class="visible-xs-down hidden-sm-up">
       <h3>Dustin Frei</h3>
       <h4>Vice President of Business Development</h4>
@@ -139,7 +139,7 @@
       </div>
   </div>
   <div class="col-lg-3 col-md-3 col-sm-3 leadership-image">
-    <img src="/wp-content/uploads/2017/04/coach-400x400.jpg" class="img-fluid">
+    <img src="/wp-content/uploads/2017/04/coach-400x400.jpg" class="img-fluid rounded">
     <div class="visible-xs-down hidden-sm-up">
     <h3>Emily Bielen</h3>
     <h4>Vice President of Referral Relations</h4>
