@@ -22,7 +22,7 @@
     </div>
     <div class="col-lg-9 col-md-9 col-sm-9 hidden-xs-down">
       <div class="leadership-bio">
-      <h3>Illana Zukavich</h3>
+      <h3>Illana Zivkovich</h3>
       <h4>Clinical Director</h4>
       <p>Ilana Zivkovich joined Northbound in January 2015. An experienced clinician, executive, and clinical development officer, Ilana celebrates and emboldens Northbound’s renowned focus on fostering a flourishing and healthy organizational culture. Trained in positive psychology, Ilana believes in the strengths and potential of every client and team member she has the opportunity to work with. She utilizes her signature strengths of curiosity, love, and honesty to help others identify and build upon their unique set of strengths to live within the upper reaches of their potential. In recovery herself since the age of 16, Ilana is grateful for the opportunity to help young and emerging adults develop a fulfilling lifestyle of recovery. In her role as Northbound’s Chief Clinical Officer Ilana oversees the clinical service development and delivery, and does her part to ensure that Northbound’s ethos of transparency, authenticity, and collaborative leadership are able to flourish. Prior to joining Northbound Ilana held a variety of leadership roles within the addiction field, most recently serving as the Executive Director for Promises Austin. Ilana holds a Master of Science in Social Work from the University of Texas at Austin, and is a Licensed Clinical Social Worker (LCSW), Licensed Chemical Dependency Counselor (LCDC), and a Certified Daring Way Facilitator Consultant (CDWF-C). Additional areas of clinical specialization include shame resiliency, dual diagnosis, family of origin and family dynamic issues, and positive psychology.</p>
     </div>
@@ -30,7 +30,7 @@
     <div class="col-lg-3 col-md-3 col-sm-3 leadership-image text-lg-right">
       <img src="/wp-content/uploads/2017/04/illana-400x400.jpg" class="img-fluid">
       <div class="visible-xs-down hidden-sm-up">
-      <h3>Illana Zuchavich</h3>
+      <h3>Illana Zivkovich</h3>
       <h4>Clinical Director</h4>
       <a href="#">Read Bio</a>
       </div>
