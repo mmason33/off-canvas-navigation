@@ -71,6 +71,12 @@
   }
 }
 
+@media screen and (max-width:320px) {
+    .wpcf7 .wpcf7-form{
+      padding: 1.6rem !important;
+  }
+}
+
 //verification form
 
 .verification-form {

@@ -151,7 +151,7 @@ body {
 
 @media screen and (max-width:1440px) {
   .section-float {
-    margin: 0 1.5rem;
+    margin: 0 1rem;
   }
 }
 
@@ -183,5 +183,5 @@ body {
   padding: 2rem !important;
   position: relative !important;
   top: 475px !important;
-  z-index: -1 !important;
+  z-index: 0  !important;
 }

@@ -2,8 +2,8 @@
   padding: 20px 0;
 }
 
-h2.white{
-  font-size: 2.5em;
+.insurance-cta h2.white{
+  font-size: 4rem;
 }
 
 #text-box{
@@ -12,8 +12,8 @@ h2.white{
   }
 }
 
-// @media screen and (max-width:768px) {
-//   h2.white {
-//     font-size: 2rem;
-//   }
-// }
+@media screen and (max-width:767px) {
+  .insurance-cta h2.white {
+    font-size: 2.5rem !important;
+  }
+}
