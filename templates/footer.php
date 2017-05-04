@@ -1,5 +1,5 @@
 <?php if (!is_page_template('contact.php')): //style="background:url('/wp-content/uploads/2017/04/footer-image-texture-idea-1.jpg') no-repeat center center;" ?>
-<footer class="content-info" style="background:url('/wp-content/uploads/2017/05/footer-image-4.jpg') no-repeat center 65%;background-size:cover;">
+<footer class="content-info" style="background:url('/wp-content/uploads/2017/05/footer-image-5.jpg') no-repeat center 65%;background-size:cover;">
   <div class="container-fluid wrap">
     <div class="row justify-content-center">
       <div class="col-xl-2 col-lg-2 col-md-4 col-8 text-center">
@@ -23,13 +23,13 @@
           <a href="#"><i class="fa fa-envelope fa-2x"></i><small>Contact</small></a>
         </div>
         <div class="col-md-2 col-lg-1 col-sm-4 col-4 text-center icon-item">
-          <a href="#"><img src="/wp-content/uploads/2017/05/jcaho-white.png" class="img-fluid" style="max-width:24px;"><small>JCAHO</small></a>
+          <a href="#"><img src="/wp-content/uploads/2017/05/jcaho-white.png" class="img-fluid"><small>JCAHO</small></a>
         </div>
         <div class="col-md-2 col-lg-1 col-sm-4 col-4 text-center icon-item">
-          <a href="#"><img src="/wp-content/uploads/2017/05/naatp-white.png" class="img-fluid" style="max-width:24px;"><small>NAATP</small></a>
+          <a href="#"><img src="/wp-content/uploads/2017/05/naatp-white.png" class="img-fluid"><small>NAATP</small></a>
         </div>
         <div class="col-md-2 col-lg-1 col-sm-4 col-4 text-center icon-item">
-          <a href="#"><img src="/wp-content/uploads/2017/05/dhhs-white.png" class="img-fluid" style="max-width:24px;"><small>DHHS</small></a>
+          <a href="#"><img src="/wp-content/uploads/2017/05/dhhs-white.png" class="img-fluid"><small>DHHS</small></a>
         </div>
         <div class="col-md-2 col-lg-1 col-sm-4 col-4 text-center icon-item">
           <a href="#"><i class="fa fa-facebook fa-2x"></i><small>Facebook</small></a>

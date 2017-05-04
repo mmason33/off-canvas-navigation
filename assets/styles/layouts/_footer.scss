@@ -1,22 +1,30 @@
 .content-info {
   padding: 3rem 0;
-  a {
-    .fa {
-      color: #fff;
-      display: block;
-      font-size: 24px !important;
-      transition: ease all 0.3s;
-    }
-    &:hover {
+  .icon-item {
+    a {
       .fa {
-        font-size: 40px !important;
-        color: #ef6f00;
+        color: #fff;
+        display: block;
+        font-size: 24px !important;
+        transition: ease all 0.3s;
       }
-    }
-    small {
-      display: block;
-      color: #fff;
-      margin-top: .5rem;
+      img {
+        width: 26px;
+        transition: ease width 0.3s;
+      }
+      &:hover {
+        .fa {
+          font-size: 40px !important;
+        }
+        img {
+          width: 40px;
+        }
+      }
+      small {
+        display: block;
+        color: #fff;
+        margin-top: .5rem;
+      }
     }
   }
   hr {
@@ -51,5 +59,13 @@
 @media screen and (max-width:767px) {
   .icon-item:nth-of-type(6), .icon-item:nth-of-type(3) {
     border-right: none !important;
+  }
+
+  .icon-item a:hover .fa {
+    font-size: 24px !important;
+  }
+
+  .icon-item a:hover img {
+    width: 26px !important;
   }
 }
