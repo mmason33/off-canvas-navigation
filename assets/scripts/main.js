@@ -68,7 +68,7 @@
             //     var elemTop = $(elem).offset().top;
             //     return ((elemTop <= docViewBottom) && (elemTop >= docViewTop));
             // }
-
+            $('.icon-item').matchHeight();
           });//end doc.ready
 
       },
