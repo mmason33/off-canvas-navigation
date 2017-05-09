@@ -21,20 +21,13 @@
     color: $brand-primary;
   }
   .contact-info{
-    background: #ebebeb;
-    padding: 2em;
-    .col-md-12{
+    padding: 2em 0;
+    p:nth-of-type(2),p:nth-of-type(4){
       border-bottom: 2px solid rgba(0,0,0,.15);
-      margin-bottom: .5em;
-      p:nth-of-type(2){
-        margin-bottom: .75em;
-      }
+      margin-bottom: 3.5rem;
     }
-    .col-md-12:nth-of-type(2),.col-md-12:nth-of-type(3){
-      padding-top: 1.25em;
-    }
-    .col-md-12:nth-of-type(4){
-      border: none;
+    p:nth-of-type(6) {
+      border-bottom: 2px solid rgba(0,0,0,.15);
     }
   }
   p{
@@ -46,8 +39,16 @@
     padding: 0 !important;
     li{
       display: inline-flex;
-      margin-right: 10px;
+      font-size: 2.5rem;
+      margin-right: 2rem;
     }
+  }
+  .wpcf7-not-valid-tip {
+    display: none !important;
+  }
+  .wpcf7-response-output.wpcf7-display-none.wpcf7-validation-errors {
+    margin: 0 !important;
+    padding: 0 !important;
   }
 }
 
@@ -65,5 +66,12 @@
 
   .head:nth-of-type(2) {
     margin-top: 5rem !important;
+  }
+}
+
+
+#contact {
+  .contact-float {
+    background: #ebebeb;
   }
 }

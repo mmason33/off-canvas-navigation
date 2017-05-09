@@ -151,13 +151,19 @@ body {
 
 @media screen and (max-width:1440px) {
   .section-float {
-    margin: 0 1rem;
+    margin: 0 2rem;
   }
 }
 
 @media screen and (min-width:1441px) {
   .section-float {
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width:425px) {
+  .section-float {
+    margin: 0 1rem;
   }
 }
 

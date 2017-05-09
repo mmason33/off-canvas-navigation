@@ -1,14 +1,20 @@
 <?php if (!is_page_template('contact.php')): //style="background:url('/wp-content/uploads/2017/04/footer-image-texture-idea-1.jpg') no-repeat center center;" ?>
-<footer class="content-info" style="background:url('/wp-content/uploads/2017/05/footer-image-5.jpg') no-repeat center 65%;background-size:cover;">
+<footer class="content-info">
+  <div id="ember238" class="ember-view">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    <div id="star4" class="animated pulse infinite"></div>
+  </div>
   <div class="container-fluid wrap">
     <div class="row justify-content-center">
-      <div class="col-xl-2 col-lg-2 col-md-4 col-8 text-center">
+      <div class="col-xl-2 col-lg-3 col-md-4 col-8 text-center">
         <img src="/wp-content/uploads/2017/04/nts-white-text-960x379.png" class="img-fluid">
       </div>
     </div>
     <div class="row justify-content-center">
       <div class="col-md-8 text-center">
-        <h3 class="white">"Our mission is assist our clients in achieving one year of continuous sobriety"</h3>
+        <h3 class="white">"Our mission is to assist our clients in achieving one year of continuous sobriety"</h3>
         <hr>
       </div>
     </div>
