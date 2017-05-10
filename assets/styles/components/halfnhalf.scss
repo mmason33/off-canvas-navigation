@@ -19,14 +19,13 @@
   width: 50%;
 }
 
-// .half-overlay {
-//   background: url('/wp-content/uploads/2017/04/light-blue-gradients-1.png') no-repeat;
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   height: 500px;
-//   width: 100%;
-// }
+.hero-overlay-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 100%;
+}
 
 .content-left-hero{
   position: absolute;
@@ -34,6 +33,7 @@
   width: 50%;
   top: 0;
   text-align: center;
+  z-index: 1;
   .content-left{
     margin-top: 18rem;
     padding: 0 5rem;

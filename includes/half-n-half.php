@@ -9,11 +9,11 @@ $contentBGcolor = get_field('content_bg_color');
 $heroSize = (get_field('hero_size') != '' ? 'background-size:'.get_field('hero_size').';' : '');
 $overlayColor = (get_field('overlay_color') != '' ? 'style="background:url(/wp-content/uploads/2017/04/'.get_field('overlay_color').') no-repeat;width:100%;position:absolute;top:0;height:500px;"' : '');
 ?>
-<section id="hero">
+<section id="hero" style="<?php echo $heroImage; ?><?php echo $heroPosition; ?>;<?php echo $switchPostion; ?><?php echo $heroSize; ?>">
 <?php if($switchPostion == 'float:right;'): ?>
-  <div class="content-left-hero" style="left:0;background:<?php echo $contentBGcolor; ?>;">
+  <div class="content-left-hero" style="left:0;">
 <?php else: ?>
-  <div class="content-left-hero" style="left:50%;background:<?php echo $contentBGcolor; ?>;">
+  <div class="content-left-hero" style="left:50%;">
 <?php endif; ?>
     <div class="row content-left">
       <div class="col-lg-12 col-xl-12 col-md-12">
@@ -21,5 +21,12 @@ $overlayColor = (get_field('overlay_color') != '' ? 'style="background:url(/wp-c
       </div>
     </div>
   </div>
-  <div class="image-right-hero" style="<?php echo $heroImage; ?><?php echo $heroPosition; ?>;<?php echo $switchPostion; ?><?php echo $heroSize; ?>"><div class="half-overlay" <?php echo $overlayColor; ?>></div></div>
+  <!-- <div class="image-right-hero" style="<?php //echo $heroImage; ?><?php //echo $heroPosition; ?>;<?php //echo $switchPostion; ?><?php //echo $heroSize; ?>"><div class="half-overlay" <?php //echo $overlayColor; ?>></div></div> -->
+  <div class="hero-overlay-gradient" style="background:linear-gradient(
+  <?php if($switchPostion == 'float:left'):
+          echo 'to left, ';
+        else:
+          echo 'to right, ';
+        endif;
+  ?><?php echo $contentBGcolor; ?>, transparent);"></div>
 </section>
