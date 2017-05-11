@@ -4,12 +4,17 @@
  */
  // style="background:url('/wp-content/uploads/2017/04/pexels-photo-360698.jpeg')no-repeat center center;background-size:cover;"
 ?>
+<div id="ember238" class="ember-view">
+  <div id="stars"></div>
+  <div id="stars2"></div>
+  <div id="stars3"></div>
+</div>
 <section id="contact">
 <div class="container">
   <div class="row">
     <div class="col-md-12 head contact-float">
       <div class="row">
-    <div class="col-md-4 offset-xl-1 offset-lg-1 offset-md-1">
+    <div class="col-md-5">
       <div class="contact-info contact">
           <h4>Von Karman</h4>
           <p>4343 Von Karman Avenue, Suite 200</p>
