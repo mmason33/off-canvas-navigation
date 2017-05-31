@@ -4,7 +4,7 @@
     <div id="stars"></div>
     <div id="stars2"></div>
     <div id="stars3"></div>
-    <div id="star4" class="animated pulse infinite"></div>
+    <!-- <div id="star4" class="animated pulse infinite"></div> -->
   </div>
   <div class="container-fluid wrap">
     <div class="row justify-content-center">

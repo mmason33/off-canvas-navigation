@@ -1,4 +1,7 @@
 .blog{
+  p.byline.author.vcard {
+    display: none !important;
+  }
   .content-info {
     position: initial !important;
   }
@@ -36,7 +39,7 @@
       top: 0;
       left: 0;
       padding: 1em 2em;
-      z-index: 10;
+      z-index: 1;
     }
     .blog-title a,.blog-summary p,.author a,.author,time{
       color: #fff;
@@ -84,18 +87,37 @@
   .blog-summary p,.author a,.author,time{
     opacity: 1 !important;
   }
+  .blog-summary p {
+    font-size: 1.5rem;
+  }
 }
+
+@media screen and (max-width:850px) {
+
+  .blog-summary {
+    display: none !important;
+  }
+
+}
+
 @media screen and (max-width:768px){
   .blog-summary p{
     opacity: 0 !important;
   }
   .blog-title{
-    margin-top: 2em !important;
+    margin-top: 0 !important;
   }
 }
+
+@media screen and (max-width:576px) {
+  .blog-title {
+    margin-top: 1rem !important;
+  }
+}
+
 @media screen and (max-width:1441px){
   h3{
-    font-size: 1.9em;
+    font-size: 1.9rem;
   }
 }
 

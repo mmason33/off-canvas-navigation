@@ -19,10 +19,13 @@
 }
 
 .page-template-our-team {
-
   .leadership-bio:nth-of-type(even) {
     padding-left: 5rem;
   }
+}
+
+.img-fluid.rounded {
+  border-radius: 7px !important;
 }
 
 // STYLES ONLY FOR LEADERSHIP - MAINLY @MEDIA
@@ -30,9 +33,9 @@
 @media screen and (max-width:1023px) {
   .page-template-leadership {
 
-    .content-left-hero,.image-right-hero,.image-right-hero::after,#hero {
-      height: 400px !important;
-    }
+    // .content-left-hero,.image-right-hero,.image-right-hero::after,#hero {
+    //   height: 500px !important;
+    // }
   }
 }
 

@@ -101,6 +101,9 @@ body.contact-us {
   #contact {
     margin-bottom: 5rem;
     padding: 0 2rem;
+    .head {
+      margin-top: 7rem;
+    }
   }
   .contact-float {
     .col-md-5 {
@@ -112,9 +115,6 @@ body.contact-us {
   //   margin-right: 2rem;
   // }
 
-  .head {
-    margin-top: 7rem !important;
-  }
 }
 
 
