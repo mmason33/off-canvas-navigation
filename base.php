@@ -25,7 +25,7 @@ use Roots\Sage\Wrapper;
       endif;
     ?>
     <?php if (!is_home() && !is_page_template('contact.php')): ?>
-          <div id="page" class="container-fluid wrap section-float" data-aos="slide-up" data-aos-once="true">
+          <div id="page" class="container-fluid wrap section-float">
             <?php include Wrapper\template_path(); ?>
             <?php do_action('get_builder'); ?>
             <?php  get_template_part('includes/builder'); ?>

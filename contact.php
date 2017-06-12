@@ -2,14 +2,8 @@
 /**
  * Template Name: Contact Page Template
  */
- // style="background:url('/wp-content/uploads/2017/04/pexels-photo-360698.jpeg')no-repeat center center;background-size:cover;"
 ?>
-<div id="ember238" class="ember-view">
-  <div id="stars"></div>
-  <div id="stars2"></div>
-  <div id="stars3"></div>
-</div>
-<section id="contact">
+<section id="contact" style="background:url('/wp-content/uploads/2017/04/pexels-photo-360698.jpeg')no-repeat center center;background-size:cover;">
 <div class="container">
   <div class="row">
     <div class="col-md-12 head contact-float">

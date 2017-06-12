@@ -1,27 +1,27 @@
-body.contact-us {
+/*body.contact-us {
   background-image: linear-gradient(0deg,#002042 0,#0e4577 100%);
-  // background: radial-gradient(ellipse at bottom,#1B2735 0,#090A0F 100%);
+  background: radial-gradient(ellipse at bottom,#1B2735 0,#090A0F 100%);
   overflow: hidden;
   box-sizing: border-box;
   #stars {
       background: 0 0;
       animation: spin 120s linear infinite;
-      // animation: animStarX 120s linear infinite;
+      animation: animStarX 120s linear infinite;
   }
 
   #stars2 {
       background: 0 0;
       animation: spinX 60s linear infinite;
-      // animation: animStarX 60s linear infinite;
+      animation: animStarX 60s linear infinite;
   }
 
   #stars3 {
       animation: spinX 30s linear infinite;
-      // animation: animStarX 30s linear infinite;
+      animation: animStarX 30s linear infinite;
   }
-}
+}*/
 
-@keyframes spin {
+/*@keyframes spin {
   from {
     transform: rotate(0);
   }
@@ -37,18 +37,20 @@ body.contact-us {
   to {
     transform: rotate(-100deg);
   }
-}
+}*/
 
 #contact{
   height: 100%;
   width: 100%;
   margin: 0;
+  overflow: scroll;
   padding: 0;
+  position: fixed;
   .insurance-cta {
     display: none !important;
   }
   .head{
-    margin-top: 13rem;
+    margin-top: 10rem;
   }
   .col-md-5.head{
     background: #ebebeb;
@@ -62,10 +64,10 @@ body.contact-us {
     color: $brand-primary;
   }
   .contact-info{
-    padding: 2em 1rem;
+    padding: 1rem 0;
     p:nth-of-type(2),p:nth-of-type(4){
       border-bottom: 2px solid rgba(0,0,0,.15);
-      margin-bottom: 3.5rem;
+      margin-bottom: 2rem;
     }
     p:nth-of-type(6) {
       border-bottom: 2px solid rgba(0,0,0,.15);
@@ -114,6 +116,10 @@ body.contact-us {
   //   margin-left: 2rem;
   //   margin-right: 2rem;
   // }
+  
+  .contact .wpcf7 .wpcf7-form {
+    padding: 1rem !important;
+  }
 
 }
 

@@ -108,7 +108,7 @@ ul.mental-health, ul.addiction-nav, ul.admissions-nav {
 @media screen and (max-width:576px) {
   .page-template-page-with-sidebar, .page-template-leadership {
     #hero{
-      height: 500px !important;
+      height: 400px !important;
     }
   }
 }
@@ -147,6 +147,15 @@ body {
     position: relative;
     top: 530px;
   }
+
+  .insurance-cta {
+    background: url('/wp-content/uploads/2017/04/pattern-orange.jpg') no-repeat center center;
+    background-size:cover;
+    padding: 2rem !important;
+    position: relative !important;
+    top: 475px;
+    z-index: 0  !important;
+  }
 }
 
 @media screen and (max-width:1440px) {
@@ -159,6 +168,22 @@ body {
   .section-float {
     margin: 0 auto;
   }
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    .section-float {
+      top: 375px;
+    }
+
+    .insurance-cta {
+      top: 390px;
+    }
+
+    .content-info {
+      top: 415px;
+    }
+  }    
 }
 
 @media screen and (max-width:425px) {
@@ -178,16 +203,8 @@ body {
   }
 
   .insurance-cta {
-    top: 150px !important;
+    top: 150px;
   }
 
 }
 
-.insurance-cta {
-  background: url('/wp-content/uploads/2017/04/pattern-orange.jpg') no-repeat center center;
-  background-size:cover;
-  padding: 2rem !important;
-  position: relative !important;
-  top: 475px !important;
-  z-index: 0  !important;
-}

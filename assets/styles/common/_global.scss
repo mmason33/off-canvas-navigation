@@ -99,12 +99,34 @@ blockquote{
 
 .wrap.container-fluid{
   max-width: 160rem;
+  margin:0 auto;
   padding: 4rem;
+}
+
+@media screen and (max-width: 1680px){
+  .wrap.container-fluid {
+    max-width: 135rem;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .wrap.container-fluid {
+    margin: 0 1.5rem;
+  }
 }
 
 @media screen and(max-width:1025px){
   body{
     font-size:1.35rem;
+  }
+
+  p {
+    line-height: 3rem;
+  }
+
+  h1,h2,h3,h4,h5,h6 {
+    line-height: 3.5rem;
   }
 }
 

@@ -80,7 +80,7 @@
 
 @media screen and (max-width:576px){
     .image-right-hero, .image-right-hero::after,.content-left-hero,#hero{
-      height: 500px !important;
+      height: 400px !important;
     }
     .content-left {
       margin-top: 12rem !important;
@@ -96,6 +96,10 @@
 
     .half-content {
       padding: 0 !important;
+    }
+
+    .hero-overlay-gradient {
+      height: 400px !important;
     }
 }
 

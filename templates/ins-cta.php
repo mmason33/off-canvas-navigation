@@ -1,5 +1,5 @@
 <div  data-aos="slide-down">
-  <div class="container-fluid wrap section-float insurance-cta">
+  <div class="container-fluid wrap insurance-cta section-float">
       <div class="container">
           <div class="row">
             <div class="col-md-12 text-center">

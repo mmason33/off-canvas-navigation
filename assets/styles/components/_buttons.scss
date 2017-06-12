@@ -105,3 +105,10 @@
     }
   }
 }
+
+
+@media screen and (max-width: 1024px) {
+  .btn-orange, .btn-dark-blue, .btn-light-blue {
+    padding: 5px 10px;
+  }
+}
