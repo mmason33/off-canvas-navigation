@@ -24,29 +24,29 @@ html{
 body{
   font-family: 'Montserrat';
   font-size: 1.6rem;
-  line-height: 1.8rem;
+  line-height: 2rem;
   margin: 0;
   padding: 0;
 }
 
 h1,h2,h3,h4,h5,h6{
   font-family: 'Montserrat';
-  line-height: 4rem;
+  line-height: 1.5;
   color: #353535;
   // margin-bottom: .65rem;
   font-weight: 400;
 }
 
 h1{
-  font-size: 3.5rem;
+  font-size: 2.8rem;
 }
 
 h2{
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 h3{
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 
 h4{
@@ -54,12 +54,12 @@ h4{
 }
 
 h5{
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 p{
-  font-size: 1.85rem;
-  line-height: 3.75rem;
+  font-size: 1.8rem;
+  line-height: 3.25rem;
   color: #6b6b6b;
   font-weight: 300;
 }
@@ -70,7 +70,7 @@ a, button {
   }
 }
 ul.list, ol.list {
-  font-size: 1.95rem !important;
+  font-size: 1.8rem !important;
   line-height: 4rem !important;
   color: #6b6b6b;
 }
@@ -152,13 +152,13 @@ footer {
     box-sizing: border-box;
 }
 
-.box-container,body>div.ember-view,html {
+/*.box-container,body>div.ember-view,html {
     height: 100%;
     width: 100%;
     margin: 0
-}
+}*/
 
-@keyframes animStar {
+/*@keyframes animStar {
     from {
         transform: translateY(0)
     }
@@ -259,3 +259,4 @@ footer {
     position: absolute;
     top: 2000px
 }
+*/

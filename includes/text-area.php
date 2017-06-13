@@ -6,7 +6,7 @@ $bgImage = (get_sub_field('bg_image') != '' ? 'style="background:url('.get_sub_f
 $bgPosition = get_sub_field('bg_position');
 $textCenter = (get_sub_field('text_center') == 1 ? 'text-center' : '');
 $padding = get_sub_field('padding');
-$aos = (get_sub_field('aos_animate') == 0 ? ' data-aos="fade" data-aos-once="true"' : '' );
+$aos = (get_sub_field('aos_animate') == 1 ? ' data-aos="fade" data-aos-once="true"' : '' );
 ?>
 <section class="text-box-wrap <?php echo $padding; ?>" <?php echo $bgImage; ?><?php echo $bgColor; ?>>
 

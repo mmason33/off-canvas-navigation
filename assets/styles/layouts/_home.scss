@@ -1,5 +1,10 @@
 
-.home {
+
+.home #page {
+  padding: 4rem 0 0 0;
+}
+
+/*.home {
   #page {
     padding: 4rem 0 0 0;
   }
@@ -14,9 +19,9 @@
   .section-float {
     top: 550px;
   }
-}
+}*/
 
-@media screen and (max-width:576px) {
+/*@media screen and (max-width:576px) {
   .home{
     #page {
       padding: 1.5rem 0 0 0;
@@ -25,12 +30,12 @@
       height: 600px !important;
     }
   }
-}
+}*/
 
 @media screen and (max-width:375px) {
-  .home #cta-content h1 {
+/*  .home #cta-content h1 {
     font-size: 2.5rem !important;
-  }
+  }*/
 
   .home .head {
     margin-top: 10rem !important;

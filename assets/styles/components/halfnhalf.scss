@@ -10,6 +10,11 @@
   margin-top: 15px;
 }
 
+.has-text {
+  position: relative;
+  top: 15%;
+}
+
 
 /*====================== HALF AND HALF HERO SECTION(NON-BUILDER) ===============*/
 
@@ -37,13 +42,13 @@
   .content-left{
     margin-top: 18rem;
     padding: 0 5rem;
-    h1 {
+/*    h1 {
       font-size: 5rem;
       margin-bottom: 1rem;
     }
     h3 {
       font-size: 3rem;
-    }
+    }*/
   }
 }
 
@@ -85,7 +90,7 @@
     .content-left {
       margin-top: 12rem !important;
     }
-    .content-left-hero .content-left {
+/*    .content-left-hero .content-left {
       h1 {
         font-size: 3rem;
       }
@@ -93,7 +98,7 @@
         font-size: 1.8rem;
       }
     }
-
+*/
     .half-content {
       padding: 0 !important;
     }
@@ -107,22 +112,17 @@
   .content-left-hero .content-left {
     margin-top: 16rem;
     padding: 0 .5rem !important;
-    h1 {
+/*    h1 {
       font-size: 3.25rem !important;
     }
     h3 {
       font-size: 2.25rem !important;
-    }
+    }*/
   }
 }
 
-@media screen and (max-width:1440px){
-  .content-left-hero .content-left {
-    h1 {
-      font-size: 4rem;
-    }
-    h3 {
-      font-size: 2.5rem;
-    }
+@media screen and (max-width:1600px){
+  .has-text {
+    top: 10%;
   }
 }
