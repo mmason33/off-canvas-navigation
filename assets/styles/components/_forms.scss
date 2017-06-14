@@ -1,63 +1,68 @@
 
-.wpcf7{
+.wpcf7 {
   font-family: 'Montserrat', sans-serif;
-  h2{
-    color: #002042;
-    margin-bottom: .5rem;
+}
+
+.wpcf7 h2 {
+  color: #002042;
+  margin-bottom: .5rem;
+}
+
+.wpc7 h6 {
+  margin: 0;
+  font-weight: 400;
+  color: #6b6b6b;
+}
+
+.wpcf7-form {
+  padding: 2rem;
+  background: #ebebeb;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px #666;
+  .row.sub{
+    margin-top: 2rem;
   }
-  h6{
-    margin: 0;
-    font-weight: 400;
-    color: #6b6b6b;
+}
+
+.wpcf7-submit {
+  font-family: 'Montserrat', sans-serif;
+  background: transparent;
+  color: #fff;
+  border:none;
+  background: $brand-complimentary;
+  box-shadow: 0 3px 5px #000;
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  &:focus{
+    outline: none;
   }
-  .wpcf7-form{
-    padding: 2rem;
-    background: #ebebeb;
-    border-radius: 10px;
-    box-shadow: 0 3px 5px #666;
-    .row.sub{
-      margin-top: 2rem;
-    }
-    .wpcf7-submit{
-      font-family: 'Montserrat', sans-serif;
-      background: transparent;
-      color: #fff;
-      border:none;
-      background: $brand-complimentary;
-      width: 100%;
-      padding: 15px;
-      border-radius: 10px;
-      &:focus{
-        outline: none;
-      }
-    }
-    .wpcf7-response-output{
-      border:none;
-    }
-    .wpcf7-form-control-wrap{
-      .wpcf7-form-control{
-        padding: 1rem;
-        margin-bottom: 1.75rem;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        border: 1px solid #b2b2b2;
-        border-radius: 10px;
-        font-size: 1.6rem;
-        color: #6b6b6b;
-        background: #fff;
-        width: 100%;
-        font-weight: 300;
-        font-family: inherit;
-        &:focus{
-          outline: none;
-          border-bottom: 1px solid #2777B1;
-        }
-        &::placeholder{
-          color:#b5b5b5;
-        }
-      }
-    }
+}
+
+.wpcf7-response-output{
+  border:none;
+}
+
+.wpcf7-form-control{
+  padding: 1rem;
+  margin-bottom: 1.75rem;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border: 1px solid #b2b2b2;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  color: #6b6b6b;
+  background: #fff;
+  width: 100%;
+  font-weight: 300;
+  font-family: inherit;
+  &:focus{
+    outline: none;
+    border-bottom: 1px solid #2777B1;
+  }
+  &::placeholder{
+    color:#b5b5b5;
   }
 }
 

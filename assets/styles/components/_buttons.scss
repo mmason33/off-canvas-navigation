@@ -1,66 +1,25 @@
 /* ==== BUTTONS ==== */
 
-.consultation-white, .consultation-dark-blue, .consultation-grey {
-  border-radius: 5px;
-  display: inline-block;
-  padding: 15px;
-  font-size: 1.8rem;
-  text-decoration: none;
-  margin-top: 2rem;
-  &:hover{
-    text-decoration: none;
-  }
-}
-
-.consultation-white {
-  border: 1px solid #fff;
-  color: #fff;
-  font-weight: 400;
-  transition: ease all 0.3s;
-  &:hover, &:focus {
-    background: #fff;
-    border: 1px solid #666;
-    box-shadow: 0px 3px 5px #000;
-    color: #666;
-  }
-}
-
-.consultation-dark-blue {
-  border: 1px solid $brand-primary;
-  color: $brand-primary;
-}
-
-.consultation-grey {
-  border: 1px solid #353535;
-  color: #353535;
-  transition: ease all 0.3s;
-  &:hover {
-    background: #353535;
-    border: 1px solid #f3f3f3;
-    color: #f3f3f3;
-  }
-}
-
-
 .btn-orange, .btn-dark-blue, .btn-light-blue {
   border-radius: 5px;
   box-shadow: 0px 2px 3px #000;
   color: #fff;
-  display: inline-flex;
-  font-weight: 400;
+  display: inline-block;
   margin-top: 1.25rem;
   padding: 7px 13px;
   transition: ease all 0.3s;
   &:hover,&:focus{
-    box-shadow: 0px 3px 5px #000;
+    box-shadow: 0px 5px 8px #000;
     text-decoration: none;
   }
 }
 
 .btn-orange {
   background: $brand-complimentary;
+  border: 2px solid $brand-complimentary;
   transition: ease all 0.3s;
   &:hover {
+    border: 2px solid $brand-primary;
     color: $brand-primary;
   }
 }
@@ -73,7 +32,19 @@
   background: $brand-secondary;
 }
 
-//.video-btn homepage
+.consultation-white {
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+  padding: 1rem 3.5rem;
+  margin-top: 1rem;
+  &:hover,&:focus {
+    color:#fff;
+  }
+}
+
 .video-btn {
   padding: 12px;
   background: #ef6f00;
@@ -93,19 +64,6 @@
     color: #fff;
   }
 }
-
-
-//specific instance for the ins-cta
-.insurance-cta {
-  .consultation-white {
-    padding: 15px;
-    &:hover, &:focus {
-      border: 1px solid $brand-complimentary;
-      color: $brand-complimentary;
-    }
-  }
-}
-
 
 @media screen and (max-width: 1024px) {
   .btn-orange, .btn-dark-blue, .btn-light-blue {

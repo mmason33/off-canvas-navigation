@@ -1,11 +1,5 @@
-<?php if (!is_page_template('contact.php')): //style="background:url('/wp-content/uploads/2017/04/footer-image-texture-idea-1.jpg') no-repeat center center;" ?>
+<?php if (!is_page_template('contact.php')): ?>
 <footer class="content-info">
-  <div id="ember238" class="ember-view">
-    <div id="stars"></div>
-    <div id="stars2"></div>
-    <div id="stars3"></div>
-    <!-- <div id="star4" class="animated pulse infinite"></div> -->
-  </div>
   <div class="container-fluid wrap">
     <div class="row justify-content-center">
       <div class="col-xl-2 col-lg-3 col-md-4 col-8 text-center">
@@ -50,6 +44,14 @@
   </div>
 </footer>
 <?php endif; ?>
+
+<?php if ( is_page_template('page-with-sidebar.php') || is_page_template('page-with-sidebar-mental-health.php') || is_page_template('page-with-sidebar-admissions.php') || is_page_template('page-with-sidebar-addiction.php')): ?>
+
+  <?php get_template_part('templates/sidebar-modal'); ?>
+
+<?php endif; ?>
 <?php if (is_page('home')): ?>
-<?php get_template_part('templates/modal'); ?>
+
+  <?php get_template_part('templates/modal'); ?>
+
 <?php endif; ?>

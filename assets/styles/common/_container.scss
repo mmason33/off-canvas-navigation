@@ -1,0 +1,30 @@
+.wrap.container-fluid{
+  max-width: 160rem;
+  margin:0 auto;
+  padding: 4rem;
+}
+
+@media screen and (max-width: 1680px){
+  .wrap.container-fluid {
+    max-width: 135rem;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .wrap.container-fluid {
+    margin: 0 1.5rem;
+  }
+}
+
+@media screen and (max-width:768px){
+  .wrap.container-fluid{
+      padding: 2rem;
+    }
+}
+
+@media screen and (max-width:425px) {
+  .wrap.container-fluid {
+    margin: 0 1rem;
+  }
+}

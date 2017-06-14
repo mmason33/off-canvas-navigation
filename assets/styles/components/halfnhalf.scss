@@ -1,4 +1,4 @@
-//STYLE FOR HALF AND HALF IN THE BUILDER
+/*====================== HALF AND HALF HERO SECTION(NON-BUILDER) ===============*/
 
 .half-left,.half-right{
   min-height: 350px;
@@ -15,9 +15,6 @@
   top: 15%;
 }
 
-
-/*====================== HALF AND HALF HERO SECTION(NON-BUILDER) ===============*/
-
 .image-right-hero{
   position: relative;
   height: 500px;
@@ -32,27 +29,48 @@
   width: 100%;
 }
 
-.content-left-hero{
+.content-left-hero {
   position: absolute;
   height: 500px;
   width: 50%;
   top: 0;
   text-align: center;
   z-index: 1;
-  .content-left{
-    margin-top: 18rem;
-    padding: 0 5rem;
-/*    h1 {
-      font-size: 5rem;
-      margin-bottom: 1rem;
-    }
-    h3 {
-      font-size: 3rem;
-    }*/
-  }
 }
 
-@media screen and (max-width:768px){
+.content-left-hero .content-left{
+  margin-top: 18rem;
+  padding: 0 5rem;
+}
+
+@media screen and (max-width:1600px){
+
+  .has-text {
+    top: 10%;
+  }
+
+}
+
+
+@media screen and (max-width:1300px) and (min-width:1025px){
+
+  .content-left-hero{
+    width: 62% !important;
+  }
+
+}
+
+@media screen and (max-width:1024px){
+
+  .content-left-hero .content-left {
+    margin-top: 16rem;
+    padding: 0 .5rem !important;
+  }
+
+}
+
+@media screen and (max-width:768px) {
+
   .image-right-hero{
     width: 100%;
     float: clear;
@@ -67,7 +85,8 @@
       width: 100%;
     }
   }
-  .content-left-hero{
+
+  .content-left-hero {
     background: transparent !important;
     z-index: 1;
     width: 97%;
@@ -77,28 +96,17 @@
     }
   }
 }
-@media screen and (max-width:1300px) and (min-width:1025px){
-  .content-left-hero{
-    width: 62% !important;
-  }
-}
 
 @media screen and (max-width:576px){
-    .image-right-hero, .image-right-hero::after,.content-left-hero,#hero{
+
+    .image-right-hero, .image-right-hero::after,.content-left-hero{
       height: 400px !important;
     }
+
     .content-left {
       margin-top: 12rem !important;
     }
-/*    .content-left-hero .content-left {
-      h1 {
-        font-size: 3rem;
-      }
-      h3 {
-        font-size: 1.8rem;
-      }
-    }
-*/
+
     .half-content {
       padding: 0 !important;
     }
@@ -106,23 +114,4 @@
     .hero-overlay-gradient {
       height: 400px !important;
     }
-}
-
-@media screen and (max-width:1024px){
-  .content-left-hero .content-left {
-    margin-top: 16rem;
-    padding: 0 .5rem !important;
-/*    h1 {
-      font-size: 3.25rem !important;
-    }
-    h3 {
-      font-size: 2.25rem !important;
-    }*/
-  }
-}
-
-@media screen and (max-width:1600px){
-  .has-text {
-    top: 10%;
-  }
 }

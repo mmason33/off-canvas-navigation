@@ -4,40 +4,29 @@
   padding: 4rem 0 0 0;
 }
 
-/*.home {
-  #page {
-    padding: 4rem 0 0 0;
-  }
-  .insurance-cta {
-    top: 575px !important;
-  }
+.home #hero {
+  height: 600px;
+}
 
-  .content-info {
-    top: 600px;
-  }
+.home .section-float {
+  top: 550px;
+}
 
-  .section-float {
-    top: 550px;
-  }
-}*/
+.home .insurance-cta {
+  top: 575px;
+}
 
-/*@media screen and (max-width:576px) {
-  .home{
-    #page {
-      padding: 1.5rem 0 0 0;
-    }
-    #hero {
-      height: 600px !important;
-    }
-  }
-}*/
+.home .content-info {
+  top: 630px;
+}
 
-@media screen and (max-width:375px) {
-/*  .home #cta-content h1 {
-    font-size: 2.5rem !important;
-  }*/
+@media screen and (max-width:576px) {
 
   .home .head {
-    margin-top: 10rem !important;
+    margin-top: 8rem !important;
+  }
+
+  .home #page {
+    padding: 1.5rem 0 0 0;
   }
 }

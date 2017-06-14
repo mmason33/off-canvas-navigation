@@ -1,18 +1,49 @@
+/*====Home Modal===*/
 
-.modal-header {
-  border-bottom: none;
+#videoModal {
+  .modal-header {
+    border-bottom: none;
+    padding: 5px;
+  }
+
+  .modal-body {
+    padding: 0;
+  }
+
+  .modal-content {
+    border-radius: 5px;
+  }
 }
-
-.modal-content {
-  border-radius: 5px;
-}
-
-// .modal-open {
-//   overflow: scroll !important;
-// }
 
 @media (min-width: 992px) {
   .modal-lg {
     max-width: 700px;
   }
+}
+
+
+/*Sidebar Modal*/
+
+#contactModal {
+
+  .modal-header {
+    padding: 0;
+  }
+
+  .modal-content {
+    padding: 0;
+  }
+
+  .close {
+    color: #ef6f00;
+    opacity: 1;
+    position: absolute;
+    font-size: 5rem;
+    top: -2rem;
+    left: -1rem;
+    span {
+      text-shadow: 1px 3px 4px #666;
+    }
+  }
+
 }
