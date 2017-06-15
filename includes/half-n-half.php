@@ -4,29 +4,25 @@
 $heroPosition = get_field('hero_position');
 $heroImage = (get_field('hero_image') != '' ? "background:url('".get_field('hero_image')."') no-repeat " : '');
 $heroContent = get_field('hero_content');
-$switchPostion = (get_field('content_right_image_left') != 1 ? 'float:right;' : 'float:left;');
 $contentBGcolor = get_field('content_bg_color');
 $heroSize = (get_field('hero_size') != '' ? 'background-size:'.get_field('hero_size').';' : '');
-$overlayColor = (get_field('overlay_color') != '' ? 'style="background:url(/wp-content/uploads/2017/04/'.get_field('overlay_color').') no-repeat;width:100%;position:absolute;top:0;height:500px;"' : '');
+
 ?>
-<section id="hero" style="<?php echo $heroImage; ?><?php echo $heroPosition; ?>;<?php echo $switchPostion; ?><?php echo $heroSize; ?>">
-<?php if($switchPostion == 'float:right;'): ?>
-  <div class="content-left-hero" style="left:0;">
-<?php else: ?>
-  <div class="content-left-hero" style="left:50%;">
-<?php endif; ?>
-    <div class="row content-left">
+<section id="hero" 
+
+<?php if(is_page_template('page-with-sidebar.php') || is_page_template('leadership.php') || is_page_template('our-team.php')): echo 'class="hero-sidebar"'; endif; ?>
+
+style="<?php echo $heroImage; ?><?php echo $heroPosition; ?>;<?php echo $switchPostion; ?><?php echo $heroSize; ?>">
+
+<div class="container-fluid wrap">
+    <div class="row content-left head-sidebar">
       <div class="col-lg-12 col-xl-12 col-md-12">
+
         <?php echo $heroContent; ?>
+
       </div>
     </div>
   </div>
-  <!-- <div class="image-right-hero" style="<?php //echo $heroImage; ?><?php //echo $heroPosition; ?>;<?php //echo $switchPostion; ?><?php //echo $heroSize; ?>"><div class="half-overlay" <?php //echo $overlayColor; ?>></div></div> -->
-  <div class="hero-overlay-gradient" style="background:linear-gradient(
-  <?php if($switchPostion == 'float:left'):
-          echo 'to left, ';
-        else:
-          echo 'to right, ';
-        endif;
-  ?><?php echo $contentBGcolor; ?>, transparent);"></div>
+
+  <div class="hero-overlay-gradient" style="background:linear-gradient(to right, <?php echo $contentBGcolor; ?>, transparent);"></div>
 </section>

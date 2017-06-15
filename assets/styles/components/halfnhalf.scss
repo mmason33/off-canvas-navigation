@@ -1,6 +1,6 @@
 /*====================== HALF AND HALF HERO SECTION(NON-BUILDER) ===============*/
 
-.half-left,.half-right{
+/*.half-left,.half-right{
   min-height: 350px;
 }
 .half-content{
@@ -20,16 +20,9 @@
   height: 500px;
   width: 50%;
 }
+*/
 
-.hero-overlay-gradient {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 500px;
-  width: 100%;
-}
-
-.content-left-hero {
+/*.content-left-hero {
   position: absolute;
   height: 500px;
   width: 50%;
@@ -41,35 +34,35 @@
 .content-left-hero .content-left{
   margin-top: 18rem;
   padding: 0 5rem;
-}
-
+}*/
+/*
 @media screen and (max-width:1600px){
 
   .has-text {
     top: 10%;
   }
 
-}
+}*/
 
 
-@media screen and (max-width:1300px) and (min-width:1025px){
+/*@media screen and (max-width:1300px) and (min-width:1025px){
 
   .content-left-hero{
     width: 62% !important;
   }
 
-}
+}*/
 
-@media screen and (max-width:1024px){
+/*@media screen and (max-width:1024px){
 
   .content-left-hero .content-left {
     margin-top: 16rem;
     padding: 0 .5rem !important;
   }
 
-}
+}*/
 
-@media screen and (max-width:768px) {
+/*@media screen and (max-width:768px) {
 
   .image-right-hero{
     width: 100%;
@@ -95,9 +88,9 @@
       color: #fff !important;
     }
   }
-}
+}*/
 
-@media screen and (max-width:576px){
+/*@media screen and (max-width:576px){
 
     .image-right-hero, .image-right-hero::after,.content-left-hero{
       height: 400px !important;
@@ -111,7 +104,4 @@
       padding: 0 !important;
     }
 
-    .hero-overlay-gradient {
-      height: 400px !important;
-    }
-}
+}*/

@@ -25,6 +25,18 @@
   line-height: 3rem;
 }
 
+.head-sidebar {
+  margin-top: 15rem;
+}
+
+.hero-overlay-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 60%;
+}
+
 @media screen and (max-width:576px) {
 
   .page-template-page-with-sidebar, .page-template-leadership {
@@ -35,5 +47,9 @@
 
   .head {
     margin-top: 12rem;
-  }  
+  } 
+
+  .hero-overlay-gradient {
+    height: 400px !important;
+  } 
 }

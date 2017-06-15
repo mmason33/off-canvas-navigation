@@ -1,15 +1,20 @@
 .wrap.container-fluid{
-  max-width: 160rem;
+  max-width: 135rem;
   margin:0 auto;
   padding: 4rem;
 }
 
-@media screen and (max-width: 1680px){
+.hero-sidebar .wrap.container-fluid {
+  padding: 0;
+  z-index: 1;
+}
+
+/*@media screen and (max-width: 1680px){
   .wrap.container-fluid {
     max-width: 135rem;
     margin: 0 auto;
   }
-}
+}*/
 
 @media screen and (max-width: 1366px) {
   .wrap.container-fluid {

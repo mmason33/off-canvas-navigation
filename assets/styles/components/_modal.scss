@@ -31,7 +31,12 @@
   }
 
   .modal-content {
+    background: #ebebeb;
+    border:none;
+    border-radius: 5px;
+    box-shadow: 0 3px 5px #000;
     padding: 0;
+    outline: none;
   }
 
   .close {
@@ -39,11 +44,26 @@
     opacity: 1;
     position: absolute;
     font-size: 5rem;
+    outline: none;
     top: -2rem;
     left: -1rem;
+    z-index: 1;
     span {
       text-shadow: 1px 3px 4px #666;
     }
+    &:focus {
+      outline: none;
+    }
+  }
+
+  form {
+    background: transparent !important;
+    box-shadow: none !important;
+    margin: 1rem;
+  }
+
+  input[type="submit"] {
+    background: $brand-complimentary;
   }
 
 }

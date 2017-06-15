@@ -24,13 +24,12 @@
   }
 }
 
-.wpcf7-submit {
+.wpcf7-form-control.wpcf7-submit {
   font-family: 'Montserrat', sans-serif;
-  background: transparent;
   color: #fff;
   border:none;
   background: $brand-complimentary;
-  box-shadow: 0 3px 5px #000;
+/*  box-shadow: 0 3px 5px #000;*/
   width: 100%;
   padding: 15px;
   border-radius: 10px;

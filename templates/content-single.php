@@ -1,3 +1,9 @@
+<?php
+
+$staffTitle = get_field('staff_title');
+
+?>
+
 <?php while (have_posts()) : the_post(); ?>
     <div class="row single-post-wrap">
   <main class="col-xl-7 col-lg-7 col-md-12">
@@ -8,9 +14,13 @@
       </div>
     </div>
       <h1 class="single-post-title"><?php the_title(); ?></h1>
+      <?php if ('our_staff' != get_post_type()): ?>
           <div class="blog-meta">
             <?php get_template_part('templates/entry-meta'); ?>
           </div>
+      <?php else: ?>
+          <h4><?php echo $staffTitle; ?></h4>
+      <?php endif; ?>
       <div class="entry-content">
         <?php the_content(); ?>
       </div>

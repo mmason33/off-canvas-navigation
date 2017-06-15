@@ -137,8 +137,9 @@
       }
     },
 
-    'home': {
+    'blog': {
       init: function() {
+
 
       }
     }

@@ -2,9 +2,9 @@
 
 <?php if (!is_page(20)): ?>
 
-    <?php //echo do_shortcode('[contact-form-7 id="4" title="Contact form 1"]'); ?>
+<?php //echo do_shortcode('[contact-form-7 id="4" title="Contact form 1"]'); ?>
 
-<button type="button" class="sidebar-btn" data-toggle="modal" data-target="#contactModal">Contact Us</button>
+<button type="button" class="sidebar-btn" data-toggle="modal" data-target="#contactModal"><h5>Contact Us</h5></button>
 
 
 <?php else: ?>
