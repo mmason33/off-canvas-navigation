@@ -10,7 +10,7 @@ $heroSize = (get_field('hero_size') != '' ? 'background-size:'.get_field('hero_s
 ?>
 <section id="hero" 
 
-<?php if(is_page_template('page-with-sidebar.php') || is_page_template('leadership.php') || is_page_template('our-team.php')): echo 'class="hero-sidebar"'; endif; ?>
+<?php if(is_page_template('page-with-sidebar.php') || is_page_template('leadership.php') || is_page_template('our-team.php') || is_page_template('about.php') || is_page_template('facilities.php')): echo 'class="hero-sidebar"'; endif; ?>
 
 style="<?php echo $heroImage; ?><?php echo $heroPosition; ?>;<?php echo $switchPostion; ?><?php echo $heroSize; ?>">
 

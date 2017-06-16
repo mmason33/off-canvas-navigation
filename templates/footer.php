@@ -2,7 +2,7 @@
 <footer class="content-info">
   <div class="container-fluid wrap">
     <div class="row justify-content-center">
-      <div class="col-xl-2 col-lg-3 col-md-4 col-8 text-center">
+      <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-8 text-center">
         <img src="/wp-content/uploads/2017/04/nts-white-text-960x379.png" class="img-fluid">
       </div>
     </div>

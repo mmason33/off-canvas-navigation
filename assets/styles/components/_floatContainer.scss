@@ -32,22 +32,6 @@
   z-index: 0  !important;
 }
 
-@media screen and (max-width: 576px) {
-
-  .section-float {
-    top: 375px;
-  }
-
-  .insurance-cta {
-    top: 390px;
-  }
-
-  .content-info {
-    top: 415px;
-  }
-
-}    
-
 .page-template-page-with-sidebar-mental-health, 
 .page-template-page-with-sidebar-addiction, 
 .page-template-page-with-sidebar-admissions, 
@@ -66,3 +50,27 @@
   }
 
 }
+
+@media screen and (max-width: 768px) {
+
+  .insurance-cta {
+    padding: 1rem 0 !important;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+
+  .section-float {
+    top: 375px;
+  }
+
+  .insurance-cta {
+    top: 390px;
+  }
+
+  .content-info {
+    top: 415px;
+  }
+
+}    

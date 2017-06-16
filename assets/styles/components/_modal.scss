@@ -13,6 +13,24 @@
   .modal-content {
     border-radius: 5px;
   }
+
+  .close {
+    color: #ef6f00;
+    opacity: 1;
+    position: absolute;
+    font-size: 5rem;
+    outline: none;
+    top: -2rem;
+    left: -1rem;
+    z-index: 1;
+    span {
+      text-shadow: 1px 3px 4px #666;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+    
 }
 
 @media (min-width: 992px) {
