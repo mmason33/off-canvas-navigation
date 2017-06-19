@@ -7,10 +7,11 @@ $bgPosition = get_sub_field('bg_position');
 $textCenter = (get_sub_field('text_center') == 1 ? 'text-center' : '');
 $padding = get_sub_field('padding');
 $aos = (get_sub_field('aos_animate') == 1 ? ' data-aos="fade" data-aos-once="true"' : '' );
+$fullWidth = (get_sub_field('full_width') == 1 ? '-fluid' : '');
 ?>
 <section class="text-box-wrap <?php echo $padding; ?>" <?php echo $bgImage; ?><?php echo $bgColor; ?>>
 
-<div class="container">
+<div class="container<?php echo $fullWidth; ?>">
 	<section id="text-box"<?php echo $aos; ?>>
 			<div class="row">
 				<div class="col-md-12 <?php echo $textCenter; ?>">

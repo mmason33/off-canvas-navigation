@@ -40,15 +40,15 @@ h1,h2,h3,h4,h5,h6{
 }
 
 h1 {
-  font-size: 3.5rem;
-}
-
-h2 {
   font-size: 3.2rem;
 }
 
+h2 {
+  font-size: 3rem;
+}
+
 h3 {
-  font-size: 2.9rem;
+  font-size: 2.7rem;
 }
 
 h4 {
@@ -70,58 +70,6 @@ p{
   display: none !important;
 }
 
-@media screen and (max-width: 1600px) {
-
-  h1 {
-    font-size: 3.2rem;
-  }
-
-  h2 {
-    font-size: 2.9rem;
-  }
-
-  h3 {
-    font-size: 2.6rem;
-  }
-
-  h4 {
-    font-size: 2.2rem;
-  }
-
-  h5 {
-    font-size: 2rem;
-  }
-
-  p {
-    font-style: 1.6rem;
-  } 
-
-}
-
-@media screen and (max-width: 576px) {
-
-  h1 {
-    font-size: 2.6rem;
-  }
-
-  h2 {
-    font-size: 2.4rem;
-  }
-
-  h3 {
-    font-size: 2.2rem;
-  }
-
-  h4 {
-    font-size: 2rem;
-  }
-
-  h5 {
-    font-size: 1.8rem;
-  }
-
-}
-
 a, button {
   &:focus, &:hover {
     text-decoration: none;
@@ -133,6 +81,40 @@ ul.list, ol.list {
   color: #6b6b6b;
 }
 
+footer {
+    background-image: linear-gradient(0deg,#002042 0,#0e4577 100%);
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1600px) {
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.7rem;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+  }
+
+  h4 {
+    font-size: 2.2rem;
+  }
+
+  h5 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+  } 
+
+}
+
 @media screen and(max-width:1025px){
   body{
     font-size:1.35rem;
@@ -142,9 +124,6 @@ ul.list, ol.list {
     line-height: 3rem;
   }
 
-  h1,h2,h3,h4,h5,h6 {
-    line-height: 3.5rem;
-  }
 }
 
 @media screen and (max-width:768px){
@@ -153,8 +132,26 @@ ul.list, ol.list {
   }
 }
 
-footer {
-    background-image: linear-gradient(0deg,#002042 0,#0e4577 100%);
-    overflow: hidden;
-    box-sizing: border-box;
+@media screen and (max-width: 576px) {
+
+  h1 {
+    font-size: 2.3rem;
+  }
+
+  h2 {
+    font-size: 2.1rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.9rem;
+  }
+
+  h5 {
+    font-size: 1.8rem;
+  }
+
 }

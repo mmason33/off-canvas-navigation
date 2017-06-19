@@ -1,14 +1,13 @@
 /*========= Sidebar styles =========*/
 
-.sidebar-tile {
+/*.sidebar-tile {
   position: relative;
   background: #e3e3e3;
   height: 240px;
   border: 1px solid #999;
-  margin-top: 10px;
   border-radius: 5px;
   box-shadow: 0px 3px 5px #000;
-  margin-top: 2em;
+  margin-bottom: 2rem;
 }
 
 .sidebar-tile h3 {
@@ -43,6 +42,26 @@
   background: rgba(1, 33, 68, 0.55);
   border-radius: 5px;
   top: 0.65em;
+}*/
+
+
+.tile-wrap {
+  background: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px #666;
+  margin-top: 2rem;
+  padding: 4rem 1rem;
+  transition: ease box-shadow 0.3s;
+  .fa, p{
+    color: $brand-secondary;
+    transition: ease color 0.3s;
+  }
+  &:hover {
+    box-shadow: 0px 3px 6px #000;
+    .fa, p {
+      color: $brand-complimentary;
+    }
+  }
 }
 
 /*=== MENTAL HEALTH MENU ===*/

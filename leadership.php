@@ -5,13 +5,14 @@
 ?>
 
 <?php //get_template_part('includes/half-n-half'); ?>
-<div class="container visible-xs-down hidden-sm-up">
-<div class="row leadership-mobile">
-  <div class="col-xs-12">
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+<!-- <div class="container visible-xs-down hidden-sm-up">
+  <div class="row leadership-mobile">
+    <div class="col-xs-12">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+    </div>
   </div>
 </div>
-</div>
+
 <div class="container-fluid">
   <div class="row leadership-grid">
   <div class="col-lg-3 col-md-3 col-sm-3 leadership-image">
@@ -31,7 +32,7 @@
   </div>
   <div class="col-lg-9 col-md-9 col-sm-9 hidden-xs-down">
     <div class="leadership-bio">
-    <h3>Michael Netherton</h3>
+    <h3>Michael Neatherton</h3>
     <h4>Chief Executive Officer</h4>
     <p>Mike Neatherton is an industry leader with a career spanning more than 30 years. When Mike joined Northbound he immediately began to transform the corporate culture by building on the transformational leadership principles of transparency, authenticity, and collaboration. Mike believes that successful leadership requires not only vision, but the ability to gain the agreement and commitment of all of the other people in the organization. As President and CEO of Northbound, Mike’s passion for treatment is founded upon the belief that all individuals can recover. Mike maintains a solid 12-Step program as the foundation for treatment at Northbound, informing all aspects of treatment, and serving as the core philosophy for the organization. Mike embraces the challenge of providing superior treatment services to the entire family system impacted by drug addiction, alcoholism, and mental illness. He cites his strong spiritual values and the ability to find balance in his personal life as the keys to his professional success. Prior to Northbound, Mike served in various executive positions at the Betty Ford Center in Rancho Mirage California, where he worked for more than 20 years. Mike holds a bachelor’s degree from Wright State University in Dayton, Ohio, and a master’s degree from Indiana State University in Terra Haute, Indiana. He is a member of both the American College of Healthcare Executives and the American College of Addiction Treatment Administrators. Mike and his wife, Maria, have 3 daughters, and they reside in Newport Beach, California.</p>
   </div>
@@ -155,3 +156,80 @@
   </div>
   </div>
 </div>
+ -->
+<div class="container-fluid">
+
+<?php
+        $args = array(
+            'post_type' => 'leadership',
+            'posts_per_page' => -1
+
+        );?>
+
+    <?php //declare query ?>
+    <?php $loop = new WP_Query( $args );?>
+
+        <?php $i = 1; ?>
+        <?php //start the loop ?>
+        <?php while ( $loop->have_posts() ) : $loop->the_post();?>
+                <?php $title = get_field('staff_title'); ?>
+
+          <?php if ( $i === 1 || $i === 3 || $i === 5 || $i === 7 || $i === 9): ?>
+
+            <div class="row leadership-grid">
+
+
+                <div class="col-lg-3 col-md-4 leadership-image">
+                  <img src="<?php the_post_thumbnail_url(); ?>" class="img-fluid rounded">
+                  <div class="visible-xs-down hidden-sm-up">
+                  <h3><?php the_title(); ?></h3>
+                  <h4><?php echo $title; ?></h4>
+                  <a href="<?php the_permalink(); ?>">Read Bio</a>
+                  </div>
+                </div>
+
+                <div class="col-lg-9 col-md-8 hidden-xs-down">
+                  <div class="leadership-bio">
+                    <h3><?php the_title(); ?></h3>
+                    <h4><?php echo $title; ?></h4>
+                    <?php the_content(); ?>
+                  </div>
+                </div>
+
+            </div>
+
+
+        <?php else: ?>
+
+        <div class="row leadership-grid">
+
+                <div class="col-lg-9 col-md-8 hidden-xs-down">
+                  <div class="leadership-bio">
+                    <h3><?php the_title(); ?></h3>
+                    <h4><?php echo $title; ?></h4>
+                    <?php the_content(); ?>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 leadership-image">
+                  <img src="<?php the_post_thumbnail_url(); ?>" class="img-fluid rounded">
+                  <div class="visible-xs-down hidden-sm-up">
+                  <h3><?php the_title(); ?></h3>
+                  <h4><?php echo $title; ?></h4>
+                  <a href="<?php the_permalink(); ?>">Read Bio</a>
+                  </div>
+                </div>
+
+        </div>
+
+
+
+        <?php endif; ?>
+        <?php $i++; ?>
+
+
+    <?php endwhile;?>
+
+
+        <?php wp_reset_postdata();?>
+  </div>

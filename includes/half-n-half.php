@@ -15,7 +15,7 @@ $heroSize = (get_field('hero_size') != '' ? 'background-size:'.get_field('hero_s
 style="<?php echo $heroImage; ?><?php echo $heroPosition; ?>;<?php echo $switchPostion; ?><?php echo $heroSize; ?>">
 
 <div class="container-fluid wrap">
-    <div class="row content-left head-sidebar">
+    <div class="row content-left head-sidebar" data-aos="fade-up" data-aos-once="true">
       <div class="col-lg-12 col-xl-12 col-md-12">
 
         <?php echo $heroContent; ?>

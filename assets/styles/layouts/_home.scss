@@ -20,10 +20,14 @@
   top: 630px;
 }
 
+.home .founder-quote {
+  padding: 5rem 0 0 0;
+}
+
 @media screen and (max-width:576px) {
 
   .home .head {
-    margin-top: 8rem !important;
+    margin-top: 10rem !important;
   }
 
   .home #page {

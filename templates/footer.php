@@ -8,7 +8,7 @@
     </div>
     <div class="row justify-content-center">
       <div class="col-md-8 text-center">
-        <h3 class="white">"Our mission is to assist our clients in achieving one year of continuous sobriety"</h3>
+        <h4 class="white">"Our mission is to assist our clients in achieving one year of continuous sobriety"</h4>
         <hr>
       </div>
     </div>

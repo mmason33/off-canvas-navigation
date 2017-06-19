@@ -31,7 +31,7 @@ $aos = (get_sub_field('aos_animate') == true ? ' data-aos="fade" data-aos-once="
     $i = 1;//loop counter
 if(have_rows('column_content') ):
   while( have_rows('column_content') ) : the_row();
-    $columnIcon = (get_sub_field('column_icon') != '' ? '<i class="fa '.get_sub_field('column_icon').' fa-4x column-icon"></i>' : '');
+    $columnIcon = (get_sub_field('column_icon') != '' ? '<i class="fa '.get_sub_field('column_icon').' fa-3x column-icon"></i>' : '');
     $columnHeadline = get_sub_field('column_headline');
     $columnBody = (get_sub_field('column_body') != '' ? '<p class="column-body">'.get_sub_field('column_body').'</p>' : '');
     $columnImage = (get_sub_field('column_image') != '' ? '<div class="column-image" style="background:url('.get_sub_field('column_image').') no-repeat center center; background-size:cover;"></div>' : '');
@@ -46,13 +46,13 @@ if(have_rows('column_content') ):
                 <a href="<?php echo $columnLink; ?>">
                   <?php echo $columnImage; ?>
                   <?php echo $columnIcon; ?>
-                  <?php echo $columnHeadline; ?>
+                  <h4><?php echo $columnHeadline; ?></h4>
                   <?php echo $columnBody; ?>
                 </a>
               <?php else: ?>
                 <?php echo $columnImage; ?>
                 <?php echo $columnIcon; ?>
-                <?php echo $columnHeadline; ?>
+                <h4><?php echo $columnHeadline; ?></h4>
                 <?php echo $columnBody; ?>
               <?php endif; ?>
             </div>
