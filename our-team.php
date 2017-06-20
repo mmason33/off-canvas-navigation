@@ -3,6 +3,8 @@
  * Template Name: Our Team Template
  */
 ?>
+<?php get_template_part('includes/half-n-half'); ?>
+<div id="page" class="container-fluid wrap section-float">
 <div class="container-fluid">
   <div class="row our-team-hero">
     <div class="col-lg-3 col-md-3 col-sm-3 leadership-image">
@@ -89,3 +91,5 @@
         <?php wp_reset_postdata();
     }?>
 </div>
+</div>
+<?php get_template_part('templates/ins-cta'); ?>

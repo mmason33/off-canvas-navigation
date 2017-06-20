@@ -5,12 +5,13 @@ $staffTitle = get_field('staff_title');
 ?>
 
 <?php while (have_posts()) : the_post(); ?>
+<div class="container-fluid wrap section-float">
     <div class="row single-post-wrap">
   <main class="col-xl-7 col-lg-7 col-md-12">
     <article <?php post_class(); ?>>
       <div class="row">
       <div class="col-md-12">
-        <img src="<?php the_post_thumbnail_url(); ?>" class="img-fluid">
+        <img src="<?php the_post_thumbnail_url(); ?>" class="img-fluid" data-aos="zoom-in" data-aos-once="true">
       </div>
     </div>
       <h1 class="single-post-title"><?php the_title(); ?></h1>
@@ -38,4 +39,6 @@ $staffTitle = get_field('staff_title');
     </div>
   </div> -->
 </div>
+</div>
+<?php get_template_part('templates/ins-cta'); ?>
 <?php endwhile; ?>

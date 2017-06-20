@@ -72,15 +72,27 @@ p{
 
 a, button {
   font-family: 'Montserrat', sans-serif;
-  &:focus, &:hover {
-    text-decoration: none;
+  &:hover, &:focus {
+    cursor:pointer;
   }
 }
+
+a {
+  color: $brand-complimentary;
+  &:hover, &:focus {
+    color: $brand-complimentary;
+  }
+}
+
 
 ul.list, ol.list {
   font-size: 1.8rem !important;
   line-height: 4rem !important;
   color: #6b6b6b;
+}
+
+.img-fluid {
+  border-radius: 5px;
 }
 
 footer {

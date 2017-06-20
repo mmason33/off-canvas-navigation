@@ -1,4 +1,4 @@
-.page-template-about {
+.about-northbound {
   #hero {
     height: 500px !important;
   }
@@ -19,8 +19,14 @@
   }
 }
 
+.value-item {
+  border: 1px solid #6b6b6b;
+  border-radius: 5px;
+  padding: 1rem .5rem;
+}
+
 @media screen and (max-width:576px) {
-  .page-template-about .container-fluid.wrap {
+  .about-northbound .container-fluid.wrap {
     padding: 2rem 0 0 0 !important;
   }
 }

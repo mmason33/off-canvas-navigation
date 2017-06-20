@@ -42,7 +42,8 @@
             });
 
             $('.column-content').matchHeight();
-
+            $('.tile-wrap').matchHeight();
+            $('.value-item').matchHeight();
 
             $(window).scroll(function(){
               $("#hero").css({

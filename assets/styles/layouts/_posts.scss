@@ -168,6 +168,16 @@ time,.author a,.author{
     }
 }
 
+.single {
+  a:hover {
+    text-decoration: none !important;
+  }
+  .tile-wrap {
+    margin-bottom: 0;
+    margin-top: 2rem;
+  }
+}
+
 .single-post-wrap{
   article{
     padding: 0 2em;

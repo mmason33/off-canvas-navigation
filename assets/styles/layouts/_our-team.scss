@@ -28,6 +28,7 @@
   .staff-member {
     margin-bottom: 4rem;
     a{
+      color: $brand-primary;
       text-decoration: none;
     }
     &:after {
@@ -109,12 +110,5 @@
 @media screen and (max-width:576px) {
   .our-team-hero .col-lg-9:nth-of-type(odd), .our-team-hero .col-lg-3:nth-of-type(even) {
     background: #fff !important;
-  }
-}
-
-
-.single-our_staff {
-  .section-float {
-    top: 125px;
   }
 }

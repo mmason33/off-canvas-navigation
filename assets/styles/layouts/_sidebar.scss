@@ -44,12 +44,17 @@
   top: 0.65em;
 }*/
 
+.col-6 {
+  a {
+    text-decoration: none;
+  }
+}
 
 .tile-wrap {
   background: #f0f0f0;
   border-radius: 5px;
   box-shadow: 0px 2px 4px #666;
-  margin-top: 2rem;
+  margin-bottom: 2rem;
   padding: 4rem 1rem;
   transition: ease box-shadow 0.3s;
   .fa, p{
@@ -73,7 +78,7 @@ ul.mental-health, ul.addiction-nav, ul.admissions-nav {
   li {
     border: 1px solid #6b6b6b;
     font-size: 1.8rem;
-    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
     transition: ease all 0.3s;
     text-align: center;
     a {
@@ -89,11 +94,21 @@ ul.mental-health, ul.addiction-nav, ul.admissions-nav {
   }
 }
 
+@media screen and (max-width:995px) {
+  .sidebar-main {
+    padding-top: 2rem;
+  }
+}
+
 
 @media screen and (max-width:576px) {
   ul.mental-health, ul.addiction-nav, ul.admissions-nav {
     a {
       padding: 1rem !important;
     }
+  }
+
+  .tile-wrap {
+    padding: 3rem 0;
   }
 }

@@ -45,7 +45,7 @@
 </footer>
 <?php endif; ?>
 
-<?php if ( is_page_template('page-with-sidebar.php') || is_page_template('page-with-sidebar-mental-health.php') || is_page_template('page-with-sidebar-admissions.php') || is_page_template('page-with-sidebar-addiction.php')): ?>
+<?php if ( is_page_template('page-with-sidebar.php') || is_page_template('page-with-sidebar-mental-health.php') || is_page_template('page-with-sidebar-admissions.php') || is_page_template('page-with-sidebar-addiction.php') ||is_page_template('template-custom.php') || is_page_template('our-team.php') || is_page_template('leadership.php') || is_page_template('facilities.php')): ?>
 
   <?php get_template_part('templates/sidebar-modal'); ?>
 
