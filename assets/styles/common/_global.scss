@@ -59,7 +59,7 @@ h5 {
   font-size: 2.3rem;
 }
 
-p{
+p {
   font-size: 1.8rem;
   line-height: 3.25rem;
   color: #6b6b6b;
@@ -81,6 +81,7 @@ a {
   color: $brand-complimentary;
   &:hover, &:focus {
     color: $brand-complimentary;
+    text-decoration: none !important;
   }
 }
 
@@ -168,4 +169,13 @@ footer {
     font-size: 1.8rem;
   }
 
+}
+
+/*print correction*/
+@media print{
+    [data-aos] {
+        display: block !important;
+        opacity: 1 !important;
+        transform: translate(0) scale(1) !important;
+    }
 }
