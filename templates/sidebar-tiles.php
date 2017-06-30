@@ -1,7 +1,7 @@
   <div class="row" data-aos="fade-up" data-aos-once="true">
     <div class="col-md-12 text-center">
-<!--       <h2>Signature Services</h2>
-        <hr> -->
+      <h2>Signature Services</h2>
+        <hr>
         <div class="row">
           <div class="col-6">
             <a href="/careerbound">
