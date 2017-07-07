@@ -3,10 +3,10 @@
  * Template Name: Contact Page Template
  */
 ?>
-<section id="contact" style="background:url('/wp-content/uploads/2017/04/pexels-photo-360698.jpeg')no-repeat center center;background-size:cover;">
-<div class="container-fluid wrap section-float">
+<section id="contact">
+<div class="container">
   <div class="row">
-    <div class="col-md-6 contact-info">
+    <div class="col-lg-4 offset-lg-1 col-md-6 contact-info">
           <h4>Von Karman</h4>
           <p>4343 Von Karman Avenue, Suite 200</p>
           <p>Newport Beach, CA 92660</p>
@@ -18,14 +18,14 @@
           <p>Costa Mesa, CA 92627</p>
           <h5>Social</h5>
           <ul class="social-list">
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="https://www.facebook.com/Northboundtreatmentservices/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/livingsober/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/livingsober_nts?lang=en" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/national-therapeutic-services" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://www.youtube.com/user/LivingSoberToday" target="_blank"><i class="fa fa-youtube"></i></a></li>
           </ul>
         </div>
-      <div class="col-md-6">
+      <div class="col-lg-4 offset-lg-2 col-md-6">
         <?php echo do_shortcode('[contact-form-7 id="4" title="Contact form 1"]'); ?>
       </div>
     </div>

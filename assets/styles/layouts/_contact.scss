@@ -1,51 +1,44 @@
 
-#contact {
-  .wrap.container-fluid.section-float {
-    background: #ebebeb;
-    padding: 1rem;
-    max-width: 80rem;
-    margin:0 auto;
-  }
-  form {
-    padding: 0;
-    .wpcf7-form-control {
-      padding: .9rem;
-    }
-  }
-}
-
-
 #contact{
+  background:url('/wp-content/uploads/2017/07/contact-page.jpg')no-repeat center center;
+  background-size:cover;
   height: 100%;
   width: 100%;
   margin: 0;
   overflow: scroll;
   padding: 0;
   position: fixed;
-  .insurance-cta {
-    display: none !important;
+  .container {
+    margin-top: 15rem;
+    z-index: 1;
   }
-  .head{
-    margin-top: 15%;
+  .wpcf7 {
+    h2,h4 {
+      color: #fff !important;
+    }
+    .wpcf7-form {
+      background: transparent;
+      padding: 0;
+      box-shadow: none;
+      .wpcf7-form-control {
+        background: rgba(255,255,255,.875);
+        padding: .9rem;
+      }
+      .wpcf7-submit {
+        background: $brand-complimentary;
+      }
+    }
   }
-  .col-md-5.head{
-    background: #ebebeb;
-    box-shadow: 0px 3px 5px #000;
-    border-radius: 10px;
-  }
-  form {
-    box-shadow: none;
-  }
-  h4{
-    color: $brand-primary;
-  }
-  .contact-info{
+  .contact-info {
     p:nth-of-type(2),p:nth-of-type(4),p:nth-of-type(6) {
-      border-bottom: 2px solid rgba(0,0,0,.15);
+      border-bottom: 2px solid rgba(255,255,255,.15);
       margin-bottom: 3rem;
     }
     p:nth-of-type(6) {
-      border-bottom: 2px solid rgba(0,0,0,.15);
+      border-bottom: 2px solid rgba(255,255,255,.15);
+    }
+    ,h4,h5,p {
+      color: #fff;
     }
   }
   p{
@@ -64,42 +57,17 @@
       margin-right: 2rem;
     }
   }
-  .wpcf7-not-valid-tip {
-    display: none !important;
-  }
-  .wpcf7-response-output.wpcf7-display-none.wpcf7-validation-errors {
-    margin: 0 !important;
-    padding: 0 !important;
-  }
 }
 
 
 @media screen and (max-width:767px) {
-  #contact {
-    margin-bottom: 5rem;
-    padding: 0 2rem;
-    .head {
-      margin-top: 7rem;
-    }
-  }
-  .contact-float {
-    .col-md-5 {
-      margin-top: 4rem;
-    }
-  }
-  .contact .wpcf7 .wpcf7-form {
-    padding: 1rem !important;
+  
+  #contact .wpcf7 .wpcf7-form {
+    padding: 0 !important;
   }
 
-}
-
-
-
-.contact {
-  padding-top: 25vh;
-  form {
-    background: transparent;
-    box-shadow: none;
-    padding: 0;
+  #contact .container {
+    margin-top: 9rem !important;
   }
+
 }
