@@ -14,31 +14,31 @@
     </div>
       <div class="row justify-content-center">
         <div class="col-md-2 col-lg-1 col-sm-4 col-4 text-center icon-item">
-          <a href="#"><i class="fa fa-phone-square fa-2x"></i><small>Call</small></a>
+          <a href="tel:8663110003"><i class="fa fa-phone-square fa-2x"></i><small>Call</small></a>
         </div>
         <div class="col-md-2 col-lg-1 col-sm-4 col-4 text-center icon-item">
-          <a href="#"><i class="fa fa-map-marker fa-2x"></i><small>Directions</small></a>
+          <a href="https://www.google.com/maps/place/4343+Von+Karman+Ave+%23200,+Newport+Beach,+CA+92660/@33.6647704,-117.8647203,17z/data=!3m1!4b1!4m5!3m4!1s0x80dcde596ca5fb65:0xfe61ff9b5c4c66ff!8m2!3d33.6647256!4d-117.8622952" target="_blank"><i class="fa fa-map-marker fa-2x"></i><small>Directions</small></a>
         </div>
         <div class="col-md-2 col-lg-1 col-sm-4 col-4 text-center icon-item">
-          <a href="#"><i class="fa fa-envelope fa-2x"></i><small>Contact</small></a>
+          <a href="/contact-us"><i class="fa fa-envelope fa-2x"></i><small>Contact</small></a>
         </div>
         <div class="col-md-2 col-lg-1 col-sm-4 col-4 text-center icon-item">
-          <a href="#"><img src="/wp-content/uploads/2017/05/jcaho-white.png" class="img-fluid"><small>JCAHO</small></a>
+          <a href="https://www.jointcommission.org/" target="_blank"><img src="/wp-content/uploads/2017/05/jcaho-white.png" class="img-fluid"><small>JCAHO</small></a>
         </div>
         <div class="col-md-2 col-lg-1 col-sm-4 col-4 text-center icon-item">
-          <a href="#"><img src="/wp-content/uploads/2017/05/naatp-white.png" class="img-fluid"><small>NAATP</small></a>
+          <a href="https://www.naatp.org/" target="_blank"><img src="/wp-content/uploads/2017/05/naatp-white.png" class="img-fluid"><small>NAATP</small></a>
         </div>
         <div class="col-md-2 col-lg-1 col-sm-4 col-4 text-center icon-item">
-          <a href="#"><img src="/wp-content/uploads/2017/05/dhhs-white.png" class="img-fluid"><small>DHHS</small></a>
+          <a href="https://www.hhs.gov/" target="_blank"><img src="/wp-content/uploads/2017/05/dhhs-white.png" class="img-fluid"><small>DHHS</small></a>
         </div>
         <div class="col-md-2 col-lg-1 col-sm-4 col-4 text-center icon-item">
-          <a href="#"><i class="fa fa-facebook fa-2x"></i><small>Facebook</small></a>
+          <a href="https://www.facebook.com/Northboundtreatmentservices/" target="_blank"><i class="fa fa-facebook fa-2x"></i><small>Facebook</small></a>
         </div>
         <div class="col-md-2 col-lg-1 col-sm-4 col-4 text-center icon-item">
-          <a href="#"><i class="fa fa-instagram fa-2x"></i><small>Instagram</small></a>
+          <a href="https://www.instagram.com/livingsober/" target="_blank"><i class="fa fa-instagram fa-2x"></i><small>Instagram</small></a>
         </div>
         <div class="col-md-2 col-lg-1 col-sm-4 col-4 text-center icon-item">
-          <a href="#"><i class="fa fa-twitter fa-2x"></i><small>Twitter</small></a>
+          <a href="https://twitter.com/livingsober_nts?lang=en" target="_blank"><i class="fa fa-twitter fa-2x"></i><small>Twitter</small></a>
         </div>
       </div>
   </div>

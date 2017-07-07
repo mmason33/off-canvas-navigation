@@ -1,49 +1,4 @@
 /*========= Sidebar styles =========*/
-
-/*.sidebar-tile {
-  position: relative;
-  background: #e3e3e3;
-  height: 240px;
-  border: 1px solid #999;
-  border-radius: 5px;
-  box-shadow: 0px 3px 5px #000;
-  margin-bottom: 2rem;
-}
-
-.sidebar-tile h3 {
-  position: relative;
-  margin-top: 9.5rem;
-  color: #fff !important;
-  z-index: 1;
-  text-shadow: 0px 2px 3px #000;
-}
-
-.tile-overlay {
-  position: absolute;
-  width: 100%;
-  height: 240px;
-  background: rgba(1, 33, 68, 0.45);
-  border-radius: 5px;
-  top: 0;
-  transition: transform 0.5s;
-  &:hover{
-    background: rgba(1,33,68,.65);
-  }
-}
-
-.tiles a:hover {
-  text-decoration: none !important;
-}
-
-.tiles a::after {
-  position: absolute;
-  width: 88.5%;
-  height: 160px;
-  background: rgba(1, 33, 68, 0.55);
-  border-radius: 5px;
-  top: 0.65em;
-}*/
-
 .col-6 {
   a {
     text-decoration: none;
@@ -66,6 +21,32 @@
     .fa, p {
       color: $brand-complimentary;
     }
+  }
+}
+
+.our-process .tile-wrap {
+  background-size: cover !important;
+  position: relative;
+  height: 150px;
+  width: 100%;
+  transition: ease all 0.2s;
+  h4.white {
+    position: relative;
+    z-index: 2;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    background: rgba(0,32,66,.5);
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+  &:hover {
+    transform:scale(1.01); 
   }
 }
 
