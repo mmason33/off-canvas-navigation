@@ -20,7 +20,7 @@
 <header class="header container" id="nav-header">
 <div class="row justify-content-end nav-wrap">
   <div class="col-4 text-right">
-    <a href="#">888.888.8888</a>
+    <p class="hidden-md-down" style="color: #ef6f00;display: inline;">Recovery Reimagined -</p>&nbsp;<a  class="hidden-md-down" href="#">888.888.8888</a>
   </div>
 </div>
     <div class="nav-wrap row">

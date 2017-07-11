@@ -1,4 +1,14 @@
 
+/*
+* blue class for nav scroll 7/11 */
+
+.blue {
+  background: #002042;
+  transition: ease background 0.2s;
+}
+
+
+
 .nav-wrap {
   max-width: 135rem;
   margin:0 auto;
@@ -17,7 +27,8 @@
 }
 
 .header {
-  background: rgba(0,32,66,0.95); /*rgba(1,33,68,1);*/
+  /*background: rgba(0,32,66,0.95); */
+  /*rgba(1,33,68,1);*/
   padding: 1.75em .75em;
   outline: none;
  /* box-align: stretch;
@@ -44,7 +55,7 @@
   justify-content: flex-start;
   -ms-flex-pack: start;*/
   z-index: 3;
-  box-shadow: 0px 4px 15px #6b6b6b;
+  /*box-shadow: 0px 4px 15px #000;*/
   line-height: 1.5em;
   // margin-top: 25px; RETHINKING THE NAV-TOP SECTION - THIS WAS MARGIN FOR PLACEMENT OF #NAV-TOP - SEE HEADER - 3/30
   .nav-wrap{
@@ -52,13 +63,15 @@
     position: relative;
     padding: 0;*/
     #nav-brand{
-      background: url('/wp-content/uploads/2017/04/logo_big.png') top no-repeat;
+      background: url('/wp-content/uploads/2017/04/NTS-FOOTERS-1.png') top no-repeat;
       background-size: contain;
       display: block;
       position: absolute;
-      top: 50%;
+      /*top: 50%;*/
+      top: 0;
       left: 0;
-      height: 50px;
+      /*height: 50px;*/
+      height: 65px;
       width: 203px;
       margin: 0;
       overflow: hidden;
@@ -174,21 +187,28 @@ a#nav-icon {
     float: left;
     position: relative;
     /*margin-right: 3rem;*/
+    transition: 0.3s;
+    &:hover {
+      border-bottom: 1px solid #ef6f00;
+    }
     margin-left: 2rem;
     a{
       font-weight: 400;
-      color: #696969;
+      /*color: #696969;*/
+      color: #e3e3e3;
       text-decoration: none;
     }
     ul.sub-menu{
       li{
         font-size: 90%;
         transition: ease all 0.3s;
-
-        margin:0 !important;;
-
+        margin:0 !important;
+        a {
+          color: #696969;
+        }
         &:hover{
-          background: #2777B1;
+          /*background: #2777B1;*/
+          background: #002042;
           a{
             color: #e3e3e3;
           }

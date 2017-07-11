@@ -22,7 +22,8 @@ html{
 }
 
 body{
-  background: url('/wp-content/uploads/2017/04/sidebar-temp-background.jpg') no-repeat center center;
+  /*background: url('/wp-content/uploads/2017/04/sidebar-temp-background.jpg') no-repeat center center;*/
+  background: rgba(0,32,66,.25);
   background-size: cover;
   background-attachment: fixed;  
   font-family: 'Montserrat', sans-serif;
@@ -97,7 +98,8 @@ ul.list, ol.list {
 }
 
 footer {
-    background-image: linear-gradient(0deg,#002042 0,#0e4577 100%);
+    /*background-image: linear-gradient(0deg,#002042 0,#0e4577 100%);*/
+    background: #002042;
     overflow: hidden;
     box-sizing: border-box;
 }

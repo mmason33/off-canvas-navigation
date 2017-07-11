@@ -41,6 +41,20 @@
                 $(this).parent().toggleClass("open");
             });
 
+            if($('#hero').length === 0) {
+              $('header.header').addClass('blue');
+            }
+
+            $(window).scroll(function(){
+              if ($('#hero').length !== 0) {
+                  if($(window).scrollTop() >= 200) {
+                    $('header.header').addClass('blue');
+                  } else {
+                    $('header.header').removeClass('blue');
+                  }
+              }
+            });
+
             $('.column-content').matchHeight();
             $('.tile-wrap').matchHeight();
             $('.value-item').matchHeight();
@@ -62,14 +76,8 @@
               disable: window.innerWidth < 1024
             });
 
-            //best helper function ever
-            // function elementScrolled(elem){
-            //     var docViewTop = $(window).scrollTop();
-            //     var docViewBottom = docViewTop + $(window).height();
-            //     var elemTop = $(elem).offset().top;
-            //     return ((elemTop <= docViewBottom) && (elemTop >= docViewTop));
-            // }
             $('.icon-item').matchHeight();
+
           });//end doc.ready
 
       },

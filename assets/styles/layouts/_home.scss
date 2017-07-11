@@ -1,4 +1,7 @@
 
+.home #cta-content .container {
+  z-index: 1;
+}
 
 .home #page {
   padding: 4rem 0 0 0;
@@ -36,6 +39,10 @@
 
   .home .head {
     margin-top: 10rem !important;
+  }
+
+  .home .hero-overlay-gradient {
+    height: 500px !important;
   }
 
 }

@@ -40,5 +40,6 @@ $contentRelative = (get_field('cta_content_relative') == 1 ? 'style="position:re
                           </div><!-- end row -->
                         </div><!--end container-->
               </section><!--end cta-content-->
+                <div class="hero-overlay-gradient" style="background:/*linear-gradient(to right,*/ <?php //echo $contentBGcolor; ?>rgba(0,32,66,.65)/*, transparent)*/;"></div>
           </section><!--end hero-->
     <?php endif; ?>
