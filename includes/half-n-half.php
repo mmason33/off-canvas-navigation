@@ -27,6 +27,6 @@ style="<?php echo $heroImage; ?><?php echo $heroPosition; ?>;<?php echo $heroSiz
     </div>
   </div>
 
-  <div class="hero-overlay-gradient" style="background:/*linear-gradient(to right,*/ <?php //echo $contentBGcolor; ?>rgba(0,32,66,.65)/*, transparent)*/;"></div>
+  <div class="hero-overlay-gradient" style="background:/*linear-gradient(to right,*/ <?php //echo $contentBGcolor; ?>rgba(0,32,66,.4)/*, transparent)*/;"></div>
 </section>
 <? endif; ?>

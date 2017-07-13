@@ -22,8 +22,8 @@ html{
 }
 
 body{
-  /*background: url('/wp-content/uploads/2017/04/sidebar-temp-background.jpg') no-repeat center center;*/
-  background: rgba(0,32,66,.25);
+  background: url('/wp-content/uploads/2017/04/sidebar-temp-background.jpg') no-repeat center center;
+  /*background: rgba(0,32,66,.25);*/
   background-size: cover;
   background-attachment: fixed;  
   font-family: 'Montserrat', sans-serif;
@@ -91,6 +91,15 @@ ul.list, ol.list {
   font-size: 1.8rem !important;
   line-height: 4rem !important;
   color: #6b6b6b;
+  list-style-type: none;
+  li:before {
+    content: "\2022";
+    color: #ef6f00;
+    display: inline-block;
+    width: 1.6rem;
+    margin-left: -1.6rem;
+    font-size:3rem;
+  }
 }
 
 .img-fluid {
@@ -103,6 +112,10 @@ footer {
     overflow: hidden;
     box-sizing: border-box;
 }
+
+/*hr {
+  border-top: 2px solid #ef6f00;
+}*/
 
 @media screen and (max-width: 1600px) {
 
