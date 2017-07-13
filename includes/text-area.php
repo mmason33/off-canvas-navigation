@@ -20,4 +20,5 @@ $fullWidth = (get_sub_field('full_width') == 1 ? '-fluid' : '');
 			</div>
 		</section><!--#textbox-->
 	</div><!--container-->
+	<div class="text-overlay"></div>
 </section><!--text-box-wrap-->
