@@ -102,7 +102,7 @@
 
 
           $('.leadership-grid').matchHeight();
-                  
+
 
         });
 
@@ -142,16 +142,35 @@
       }
     },
 
-    'page_template_home_page': {
+    'home': {
       init: function() {
-
+        $(document).ready( function () {
+          $(window).scroll(function(){
+            if ($('#hero').length !== 0) {
+                if($(window).scrollTop() >= 200) {
+                  $('header.header').addClass('blue');
+                } else {
+                  $('header.header').removeClass('blue');
+                }
+            }
+          });
+        });
       }
     },
 
-    'blog': {
+    'home_2': {
       init: function() {
-
-
+        $(document).ready( function () {
+          $(window).scroll(function(){
+            if ($('#hero').length !== 0) {
+                if($(window).scrollTop() >= 200) {
+                  $('header.header').addClass('light-blue');
+                } else {
+                  $('header.header').removeClass('light-blue');
+                }
+            }
+          });
+        });
       }
     }
   };

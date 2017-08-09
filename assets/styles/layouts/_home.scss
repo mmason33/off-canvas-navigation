@@ -1,4 +1,9 @@
 
+.light-blue {
+  background: #2777b1;
+  box-shadow: 0 0 20px #000;
+}
+
 .home #cta-content .container {
   z-index: 1;
 }
@@ -42,6 +47,70 @@
   }
 
   .home .hero-overlay-gradient {
+    height: 500px !important;
+  }
+
+}
+
+
+
+// Home page clone
+
+.home-2 #cta-content .container {
+  z-index: 1;
+}
+
+.home-2 #page {
+  padding: 4rem 0 0 0;
+}
+
+.home-2 #hero {
+  height: 500px;
+}
+
+.home-2 .section-float {
+  top: 450px;
+}
+
+.home-2 .insurance-cta {
+  top: 475px;
+}
+
+.home-2 .content-info {
+  top: 530px;
+}
+
+.home-2 .founder-quote {
+  padding: 5rem 0 0 0;
+}
+
+.home-2 {
+  .column-content h4 {
+    background: #2777b1 !important;
+  }
+  .column-icon {
+    color: #2777b1 !important;
+  }
+  footer {
+    background: #2777b1 !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .home-2 #page {
+    padding: 1.5rem 0 0 0;
+  }
+
+}
+
+@media screen and (max-width:576px) {
+
+  .home-2 .head {
+    margin-top: 10rem !important;
+  }
+
+  .home-2 .hero-overlay-gradient {
     height: 500px !important;
   }
 

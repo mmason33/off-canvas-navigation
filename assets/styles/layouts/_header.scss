@@ -4,12 +4,13 @@
 
 .blue {
   background: #002042;
-  transition: ease background 0.2s;
+  box-shadow: 0 0 20px #000;
+  transition: ease all 0.2s;
 }
 
 .nav-number {
   position: relative;
-  background: #ef6f00; 
+  background: #ef6f00;
   border-radius: 10px;
   color: white;
   padding: 2rem 1rem .5rem;
@@ -335,7 +336,7 @@ a#nav-icon {
 }
 
 @media screen and (max-width: 1024px) {
-    
+
     .nav-number {
       display: none;
     }

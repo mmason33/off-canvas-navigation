@@ -26,19 +26,26 @@
 .insurance-cta {
   background: url('/wp-content/uploads/2017/04/pattern-orange.jpg') no-repeat center center;
   background-size:cover;
+  top: 700px !important;
+}
+
+.credits-cta {
+  top: 260px !important;
+}
+
+.credits-cta, .insurance-cta {
   padding: 2rem !important;
   position: relative !important;
-  top: 475px;
   z-index: 0  !important;
 }
 
-.page-template-page-with-sidebar-mental-health, 
-.page-template-page-with-sidebar-addiction, 
-.page-template-page-with-sidebar-admissions, 
-.page-id-17, 
+.page-template-page-with-sidebar-mental-health,
+.page-template-page-with-sidebar-addiction,
+.page-template-page-with-sidebar-admissions,
+.page-id-17,
 .single-post,
-.single-our_staff, 
-.blog, 
+.single-our_staff,
+.blog,
 .page-template-contact {
   .section-float {
     top: 120px;
@@ -77,4 +84,4 @@
     top: 415px;
   }
 
-}    
+}

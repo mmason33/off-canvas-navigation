@@ -12,3 +12,4 @@
   <?php endwhile; ?>
 </div>
 <?php get_template_part('templates/ins-cta'); ?>
+<?php get_template_part('templates/credits'); ?>
