@@ -1,5 +1,5 @@
 <div  data-aos="slide-down">
-  <div class="container-fluid wrap credits-cta section-float" style="background: url(/wp-content/uploads/2017/04/footer-image-texture-idea-1.jpg) no-repeat center center;background-size:cover;padding:1rem !important;">
+  <div class="container-fluid wrap credits-cta section-float" style="background:#2777b1;">
       <div class="container">
           <div class="row">
             <div class="col-md-12 text-center">
